@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elink | Sign In</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    
+    <section class="signin-secreen-main">
+        <div class="e-link_container">
+          <div class="signin-secreen-inner">
+            <div class="signin-secreen-inner-bg">
+                <img src="./assets/images/siginin-main-bg.png" alt="">
+            </div>
+            <div class="signin-secreen-logo">
+                <img src="./assets/images/e-link-logo.svg" alt="">
+                <h1>Welcome back! Sign In here.</h1>
+            </div>
+
+            <div class="signin-secreen-form">
+                <form action="action.php">
+                    <div class="error-msg">
+                        <div class="error-msg-bg">
+                            <div class="error-msg-icon">
+                                <img src="./assets/images/error-notification-icon.svg" alt="">
+                            </div>
+                            <div class="error-msg-desc">
+                                <h4>Missing digits</h4>
+                                <p> Please enter the phone number.</p>
+                            </div>
+                          </div>
+                      </div>
+                    
+                      <!-- <div class="site_input-group">
+                        <div class="site_input-group-dropdown">
+                          <div class="dropdown-wrapper">
+                            <div class="dropdown-select">
+                              <div class="dropdown-toggle-bg">
+                                <button class="country_dropdown">
+                                  <span class="dropdown-country code">+1</span>
+                                  <img class="arrow-icon" src="./assets/images/dropdown-icon.svg" alt="">
+                                </button>
+                              </div>
+                            </div>
+  
+                            <div class="dropdown-panel" id="sideHustleDropdown" data-lenis-prevent="">
+                              <div class="dropdown-fade-effect">
+                                <a href="javascript:void(0);">+1</a>
+                                <a href="javascript:void(0);">+61</a>
+                                <a href="javascript:void(0);">+91</a>
+                                <a href="javascript:void(0);">+20</a>
+                                <a href="javascript:void(0);">+001</a>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <input type="number" class="site_input" placeholder="Phone" required>
+                          <label class="site_input-phone">Phone*</label>
+
+                        </div>
+                      </div> -->
+
+                      <div class="site_input-group">
+                          <input type="email" class="site_input" placeholder="Your Email Address" required>
+                          <label>Email*</label>
+                          <span class="fake-caret"></span>
+                      </div>
+  
+
+                    <div class="signin-secreen-form-btn">
+                        <button>Continue</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="continue-btn">
+              <div class="continue-btn-bg site_btn-bg">
+                <a href="#"><img src="./assets/images/email.svg" alt=""> Continue with Email</a>
+              </div>
+            </div>
+
+
+            <div class="create-account-text">
+                <p>Don’t have an account? <a href="">Create One</a></p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Js -->
+    <script src="./assets/js/gsap.min.js" defer></script>
+    <script src="./assets/js/lenis.min.js" defer></script>
+    <script src="./assets/js/gsap.min.js" defer></script>
+    <script src="./js/ScrollTrigger.min.js" defer></script>
+    <script src="./js/app.js" defer></script>
+
+
+
+
+    <!-- Add active and error class on input -->
+    <script>
+      document.querySelectorAll('.site_input').forEach(input => {
+        input.addEventListener('focus', () => {
+          input.parentElement.classList.add('focus');
+          input.parentElement.classList.remove('error'); // clear error on focus
+        });
+
+        input.addEventListener('blur', () => {
+          const parent = input.parentElement;
+          const value = input.value.trim();
+
+          if (value === "") {
+            parent.classList.remove('focus');
+            parent.classList.remove('error');
+          } else {
+            parent.classList.add('focus');
+
+            // ✅ validation: must be exactly 10 digits
+            if (!/^\d{10}$/.test(value)) {
+              parent.classList.add('error');
+            } else {
+              parent.classList.remove('error');
+            }
+          }
+        });
+      });
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const wrapper = document.querySelector('.dropdown-wrapper');
+  const button = wrapper.querySelector('.country_dropdown'); // ✅ fixed
+  const panel = wrapper.querySelector('.dropdown-panel');
+  const content = panel.querySelector('.dropdown-fade-effect');
+  const links = content.querySelectorAll('a');
+  const label = button.querySelector('.dropdown-country'); // ✅ fixed
+
+  // Hide links initially
+  gsap.set(links, { opacity: 0, y: 20 });
+
+  let isOpen = false;
+
+  // Toggle dropdown
+  button.addEventListener('click', (e) => {
+    e.stopPropagation();
+
+    if (isOpen) {
+      closeDropdown();
+    } else {
+      openDropdown();
+    }
+  });
+
+  // Select option
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      const selectedValue = link.textContent.trim();
+      if (label) label.textContent = selectedValue;
+
+      closeDropdown();
+      console.log("Selected:", selectedValue);
+    });
+  });
+
+  // Close on outside click
+  document.addEventListener('click', (e) => {
+    if (isOpen && !wrapper.contains(e.target)) {
+      closeDropdown();
+    }
+  });
+
+  // Scroll fade effect
+  content.addEventListener('scroll', () => {
+    const scrollTop = content.scrollTop;
+    const scrollHeight = content.scrollHeight;
+    const clientHeight = content.clientHeight;
+
+    if (scrollTop + clientHeight >= scrollHeight - 1) {
+      panel.classList.add('at-bottom');
+    } else {
+      panel.classList.remove('at-bottom');
+    }
+  });
+
+  function openDropdown() {
+    wrapper.classList.add('dropdown-open');
+    const currentHeight = panel.offsetHeight;
+    panel.style.height = 'auto';
+    const autoHeight = panel.offsetHeight;
+    panel.style.height = currentHeight + 'px';
+
+    gsap.to(panel, { height: autoHeight, duration: 0.3, ease: "power2.out" });
+    gsap.to(links, { opacity: 1, y: 0, duration: 0.2, stagger: 0.05, ease: "power2.out" });
+
+    isOpen = true;
+  }
+
+  function closeDropdown() {
+    wrapper.classList.remove('dropdown-open');
+    gsap.to(panel, { height: 0, duration: 0.3, ease: "power2.out" });
+    gsap.to(links, { opacity: 0, y: 20, duration: 0.2, ease: "power2.out" });
+    isOpen = false;
+  }
+});
+
+
+</script>
+
+
+<script>
+  const input = document.getElementById("customInput");
+const caret = document.querySelector(".fake-caret");
+
+function updateCaret() {
+  const text = input.value;
+  const span = document.createElement("span");
+
+  // temp span to measure text width
+  span.style.visibility = "hidden";
+  span.style.position = "absolute";
+  span.style.font = window.getComputedStyle(input).font;
+  span.textContent = text.replace(/ /g, "\u00a0"); // keep spacing
+
+  document.body.appendChild(span);
+  const textWidth = span.offsetWidth;
+  document.body.removeChild(span);
+
+  // move fake caret
+  caret.style.left = 8 + textWidth + "px"; // 8px = input padding
+}
+
+// update on input & click
+input.addEventListener("input", updateCaret);
+input.addEventListener("click", updateCaret);
+
+</script>
+
+</body>
+</html>
