@@ -95,7 +95,7 @@ input[type=number] {-moz-appearance: textfield;}
 /* Image Revel */
 .image_reveal-init {clip-path: inset(0 0 100% 0);-webkit-clip-path: inset(0 0 100% 0);opacity: 0;}
 /* E Link Container */
-.e-link_container {max-width: 440px;margin: 0 auto;}
+.e-link_container {max-width: 470px;margin: 0 auto;padding: 15px;}
 
 /* Site Button */
 .site_btn-bg {background: var(--gradient-secondry);backdrop-filter: blur(30px);border-radius: var(--radius);display: flex;align-items: center;justify-content: center;padding: 1px;}

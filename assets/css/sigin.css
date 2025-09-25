@@ -45,6 +45,7 @@
 .error-msg-icon {width: 32px;}
 .error-msg-desc h4 {font-size: var(--f-16);margin-bottom: 5px;color: var(--white);opacity: 0.8;}
 .error-msg-desc p {font-size: var(--f-12);color: var(--white);opacity: 0.6;}
+.error-input-icon{position: absolute;right: 20px;transition: 0.5s;top: 17px;}
 .create-account-text {margin-top: 80px;}
 .create-account-text p {display: flex;align-items: center;justify-content: center;color: #FFFFFF80;gap: 3px;}
 .create-account-text a {display: inline-block;color: var(--white);}
