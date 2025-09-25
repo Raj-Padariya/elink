@@ -116,16 +116,16 @@
       let hasError = false;
 
       // Initialize error UI and email group with GSAP
-      gsap.set(errorBox, { opacity: 0, display: "none", zIndex: 10 });
-      gsap.set(phoneErrorIcon, { opacity: 0 });
-      gsap.set(emailErrorIcon, { opacity: 0 });
+      gsap.set(errorBox, { opacity: 0, y: 10, display: "none", zIndex: 10 });
+      gsap.set(phoneErrorIcon, { opacity: 0, y: 10 });
+      gsap.set(emailErrorIcon, { opacity: 0, y: 10 });
       gsap.set(emailGroup, { opacity: 0, y: 20, display: "none" });
 
       // Set initial required state
       phoneInput.setAttribute("required", "");
       emailInput.removeAttribute("required");
 
-      // Function to reset error state
+      // Function to reset error state with smooth animation
       const resetErrorState = () => {
         if (hasError) {
           console.log("Resetting error state");
@@ -133,10 +133,19 @@
           emailGroup.classList.remove("error");
           phoneInput.style.borderColor = "";
           emailInput.style.borderColor = "";
-          gsap.to([phoneErrorIcon, emailErrorIcon, errorBox], { 
+          gsap.to([phoneErrorIcon, emailErrorIcon], { 
             opacity: 0, 
-            duration: 0.2, 
-            ease: "power2.out", 
+            y: 10, 
+            duration: 0.3, 
+            ease: "power2.in", 
+            stagger: 0.1
+          });
+          gsap.to(errorBox, { 
+            opacity: 0, 
+            y: 10, 
+            duration: 0.3, 
+            ease: "power2.in", 
+            delay: 0.2, 
             onComplete: () => {
               phoneErrorIcon.style.opacity = "0";
               emailErrorIcon.style.opacity = "0";
@@ -251,9 +260,9 @@
             phoneGroup.classList.add("error");
             phoneInput.style.borderColor = "red";
             gsap.set(errorBox, { display: "block" });
-            gsap.to(errorBox, { opacity: 1, duration: 0.3, ease: "power2.out" });
-            gsap.set(phoneErrorIcon, { opacity: 0 });
-            gsap.to(phoneErrorIcon, { opacity: 1, duration: 0.3, ease: "power2.out", delay: 0.1 });
+            gsap.to(errorBox, { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" });
+            gsap.set(phoneErrorIcon, { opacity: 0, y: 10 });
+            gsap.to(phoneErrorIcon, { opacity: 1, y: 0, duration: 0.3, ease: "power2.out", delay: 0.1 });
             hasError = true;
             return;
           }
@@ -267,9 +276,9 @@
             emailGroup.classList.add("error");
             emailInput.style.borderColor = "red";
             gsap.set(errorBox, { display: "block" });
-            gsap.to(errorBox, { opacity: 1, duration: 0.3, ease: "power2.out" });
-            gsap.set(emailErrorIcon, { opacity: 0 });
-            gsap.to(emailErrorIcon, { opacity: 1, duration: 0.3, ease: "power2.out", delay: 0.1 });
+            gsap.to(errorBox, { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" });
+            gsap.set(emailErrorIcon, { opacity: 0, y: 10 });
+            gsap.to(emailErrorIcon, { opacity: 1, y: 0, duration: 0.3, ease: "power2.out", delay: 0.1 });
             hasError = true;
             return;
           }
