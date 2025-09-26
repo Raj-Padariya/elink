@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elink | Onboarding</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    
+    <section class="onboarding-section-main">
+        <div class="e-link_container">
+            <div class="onboarding-inner">
+                <!-- Loader -->
+                <div class="onboarding-frist-loader">
+                    <div class="onboarding-frist-loader-text">
+                        <h1 class="loading loading02">
+                        <span>e</span>
+                        <span>l</span>
+                        <span>i</span>
+                        <span>n</span>
+                        <span>k</span>
+                        </h1>
+                        <p>
+                        <img src="./assets/images/info-icon.svg" alt="">
+                        Animated logo, of course.
+                        </p>
+                    </div>
+                </div>
+                <!-- Let's Start Screen -->
+                <div class="lets-start">
+                    <p class="tooltip-info-text">
+                        <img src="./assets/images/info-icon.svg" alt="">
+                        Tooltip Text
+                    </p>
+                    <div class="lets-start-col">
+                        <div class="lets-start-img">
+                            <img src="./assets/images/let-start-screen.png" alt="">
+                        </div>
+                        <div class="lets-start-detail">
+                            <h2>Present yourself in the best way possible</h2>
+                            <p>Make every introduction unforgettable.</p>
+                        </div>
+                        <div class="onboarding-main-bg">
+                            <img src="./assets/images/siginin-main-bg.png" alt="">
+                        </div>
+                    </div>
+                    <div class="site_btn-bg">
+                        <a href="#">Let’s Start</a>
+                    </div>
+                    <div class="create-account-text">
+                        <p>Already have an account? <a href="">Sign In</a></p>
+                    </div>
+                </div>
+                <!-- Main Step Screen -->
+                <div class="setup-profile-main">
+                    <div class="setup-profile-bg">
+                        <img src="./assets/images/siginin-main-bg.png" alt="">
+                    </div>
+                    <div class="setup-profile-progress">
+                        <div class="setup-profile-progress-bg">
+                            <div class="setup-profile-progress-inner">
+                                <div class="bar">
+                                    <span class="bar-progress"></span>
+                                </div>
+                                <div class="step-count">
+                                    <div class="setps">
+                                        <p>Top Section <span>1</span>/<span>9</span> steps</p>
+                                    </div>
+                                    <div class="progress">
+                                        <p><span>0%</span></p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Screen chnage -->
+                    <div class="screen-chnage-step">
+                        <!-- Upload Photo Screen -->
+                        <div class="upload-photo-screen">
+                            <div class="upload-photo-inner">
+                                <div class="upload-photo-content">
+                                    <h2>Start with a strong first impression</h2>
+                                    <p>Let's set everything up as in the example.</p>
+                                    <img src="./assets/images/add-photo-screen.png" alt="">
+                                    <p><img src="./assets/images/info-icon.svg" alt=""> This animation shows the best aspect ratio for photos.</p>
+                                </div>
+                            </div>
+
+                                <div class="upload-image-input">
+                                    <div class="image-upload">
+                                        <input type="file" class="file-input" accept="image/*">
+                                    </div>
+                                    <div class="upload-content" id="uploadContent">
+                                        <div class="upload-icon">
+                                            <img src="./assets/images/image-label.svg" alt="">
+                                        </div>
+                                        <h3 class="upload-title">Add your best photo</h3>
+                                        <p class="upload-description">
+                                            This step required a high-quality photo to achieve a better result.
+                                        </p>
+                                        <span class="upload-specs">Min Size: <strong>1200x1755</strong></span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Js -->
+    <script src="./assets/js/gsap.min.js" defer></script>
+    <script src="./assets/js/lenis.min.js" defer></script>
+    <script src="./js/ScrollTrigger.min.js" defer></script>
+    <script src="./js/app.js" defer></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        // Step 1: Loader stays 2s
+        setTimeout(() => {
+            const loader = document.querySelector(".onboarding-frist-loader");
+            loader.classList.add("hide");
+
+            // Step 2: Show Let's Start screen
+            const letsStart = document.querySelector(".lets-start");
+            setTimeout(() => {
+            letsStart.classList.add("show");
+            }, 600); // wait for loader fade-out
+        }, 2000); // hold loader 2s
+
+        // Step 3: On button click → show setup profile
+        const startBtn = document.querySelector(".site_btn-bg a");
+        startBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            const letsStart = document.querySelector(".lets-start");
+            const setupProfile = document.querySelector(".setup-profile-main");
+
+            // Hide let's start
+            letsStart.classList.remove("show");
+            setTimeout(() => {
+            letsStart.style.display = "none";
+
+            // Show setup profile
+            setupProfile.style.display = "block";
+            setTimeout(() => {
+                setupProfile.classList.add("show");
+            }, 50);
+            }, 600); // matches transition time
+        });
+        });
+
+</script>
+
+
+
+</body>
+</html>

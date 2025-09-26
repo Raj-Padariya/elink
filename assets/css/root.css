@@ -44,7 +44,10 @@
     --shadow-one: 0px 0px 8px 0px #1D4AFE;
     --shadow-two: 0px 0px 8px 0px #F51D1D;
     --hover-clr: linear-gradient(88.24deg, #5E29FD -0.52%, #B84EFF 99.49%); 
-    --radius: 10px;  
+    --radius: 10px;
+    --radius-20: 20px;
+    --f-32: 32px;  
+    --f-24: 24px;  
     --f-20: 20px;
     --f-18: 18px;
     --f-16: 16px;
