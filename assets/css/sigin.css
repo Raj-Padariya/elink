@@ -11,26 +11,8 @@
 .site_input-group {width: 100%;position: relative;display: flex;justify-content: center;align-items: flex-start;flex-direction: column;background: var(--gradient-secondry);backdrop-filter: blur(132px);box-shadow: 0px 0px 8px 0px #FFFFFF40;padding: 1px;transition: all 0.9s ease;border-radius: var(--radius);z-index: 1;}
 .site_input-group.focus {background: var(--gradient-primary);box-shadow: var(--shadow-one);}
 .site_input-group.error {background: var(--gradient-tertiory);box-shadow: var(--shadow-two);}
-.site_input-group-dropdown{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    border-radius: var(--radius);
-    width: 100%;
-    background: var(--black);
-    border: none;
-    color: var(--white);
-    font-size: var(--f-14);
-    font-weight: var(--fw-500);
-}
-
-.site_input-group-dropdown .site_input{
-    border: none;
-    background: transparent;
-    box-shadow: none;
-}
-
-
+.site_input-group-dropdown{display: flex;width: 100%;align-items: center;border-radius: var(--radius);width: 100%;background: var(--black);border: none;color: var(--white);font-size: var(--f-14);font-weight: var(--fw-500);}
+.site_input-group-dropdown .site_input{border: none;background: transparent;box-shadow: none;}
 .site_input {padding: 30px 10px 10px;border-radius: var(--radius);width: 100%;background: var(--black);border: none;color: var(--white);font-size: var(--f-14);font-weight: var(--fw-500);}
 .site_input-group label {position: absolute;left: 10px;top: 50%;transform: translateY(-50%);font-size: var(--f-16);color: var(--white);pointer-events: none;transition: all 0.3s ease;font-size: var(--f-14);}
 .site_input:focus+label,
@@ -53,7 +35,7 @@
 .continue-btn::before {content: "";position: absolute;width: 100%;height: 1px;background: #FFFFFF1A;left: 0px;top: 0;background: linear-gradient(90deg, #ffffff01, #ffffff80, #ffffff01);}
 .site_input-group label.site_input-phone{left: 82px;}
 
-
+/* Drop Down */
 .dropdown-wrapper{max-width: 70px;width: 100%;position: relative;}
 .dropdown-wrapper::before{content: "";position: absolute;width: 1px;height: 60%;background: linear-gradient(10deg, #ffffff01, #ffffff40, #ffffff01);right: 0px;top: 50%;transform: translateY(-50%);}
 .country_dropdown{display: flex;align-items: center;background: transparent;position: relative;max-width: 40px;gap: 10px;padding: 17px 0px 18px 20px;}
