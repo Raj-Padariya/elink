@@ -74,6 +74,7 @@
 }
 .onboarding-inner{
     position: relative;
+    /* overflow-x: hidden; */
 }
 .onboarding-main-bg{
   position: absolute;

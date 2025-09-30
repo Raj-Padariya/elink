@@ -158,3 +158,20 @@ input[type=number] {-moz-appearance: textfield;}
 .setup-profile-progress-bg.start-profile::before{
   background: linear-gradient(90deg, #FF5526 0%, #1D4AFE 100%);
 }
+
+
+
+.common-bg-shape{
+  position: relative;
+}
+
+.common-bg-shape span{
+  width: 455px;
+  height: 312px;
+  background: linear-gradient(90deg, #1D4AFE 0%, #FF5526 100%);
+  filter: blur(50px);
+  position: fixed;
+  z-index: -1;
+  top: 50%;
+  opacity: 0.3;
+}
