@@ -1,199 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elink | Onboarding</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
-</head>
-<body>
-    
-    <section class="onboarding-section-main">
-        <div class="e-link_container">
-            <div class="onboarding-inner">
-                <!-- Loader -->
-                <div class="onboarding-frist-loader">
-                    <div class="onboarding-frist-loader-text">
-                        <h1 class="loading loading02">
-                        <span>e</span>
-                        <span>l</span>
-                        <span>i</span>
-                        <span>n</span>
-                        <span>k</span>
-                        </h1>
-                        <p>
-                        <img src="./assets/images/info-icon.svg" alt="">
-                        Animated logo, of course.
-                        </p>
-                    </div>
-                </div>
-                <!-- Let's Start Screen -->
-                <div class="lets-start">
-                    <p class="tooltip-info-text">
-                        <img src="./assets/images/info-icon.svg" alt="">
-                        Tooltip Text
-                    </p>
-                    <div class="lets-start-col">
-                        <div class="lets-start-img">
-                            <img src="./assets/images/let-start-screen.png" alt="">
-                        </div>
-                        <div class="lets-start-detail">
-                            <h2>Present yourself in the best way possible</h2>
-                            <p>Make every introduction unforgettable.</p>
-                        </div>
-                        <div class="onboarding-main-bg">
-                            <img src="./assets/images/siginin-main-bg.png" alt="">
-                        </div>
-                    </div>
-                    <div class="site_btn-bg">
-                        <a href="#">Let’s Start</a>
-                    </div>
-                    <div class="create-account-text">
-                        <p>Already have an account? <a href="">Sign In</a></p>
-                    </div>
-                </div>
-                <!-- Main Step Screen -->
-                <div class="setup-profile-main">
-                    <div class="setup-profile-bg">
-                        <img src="./assets/images/siginin-main-bg.png" alt="">
-                    </div>
-                    <div class="setup-profile-progress">
-                        <div class="setup-profile-progress-bg">
-                            <div class="setup-profile-progress-inner">
-                                <div class="bar">
-                                    <span class="bar-progress"></span>
-                                </div>
-                                <div class="step-count">
-                                    <div class="setps">
-                                        <p>Top Section <span>1</span>/<span>9</span> steps</p>
-                                    </div>
-                                    <div class="progress">
-                                        <p><span>0%</span></p>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Screen chnage -->
-                    <div class="screen-chnage-step">
-                        <!-- Upload Photo Screen -->
-                        <div class="upload-photo-screen">
-                            <div class="upload-photo-inner">
-                                <div class="upload-photo-content">
-                                    <h2>Start with a strong first impression</h2>
-                                    <p>Let's set everything up as in the example.</p>
-                                    <img src="./assets/images/add-photo-screen.png" alt="">
-                                    <p><img src="./assets/images/info-icon.svg" alt=""> This animation shows the best aspect ratio for photos.</p>
-                                </div>
-                            </div>
-
-                                <div class="upload-image-input">
-                                    <div class="image-upload">
-                                        <input type="file" class="file-input" accept="image/*">
-                                    </div>
-                                    <div class="upload-content" id="uploadContent">
-                                        <div class="upload-icon">
-                                            <img src="./assets/images/image-label.svg" alt="">
-                                        </div>
-                                        <h3 class="upload-title">Add your best photo</h3>
-                                        <p class="upload-description">
-                                            This step required a high-quality photo to achieve a better result.
-                                        </p>
-                                        <p><span class="upload-specs">Min Size:</span> 1200x1755</p>
-                                        
-                                    </div>
-                                </div>
-
-                                <div class="site_btn-bg">
-                                    <a href="#">Add Photo</a>
-                                </div>
-
-
-                                <div class="Upload-Photo-loader">
-                                    <h2>Great, your photo is loading!</h2>
-                                    <p>It may take a moment. Please wait.</p>
-
-                                    <div class="upload-pregress">
-                                        <img src="./assets/images/image-label.svg" alt="">
-                                        <div class="bar">
-                                            <span class="bar-progress"></span>
-                                        </div>
-                                        <div class="upload-pregress-count">
-                                            <p class="upload-pregress-text">Lading...</p>
-                                            <p class="upload-pregress-count">45%</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="upload-photo-error">
-                                    <img src="./assets/images/broken-img-label.svg" alt="">
-                                    <h2>Oops... <br>
-                                            It looks like the photo you tried to upload is of low quality.</h2>
-                                    <p>A clear, high-quality photo helps you look your best and makes your card stand out — it’s a win for you and your audience.</p>
-
-                                    <div class="site_btn-bg">
-                                        <a href="">Try a New Photo</a>
-                                    </div>
-                                    <div class="site_btn-bg">
-                                        <a href="">Watch Photo Tips </a>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <link rel="icon" type="image/png" href="./assets/images/fav-ico.png" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+<section class="onboarding-section-main">
+  <div class="e-link_container">
+    <div class="onboarding-inner">
+      <!-- Loader -->
+      <div class="onboarding-frist-loader">
+        <div class="onboarding-frist-loader-text">
+          <h1 class="loading loading02">
+            <span>e</span>
+            <span>l</span>
+            <span>i</span>
+            <span>n</span>
+            <span>k</span>
+          </h1>
+          <p>
+            <img
+              decoding="async"
+              src="./assets/images/info-icon.svg"
+              alt=""
+            />
+            Animated logo, of course.
+          </p>
         </div>
-    </section>
+      </div>
+      <!-- Let's Start Screen -->
+      <div class="lets-start">
+        <p class="tooltip-info-text">
+          <img
+            decoding="async"
+            src="./assets/images/info-icon.svg"
+            alt=""
+          />
+          Tooltip Text
+        </p>
+        <div class="lets-start-col">
+          <div class="lets-start-img">
+            <img
+              decoding="async"
+              src="./assets/images/let-start-screen.png"
+              alt=""
+            />
+          </div>
+          <div class="lets-start-detail">
+            <h2>Present yourself in the best way possible</h2>
+            <p>Make every introduction unforgettable.</p>
+          </div>
+          <div class="onboarding-main-bg">
+            <img
+              decoding="async"
+              src="./assets/images/siginin-main-bg.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="site_btn-bg">
+          <a href="#">Let’s Start</a>
+        </div>
+        <div class="create-account-text">
+          <p>Already have an account? <a href="">Sign In</a></p>
+        </div>
+      </div>
+      <!-- Main Step Screen -->
+      <div class="setup-profile-main">
+        <div class="setup-profile-bg">
+          <img
+            decoding="async"
+            src="./assets/images/siginin-main-bg.png"
+            alt=""
+          />
+        </div>
+        <div class="setup-profile-progress">
+          <div class="setup-profile-progress-bg">
+            <div class="setup-profile-progress-inner">
+              <div class="bar">
+                <span class="bar-progress"></span>
+              </div>
+              <div class="step-count">
+                <div class="setps">
+                  <p>Top Section <span>1</span>/<span>9</span> steps</p>
+                </div>
+                <div class="progress">
+                  <p><span>0%</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Screen change -->
+        <div class="screen-chnage-step">
+          <!-- Upload Photo Screen -->
+          <div class="upload-photo-screen">
+            <div class="upload__screen-one">
+              <div class="upload-photo-inner">
+                <div class="upload-photo-content">
+                  <h2>Start with a strong first impression</h2>
+                  <p>Let's set everything up as in the example.</p>
+                  <img
+                    decoding="async"
+                    src="./assets/images/add-photo-screen.png"
+                    alt=""
+                  />
+                  <p data-open-popup="modalId">
+                    <img
+                      decoding="async"
+                      src="./assets/images/info-icon.svg"
+                      alt=""
+                    />
+                    This animation shows the best aspect ratio for photos.
+                  </p>
+                </div>
+              </div>
+              <div class="upload-image-input">
+                <div class="image-upload">
+                  <input type="file" class="file-input" accept="image/*" />
+                </div>
+                <div class="upload-content" id="uploadContent">
+                  <div class="upload-icon">
+                    <img
+                      decoding="async"
+                      src="./assets/images/image-label.svg"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="upload-title">Add your best photo</h3>
+                  <p class="upload-description">
+                    This step requires a high-quality photo to achieve a
+                    better result.
+                  </p>
+                  <p>
+                    <span class="upload-specs">Min Size:</span> 1200x1755
+                  </p>
+                </div>
+              </div>
+              <div class="site_btn-bg" style="margin-bottom: 15px;">
+                <a href="#">Add Photo</a>
+              </div>
+              <div class="site_btn-bg">
+                <a href="#" class="proceed-to-loading">proceed to loading</a>
+              </div>
+            </div>
+            <div class="upload__screen-two">
+              <div class="Upload-Photo-loader">
+                <div class="loader__text">
+                    <h2>Great, your photo is loading!</h2>
+                    <p>It may take a moment. Please wait.</p>
+                </div>
+                <div class="upload-pregress">
+                  <img
+                    decoding="async"
+                    src="./assets/images/image-label.svg"
+                    alt=""
+                  />
+                  <div class="bar">
+                    <span class="bar-progress"></span>
+                  </div>
+                  <div class="upload-pregress-count">
+                    <p class="upload-pregress-text">Loading...</p>
+                    <p class="upload-pregress-count">45%</p>
+                  </div>
+                </div>
+                <div class="site_btn-bg">
+                  <a href="#" class="proceed-to-error">Proceed to Error</a>
+                </div>
+              </div>
+            </div>
+            <div class="upload__screen-three">
+              <div class="upload-photo-error">
+                <div class="error__text">
 
+                    <img
+                      decoding="async"
+                      src="./assets/images/broken-img-label.svg"
+                      alt=""
+                    />
+                    <h2>
+                      Oops... <br />
+                      It looks like the photo you tried to upload is of low
+                      quality.
+                    </h2>
+                    <p>
+                      A clear, high-quality photo helps you look your best and
+                      makes your card stand out — it’s a win for you and your
+                      audience.
+                    </p>
+                </div>
+                <div class="site_btn-bg">
+                  <a href="">Try a New Photo</a>
+                </div>
+                <div class="site_btn-bg error_light--cta">
+                  <a href="">Watch Photo Tips</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Js -->
     <script src="./assets/js/gsap.min.js" defer></script>
     <script src="./assets/js/lenis.min.js" defer></script>
-    <script src="./js/ScrollTrigger.min.js" defer></script>
-    <script src="./js/app.js" defer></script>
-
+    <script src="./assets/js/ScrollTrigger.min.js" defer></script>
+    <script src="./assets/js/app.js" defer></script>
 
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-        // Step 1: Loader stays 2s
-        setTimeout(() => {
-            const loader = document.querySelector(".onboarding-frist-loader");
-            loader.classList.add("hide");
+document.addEventListener("DOMContentLoaded", () => {
+  // Select main elements
+  const loader = document.querySelector(".onboarding-frist-loader");
+  const letsStart = document.querySelector(".lets-start");
+  const startBtn = document.querySelector(".site_btn-bg a");
+  const setupProfile = document.querySelector(".setup-profile-main");
+  const uploadScreenOne = document.querySelector(".upload__screen-one");
+  const uploadScreenTwo = document.querySelector(".upload__screen-two");
+  const uploadScreenThree = document.querySelector(".upload__screen-three");
+  const proceedToLoadingBtn = document.querySelector(".proceed-to-loading");
+  const proceedToErrorBtn = document.querySelector(".proceed-to-error");
 
-            // Step 2: Show Let's Start screen
-            const letsStart = document.querySelector(".lets-start");
-            setTimeout(() => {
-            letsStart.classList.add("show");
-            }, 600); // wait for loader fade-out
-        }, 2000); // hold loader 2s
+  // Initial setup
+  gsap.set(letsStart, { autoAlpha: 0 });
+  gsap.set(setupProfile, { autoAlpha: 0, display: "none" });
+  gsap.set(uploadScreenOne, { autoAlpha: 1, display: "block" });
+  gsap.set(uploadScreenTwo, { autoAlpha: 0, display: "none" });
+  gsap.set(uploadScreenThree, { autoAlpha: 0, display: "none" });
 
-        // Step 3: On button click → show setup profile
-        const startBtn = document.querySelector(".site_btn-bg a");
-        startBtn.addEventListener("click", (e) => {
-            e.preventDefault();
+  const initialTimeline = gsap.timeline({
+    defaults: { ease: "power2.out" },
+  });
 
-            const letsStart = document.querySelector(".lets-start");
-            const setupProfile = document.querySelector(".setup-profile-main");
+  initialTimeline
+    .to(loader, { duration: 2, autoAlpha: 1 })
+    .to(loader, {
+      duration: 0.5,
+      autoAlpha: 0,
+      onComplete: () => (loader.style.display = "none"),
+    })
+    .set(letsStart, { autoAlpha: 1 })
+    .from(
+      ".lets-start > *",
+      {
+        y: 30,
+        opacity: 0,
+        duration: 0.6,
+        stagger: 0.1,
+      },
+      "<0.1"
+    );
 
-            // Hide let's start
-            letsStart.classList.remove("show");
-            setTimeout(() => {
-            letsStart.style.display = "none";
+  startBtn.addEventListener("click", (e) => {
+    e.preventDefault();
 
-            // Show setup profile
-            setupProfile.style.display = "block";
-            setTimeout(() => {
-                setupProfile.classList.add("show");
-            }, 50);
-            }, 600); // matches transition time
-        });
-        });
+    const transitionTimeline = gsap.timeline({
+      defaults: { ease: "power2.inOut" },
+      onStart: () => {
+        setupProfile.style.display = "block";
+        gsap.set(setupProfile, { autoAlpha: 1 }); // Ensure setup-profile-main is visible
+        gsap.set(".upload__screen-one > *", { autoAlpha: 0, y: 30 }); // Prepare children for animation
+      },
+    });
 
-</script>
+    transitionTimeline
+      .to(".lets-start > *", {
+        y: -30,
+        opacity: 0,
+        duration: 0.4,
+        stagger: -0.05,
+      })
+      .to(letsStart, {
+        duration: 0,
+        autoAlpha: 0,
+        onComplete: () => (letsStart.style.display = "none"),
+      })
+      .to(
+        ".upload__screen-one > *",
+        {
+          y: 0,
+          autoAlpha: 1,
+          duration: 0.6,
+          stagger: 0.1,
+        },
+        "<0.1"
+      );
+  });
 
+  // Transition from Screen 1 to Screen 2
+  proceedToLoadingBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const screenTransition = gsap.timeline({
+      defaults: { ease: "power2.inOut" },
+      onStart: () => {
+        uploadScreenTwo.style.display = "block";
+        gsap.set(uploadScreenTwo, { autoAlpha: 1 }); // Ensure upload__screen-two is visible
+        gsap.set(".upload__screen-two .Upload-Photo-loader > *", { autoAlpha: 0, y: 30 });
+      },
+    });
 
+    screenTransition
+      .to(".upload__screen-one > *", {
+        y: -30,
+        opacity: 0,
+        duration: 0.4,
+        stagger: -0.05,
+      })
+      .to(uploadScreenOne, {
+        duration: 0,
+        autoAlpha: 0,
+        onComplete: () => (uploadScreenOne.style.display = "none"),
+      })
+      .to(
+        ".upload__screen-two .Upload-Photo-loader > *",
+        {
+          y: 0,
+          autoAlpha: 1,
+          duration: 0.6,
+          stagger: 0.1,
+        },
+        "<0.1"
+      );
+  });
 
-</body>
+  // Transition from Screen 2 to Screen 3
+  proceedToErrorBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const screenTransition = gsap.timeline({
+      defaults: { ease: "power2.inOut" },
+      onStart: () => {
+        uploadScreenThree.style.display = "block";
+        gsap.set(uploadScreenThree, { autoAlpha: 1 }); // Ensure upload__screen-three is visible
+        gsap.set(".upload__screen-three .upload-photo-error > *", { autoAlpha: 0, y: 30 });
+      },
+    });
+
+    screenTransition
+      .to(".upload__screen-two .Upload-Photo-loader > *", {
+        y: -30,
+        opacity: 0,
+        duration: 0.4,
+        stagger: -0.05,
+      })
+      .to(uploadScreenTwo, {
+        duration: 0,
+        autoAlpha: 0,
+        onComplete: () => (uploadScreenTwo.style.display = "none"),
+      })
+      .to(
+        ".upload__screen-three .upload-photo-error > *",
+        {
+          y: 0,
+          autoAlpha: 1,
+          duration: 0.6,
+          stagger: 0.1,
+        },
+        "<0.1"
+      );
+  });
+});
+    </script>
+  </body>
 </html>

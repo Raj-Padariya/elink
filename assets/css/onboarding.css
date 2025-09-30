@@ -119,20 +119,10 @@
   margin-bottom: 50px;
 }
 
-/* Setup Profile (hidden initially) */
-.setup-profile-main {
-  opacity: 0;
-  transform: translateY(30px);
+/* .setup-profile-main {
   transition: all 0.8s ease;
-  display: none;
 }
-.setup-profile-main.show {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
+ */
 
 .step-count{
   display: flex;
@@ -298,6 +288,20 @@
 .upload-pregress{
   max-width: 235px;
   margin: 0 auto;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error__text {
+  padding-top: 120px;
+  margin-bottom: 24px;
+}
+
+.error_light--cta{
+background: linear-gradient(180deg, #ffffff2e 0%, #000 100%);
 }
 
 .upload-pregress-count{
