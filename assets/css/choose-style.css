@@ -264,6 +264,7 @@ ease;
     width: 100%;
     position: absolute;
     bottom: 0;
+    border-radius: 12px;
 
 }
 .select-profile_block {
