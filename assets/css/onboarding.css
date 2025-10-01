@@ -1,57 +1,17 @@
 
-.onboarding-frist-loader-text{
-    text-align: center;
-}
-.onboarding-frist-loader-text h1{
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-.onboarding-frist-loader-text p{
-    font-size: var(--f-12);
+.onboarding-frist-loader-text{text-align: center;}
+.onboarding-frist-loader-text h1{font-size: 40px;margin-bottom: 10px;}
+.onboarding-frist-loader-text p{font-size: var(--f-12);}
+.onboarding-frist-loader{position: fixed;inset: 0;background: #111;color: #fff;display: flex;align-items: center;justify-content: center;z-index: 9999;transition: opacity 0.6s ease, visibility 0.6s ease;}
+.onboarding-frist-loader.hide {opacity: 0;visibility: hidden;pointer-events: none;}
 
-}
-
-.onboarding-frist-loader{
-   position: fixed;
-  inset: 0;
-  background: #111;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  transition: opacity 0.6s ease, visibility 0.6s ease;
-}
-
-.onboarding-frist-loader.hide {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-
-
-.loading02 span {
-  animation: loading02 1.2s infinite alternate;
-}
-.loading02 span:nth-child(2) {
-  animation-delay: 0.2s;
-}
-.loading02 span:nth-child(3) {
-  animation-delay: 0.4s;
-}
-.loading02 span:nth-child(4) {
-  animation-delay: 0.6s;
-}
-.loading02 span:nth-child(5) {
-  animation-delay: 0.8s;
-}
-.loading02 span:nth-child(6) {
-  animation-delay: 1s;
-}
-.loading02 span:nth-child(7) {
-  animation-delay: 1.2s;
-}
+.loading02 span {animation: loading02 1.2s infinite alternate;}
+.loading02 span:nth-child(2) {animation-delay: 0.2s;}
+.loading02 span:nth-child(3) {animation-delay: 0.4s;}
+.loading02 span:nth-child(4) {animation-delay: 0.6s;}
+.loading02 span:nth-child(5) {animation-delay: 0.8s;}
+.loading02 span:nth-child(6) {animation-delay: 1s;}
+.loading02 span:nth-child(7) {animation-delay: 1.2s;}
 
 @keyframes loading02 {
   0% {
@@ -66,9 +26,6 @@
 
 
 /* Lets start sceen */
-/* .lets-start-col{
-  background-image: url(../images/siginin-main-bg.png);
-} */
 .lets-start-col{
   position: relative;
 }
@@ -144,7 +101,7 @@
 
 .bar .bar-progress{
   width: 10%;
-    background: #FFF;
+    background: var(--white);
     display: inline-block;
     height: 8px;
     border-radius: 30px;

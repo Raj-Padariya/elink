@@ -13,7 +13,7 @@
      <div class="e-link_container">
         <div class="onboarding-inner">
             <div class="common-bg-shape">
-                <span></span>
+                <span style="--commom-bg: linear-gradient(90deg, #1D4AFE 0%, #FF5526 100%);"></span>
             </div>
             <div class="setup-profile-progress">
                 <div class="setup-profile-progress-bg start-profile">
@@ -45,8 +45,28 @@
                     <div class="choose-color-bg-dropdown-inner">
                         <div class="choose-color-bg-dropdown-heading">
                             <h3>Set Your Color</h3>
+                            <div class="dropdown-btn-select">
+                                <div class="dropdown-btn">
+                                    <div class="dropdown-btn-bg">
+                                        <button style="--color-option: linear-gradient(90deg, #B8E8FF 0%, #B8C5FE 100%);" type="button" class="dropdown-toggle" data-target="accent-dropdown">
+                                            <span class="slection-icon"><img src="./assets/images/color-selection.svg" alt=""></span>
+                                            <span class="slection-name">Accent </span>
+                                            <span class="slection-arrow"><img src="./assets/images/arrow-down.svg" alt=""></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="dropdown-btn">
+                                    <div class="dropdown-btn-bg">
+                                        <button style="--color-option: transparent;" type="button" class="dropdown-toggle" data-target="bg-dropdown">
+                                            <span class="slection-icon"><img src="./assets/images/bg-select.svg" alt=""></span>
+                                            <span class="slection-name">Background </span>
+                                            <span class="slection-arrow"><img src="./assets/images/arrow-down.svg" alt=""></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="choose-color-bg-dropdown-select">
+                        <div class="choose-color-bg-dropdown-select open" id="accent-dropdown">
                             <h4>Accent Color</h4>
                             <div class="dropdown-select-colors">
                                 <label class="dropdown-select-colors-opetion-bg">
@@ -154,6 +174,96 @@
 
                             </div>
                         </div>
+                        <div class="choose-bg-dropdown-select" id="bg-dropdown">
+                            <h4>Background Color</h4>
+                            <div class="choose-bg-dropdown">
+                                <div class="choose-bg-dropdown-theme">
+                                    <label class="dropdown-select-colors-opetion-bg dark color-select">
+                                        <div class="dropdown-select-colors-opetion-border">
+                                            <div class="color-select-radio-wrapper" style="--color-option: #000;">
+                                                <div class="color-select-radio-btn">
+                                                    <input type="radio" class="color-select-radio" checked>
+                                                </div>
+                                                <div class="color-select-name">
+                                                    <span class="color-select-no">01</span>
+                                                    <span class="color-name">Black</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="dropdown-select-colors-opetion-bg light">
+                                        <div class="dropdown-select-colors-opetion-border">
+                                            <div class="color-select-radio-wrapper" style="--color-option: #FFF;">
+                                                <div class="color-select-radio-btn">
+                                                    <input type="radio" class="color-select-radio">
+                                                </div>
+                                                <div class="color-select-name">
+                                                    <span class="color-select-no">02</span>
+                                                    <span class="color-name">White</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="choose-bg-dropdown-theme-color">
+                                    <div class="theme-color-radio">
+                                        <div class="color-radio-choose-bg">
+                                            <div class="color-radio-choose" style="--color-theme-option: #000;">
+                                                <input type="radio" id="none" name="color" value="none" checked>
+                                                <label for="none" class="radio-label-color-tint none-label">
+                                                    <span class="none-text">None</span>
+                                                    <span class="checkmark"><img src="./assets/images/checkmark.svg" alt=""></span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="color-radio-choose-bg">
+                                            <div class="color-radio-choose" style="--color-theme-option: linear-gradient(90deg, #1D4AFE 0%, #FF5526 100%);">
+                                                <input type="radio" id="tint1" name="color" value="tint1" >
+                                                <label for="tint1" class="radio-label-color-tint ">
+                                                    <span class="checkmark"><img src="./assets/images/checkmark.svg" alt=""></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="color-radio-choose-bg">
+                                            <div class="color-radio-choose" style="--color-theme-option: linear-gradient(90deg, #924CE1 0%, #000000 100%);">
+                                                <input type="radio" id="tint2" name="color" value="tint2" >
+                                                <label for="tint2" class="radio-label-color-tint ">
+                                                    <span class="checkmark"><img src="./assets/images/checkmark.svg" alt=""></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="color-radio-choose-bg">
+                                            <div class="color-radio-choose" style="--color-theme-option: linear-gradient(90deg, #000000 0%, #56D8FF 100%);">
+                                                <input type="radio" id="tint3" name="color" value="tint3" >
+                                                <label for="tint3" class="radio-label-color-tint ">
+                                                    <span class="checkmark"><img src="./assets/images/checkmark.svg" alt=""></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="color-radio-choose-bg">
+                                            <div class="color-radio-choose" style="--color-theme-option: linear-gradient(90deg, #FF5526 0%, rgba(245, 29, 29, 0.2) 100%);">
+                                                <input type="radio" id="tint4" name="color" value="tint4" >
+                                                <label for="tint4" class="radio-label-color-tint ">
+                                                    <span class="checkmark"><img src="./assets/images/checkmark.svg" alt=""></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="color-radio-choose-bg">
+                                            <div class="color-radio-choose" style="--color-theme-option: linear-gradient(90deg, #924CE1 0%, #1D4AFE 100%);">
+                                                <input type="radio" id="tint5" name="color" value="tint5">
+                                                <label for="tint5" class="radio-label-color-tint ">
+                                                    <span class="checkmark"><img src="./assets/images/checkmark.svg" alt=""></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
                     </div>
                 </div>
 
@@ -679,53 +789,141 @@
     <script src="./js/app.js" defer></script>
 
 
-    <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const options = document.querySelectorAll(".dropdown-select-colors-opetion-bg");
 
-  // Default first option active
-  if (options.length > 0) {
-    options[0].classList.add("color-select");
-    options[0].querySelector("input[type='radio']").checked = true;
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const colorOptions = document.querySelectorAll(".dropdown-select-colors-opetion-bg");
+  const body = document.body; // or any container
+
+  function updateMode(option) {
+    if (option.classList.contains("light")) {
+      body.classList.add("light-mode");
+    } else if (option.classList.contains("dark")) {
+      body.classList.remove("light-mode");
+    }
   }
 
-  // Always update on click
-  options.forEach(option => {
+  // Click event for all options
+  colorOptions.forEach(option => {
     option.addEventListener("click", () => {
-      // remove active class from all
-      options.forEach(o => o.classList.remove("color-select"));
-      // add to clicked one
-      option.classList.add("color-select");
-      option.querySelector("input[type='radio']").checked = true;
+      const radio = option.querySelector("input[type='radio']");
+      radio.checked = true;
+      updateMode(option); // Update body class based on clicked option
     });
   });
 });
+</script>
 
 
-    </script>
 
-
+    <!-- Drop Down  -->
 <script>
-    document.querySelectorAll('.select-profile_block-radio-bg input[type="radio"]').forEach(radio => {
-    radio.addEventListener('change', () => {
-        // Remove from all blocks first
-        document.querySelectorAll('.select-profile_block').forEach(block => {
-            block.classList.remove('selected-profile');
-        });
-        // Add to the currently checked radio's parent block
-        if (radio.checked) {
-            radio.closest('.select-profile_block').classList.add('selected-profile');
-        }
-    });
-});
+document.addEventListener("DOMContentLoaded", () => {
 
-// Run once on load to apply to the default checked one
-document.querySelectorAll('.select-profile_block-radio-bg input[type="radio"]').forEach(radio => {
-    if (radio.checked) {
-        radio.closest('.select-profile_block').classList.add('selected-profile');
+  /* =========================
+     Dropdown toggle
+  ========================= */
+  function initDropdowns() {
+    document.querySelectorAll(".dropdown-toggle").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const targetId = btn.getAttribute("data-target");
+        const targetDropdown = document.getElementById(targetId);
+
+        // Close other dropdowns
+        document.querySelectorAll(".choose-color-bg-dropdown-select, .choose-bg-dropdown-select")
+          .forEach(dd => {
+            if (dd !== targetDropdown) dd.classList.remove("open");
+          });
+
+        // Toggle current dropdown
+        targetDropdown.classList.toggle("open");
+      });
+    });
+  }
+
+  /* =========================
+     Profile radio selection
+  ========================= */
+  function initProfileRadios() {
+    const profileRadios = document.querySelectorAll('.select-profile_block-radio-bg input[type="radio"]');
+
+    function updateProfileSelection() {
+      profileRadios.forEach(radio => {
+        const block = radio.closest('.select-profile_block');
+        if (radio.checked) {
+          block.classList.add('selected-profile');
+        } else {
+          block.classList.remove('selected-profile');
+        }
+      });
     }
+
+    profileRadios.forEach(radio => {
+      radio.addEventListener('change', updateProfileSelection);
+    });
+
+    // Apply default selection on load
+    updateProfileSelection();
+  }
+
+  /* =========================
+     Theme color selection
+  ========================= */
+  function initThemeColorRadios() {
+    const colorRadios = document.querySelectorAll('.color-radio-choose input');
+
+    function updateColorSelection() {
+      colorRadios.forEach(radio => {
+        const parentBg = radio.closest('.color-radio-choose-bg');
+        if (radio.checked) {
+          parentBg.classList.add('tint-selected');
+        } else {
+          parentBg.classList.remove('tint-selected');
+        }
+      });
+    }
+
+    colorRadios.forEach(radio => {
+      radio.addEventListener('change', updateColorSelection);
+    });
+
+    // Apply default color selection on load
+    updateColorSelection();
+  }
+
+  /* =========================
+     Color option dropdown
+  ========================= */
+  function initColorOptionDropdown() {
+    const options = document.querySelectorAll(".dropdown-select-colors-opetion-bg");
+
+    if (options.length > 0) {
+      // Default first option active
+      options[0].classList.add("color-select");
+      options[0].querySelector("input[type='radio']").checked = true;
+    }
+
+    options.forEach(option => {
+      option.addEventListener("click", () => {
+        // Remove active class from all
+        options.forEach(o => o.classList.remove("color-select"));
+        // Add to clicked one
+        option.classList.add("color-select");
+        option.querySelector("input[type='radio']").checked = true;
+      });
+    });
+  }
+
+  // Initialize all
+  initDropdowns();
+  initProfileRadios();
+  initThemeColorRadios();
+  initColorOptionDropdown();
+
 });
 </script>
+
+
 
 
     </body>
