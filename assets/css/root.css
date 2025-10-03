@@ -152,7 +152,7 @@ input[type=number] {-moz-appearance: textfield;}
 .light-mode .dropdown-btn-bg{background: var(--white);}
 .light-mode span.slection-name{color: var(--black);}
 .light-mode .slection-icon img,
-.slection-arrow img{filter: brightness(0);}
+.light-mode .slection-arrow img{filter: brightness(0);}
 .light-mode .dropdown-btn-bg button{border: 1px solid #00000030;}
 .light-mode .color-radio-choose{border: 1.5px solid #FFFFFF;box-shadow: inset 0px 4px 2px 0px #0000000D,  inset 0px 8px 4px 0px #0000001A,  inset 0px -4px 4px 0px #FFFFFF1A, 0px 3px 4px 0px #0000001A;       }
 .light-mode .color-radio-choose-bg{background: linear-gradient(118.8deg, rgba(0, 0, 0, 0.02) -45.59%, rgba(0, 0, 0, 0.2) 54.83%, rgba(0, 0, 0, 0.02) 165.4%);}
