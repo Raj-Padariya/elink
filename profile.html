@@ -1,149 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elink | Onboarding</title>
     <link rel="icon" type="image/png" href="./assets/images/fav-ico.png" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <style>
+    .complete-your-profile {
+      display: none;
+    }
+    .complete__profile-screen .bottom_next-prev-btn {
+      flex-direction: column;
+      width: 100%;
+    }
 
- <section class="onboarding-section-main">
-     <div class="e-link_container">
+    .complete__profile-screen :is(.bottom_prev, .bottom-skip) {
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <section class="onboarding-section-main">
+      <div class="e-link_container">
         <div class="onboarding-inner">
-            <div class="setup-profile-progress">
-                <div class="setup-profile-progress-bg start-profile">
-                    <div class="setup-profile-progress-inner">
-                        <div class="bar">
-                            <span class="bar-progress"></span>
-                        </div>
-                        <div class="step-count">
-                            <div class="setps">
-                                <p>Top Section <span>1</span>/<span>9</span> steps</p>
-                            </div>
-                            <div class="progress">
-                                <p><span>0%</span></p>
-                            </div>
-                        </div>
-                    </div>
+          <div class="setup-profile-progress">
+            <div class="setup-profile-progress-bg start-profile">
+              <div class="setup-profile-progress-inner">
+                <div class="bar">
+                  <span class="bar-progress"></span>
                 </div>
+                <div class="step-count">
+                  <div class="setps">
+                    <p>Top Section <span>1</span>/<span>9</span> steps</p>
+                  </div>
+                  <div class="progress">
+                    <p><span>0%</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="complete__profile-screen">
+            <div class="complete-your-profile-heading">
+              <h2>Great, Now Complete Your Profile</h2>
+              <p>
+                Add your key details, one by one, from your name to your contact
+                information, to make your card feel complete and ready to share.
+              </p>
+            </div>
+          
+
+            <div class="your-profile-preview">
+              <div class="preview_container">
+                <div class="your-profile-top">
+                  <div class="your-profile-left">
+                    <div class="your-profile-detail">
+                      <div class="your-profile-img">
+                        <img src="./assets/images/profile-pic.png" alt="" />
+                      </div>
+                      <div class="your-profile-text">
+                        <h2 class="your-profile-name">
+                          <span id="displayName"></span
+                          ><img src="./assets/images/verify-badge.svg" alt="" />
+                        </h2>
+                        <p class="your-profile-role">
+                          <span id="displayRole"></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="your-profile-right">
+                    <div class="your-profile-right-inner">
+                      <div class="your-profile-post">
+                        <p class="prifile_statistics_text"><span></span></p>
+                        <p class="profile_statistics_subtext">Posts</p>
+                      </div>
+                      <div class="your-profile-post">
+                        <p class="prifile_statistics_text"><span></span></p>
+                        <p class="profile_statistics_subtext">Followers</p>
+                      </div>
+                      <div class="your-profile-post">
+                        <p class="prifile_statistics_text"><span></span></p>
+                        <p class="profile_statistics_subtext">Following</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile_bottom-contact_ctas">
+                  <div class="profile_contact-ctas">
+                    <a href="" class="profile_cta profile_cta__contact">
+                      Save Contact</a
+                    >
+                    <a href="" class="profile_cta profile_cta__call">
+                      <img src="./assets/images/call.svg" alt="" />
+                    </a>
+                    <a href="" class="profile_cta profile_cta__msg">
+                      <img src="./assets/images/msg.svg" alt="" />
+                    </a>
+                    <a href="" class="profile_cta profile_cta__mail">
+                      <img src="./assets/images/email.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom_next-prev-btn">
+                <div class="bottom_prev keep_cta">
+                  <a href="#"> Keep This Photo for Avatar </a>
+                </div>
+
+                <div class="bottom-skip">
+                  <a href="#">Choose a New Photo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Complete Profile -->
+          <div class="complete-your-profile">
+            <div class="complete-your-profile-heading">
+              <h2>Great, Now Complete Your Profile</h2>
+              <p>
+                Add your key details, one by one, from your name to your contact
+                information, to make your card feel complete and ready to share.
+              </p>
             </div>
 
-            <!-- Complete Profile -->
-             <div class="complete-your-profile">
-                <div class="complete-your-profile-heading">
-                    <h2>Great, Now Complete Your Profile</h2>
-                    <p>Add your key details, one by one, from your name to your contact information, to make your card feel complete and ready to share.</p>
-                </div>
-
-                <div class="your-profile-preview">
-                    <div class="preview_container">
-                        <div class="your-profile-top">
-                            <div class="your-profile-left">
-                                <div class="your-profile-detail">
-                                    <div class="your-profile-img">
-                                        <img src="./assets/images/profile-pic.png" alt="">
-                                    </div>
-                                    <div class="your-profile-text">
-                                        <h2 class="your-profile-name"><span id="displayName"></span><img src="./assets/images/verify-badge.svg" alt=""></h2>
-                                        <p class="your-profile-role"><span id="displayRole"></span></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="your-profile-right">
-                                <div class="your-profile-right-inner">
-                                    <div class="your-profile-post">
-                                        <p class="prifile_statistics_text"><span></span></p>
-                                        <p class="profile_statistics_subtext">Posts</p>
-                                    </div>
-                                    <div class="your-profile-post">
-                                        <p class="prifile_statistics_text"><span></span></p>
-                                        <p class="profile_statistics_subtext">Followers</p>
-                                    </div>
-                                    <div class="your-profile-post">
-                                        <p class="prifile_statistics_text"><span></span></p>
-                                        <p class="profile_statistics_subtext">Following</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile_bottom-contact_ctas">
-                            <div class="profile_contact-ctas">
-                                <a href="" class="profile_cta profile_cta__contact"> Save Contact</a>
-                                <a href="" class="profile_cta profile_cta__call">
-                                    <img src="./assets/images/call.svg" alt="">
-                                </a>
-                                <a href="" class="profile_cta profile_cta__msg">
-                                    <img src="./assets/images/msg.svg" alt="">
-                                </a>
-                                <a href="" class="profile_cta profile_cta__mail">
-                                    <img src="./assets/images/email.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="profile-fill-detail">
-                    <div class="error-msg" style="opacity: 0; display: none; translate: none; rotate: none; scale: none; z-index: 10; transform: translate(0px, 10px);">
-                        <div class="error-msg-bg">
-                            <div class="error-msg-icon">
-                                <img src="./assets/images/error-notification-icon.svg" alt="">
-                            </div>
-                            <div class="error-msg-desc">
-                                <h4>Missing digits</h4>
-                                <p>Please enter the phone number.</p>
-                            </div>
-                          </div>
+            <div class="your-profile-preview">
+              <div class="preview_container">
+                <div class="your-profile-top">
+                  <div class="your-profile-left">
+                    <div class="your-profile-detail">
+                      <div class="your-profile-img">
+                        <img src="./assets/images/profile-pic.png" alt="" />
                       </div>
-                    <div class="site_input-group">
-                        <input type="text" class="site_input" placeholder="Your Full Name">
-                        <label for="Full Name">Full Name</label>
-                        <span class="fake-caret"></span>
+                      <div class="your-profile-text">
+                        <h2 class="your-profile-name">
+                          <span id="displayName_actual"></span
+                          ><img src="./assets/images/verify-badge.svg" alt="" />
+                        </h2>
+                        <p class="your-profile-role">
+                          <span id="displayRole__actual"></span>
+                        </p>
+                      </div>
                     </div>
+                  </div>
+                  <div class="your-profile-right">
+                    <div class="your-profile-right-inner">
+                      <div class="your-profile-post">
+                        <p class="prifile_statistics_text"><span></span></p>
+                        <p class="profile_statistics_subtext">Posts</p>
+                      </div>
+                      <div class="your-profile-post">
+                        <p class="prifile_statistics_text"><span></span></p>
+                        <p class="profile_statistics_subtext">Followers</p>
+                      </div>
+                      <div class="your-profile-post">
+                        <p class="prifile_statistics_text"><span></span></p>
+                        <p class="profile_statistics_subtext">Following</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
-
-                <div class="bottom_next-prev-btn">
-                    <div class="bottom_prev">
-                        <a href="#">
-                            <img src="./assets/images/arrow.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="bottom-continue">
-                        <a href="#">
-                            <span>Continue</span>
-                            <img src="./assets/images/arrow.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="bottom-skip">
-                        <a href="#">Skip</a>
-                    </div>
+                <div class="profile_bottom-contact_ctas">
+                  <div class="profile_contact-ctas">
+                    <a href="" class="profile_cta profile_cta__contact">
+                      Save Contact</a
+                    >
+                    <a href="" class="profile_cta profile_cta__call">
+                      <img src="./assets/images/call.svg" alt="" />
+                    </a>
+                    <a href="" class="profile_cta profile_cta__msg">
+                      <img src="./assets/images/msg.svg" alt="" />
+                    </a>
+                    <a href="" class="profile_cta profile_cta__mail">
+                      <img src="./assets/images/email.svg" alt="" />
+                    </a>
+                  </div>
                 </div>
+              </div>
+            </div>
 
-                <div class=" verify-num-btn site_btn-bg">
-                    <a href="">Verify Phone Number</a>
+            <div class="profile-fill-detail">
+              <div
+                class="error-msg"
+                style="
+                  opacity: 0;
+                  display: none;
+                  translate: none;
+                  rotate: none;
+                  scale: none;
+                  z-index: 10;
+                  transform: translate(0px, 10px);
+                "
+              >
+                <div class="error-msg-bg">
+                  <div class="error-msg-icon">
+                    <img
+                      src="./assets/images/error-notification-icon.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="error-msg-desc">
+                    <h4>Missing digits</h4>
+                    <p>Please enter the phone number.</p>
+                  </div>
                 </div>
+              </div>
+              <div class="site_input-group">
+                <input
+                  type="text"
+                  class="site_input site_actual_input"
+                  placeholder="Your Full Name"
+                />
+                <label for="Full Name">Full Name</label>
+                <span class="fake-caret"></span>
+              </div>
+            </div>
 
-                <div class="verify-number">
-                    <div class="verify-number-screen">
-                        <div class="verify-number-heading">
-                            <h3>Confirm Your Number</h3>
-                            <div class="verify-number-close">
-                                <a href="#">
-                                    <img src="./assets/images/close-icon.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="verify-number-otp">
-                            <div class="verify-number-otp-desc">
-                                <p>Enter the code that has been sent to you by text message to <span>0660624948</span></p>
-                            </div>
-                            <form id="otp-form" class="otp-form">
-                            <!-- <div class="error-msg" style="opacity: 1; display: block; translate: none; rotate: none; scale: none; z-index: 10; transform: translate(0px, 0px);">
+            <div class="bottom_next-prev-btn">
+              <div class="bottom_prev">
+                <a href="#">
+                  <img src="./assets/images/arrow.svg" alt="" />
+                </a>
+              </div>
+              <div class="bottom-continue">
+                <a href="#">
+                  <span>Continue</span>
+                  <img src="./assets/images/arrow.svg" alt="" />
+                </a>
+              </div>
+              <div class="bottom-skip">
+                <a href="#">Skip</a>
+              </div>
+            </div>
+
+            <div class="verify-num-btn site_btn-bg">
+              <a href="">Verify Phone Number</a>
+            </div>
+
+            <div class="verify-number">
+              <div class="verify-number-screen">
+                <div class="verify-number-heading">
+                  <h3>Confirm Your Number</h3>
+                  <div class="verify-number-close">
+                    <a href="#">
+                      <img src="./assets/images/close-icon.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="verify-number-otp">
+                  <div class="verify-number-otp-desc">
+                    <p>
+                      Enter the code that has been sent to you by text message
+                      to <span>0660624948</span>
+                    </p>
+                  </div>
+                  <form id="otp-form" class="otp-form">
+                    <!-- <div class="error-msg" style="opacity: 1; display: block; translate: none; rotate: none; scale: none; z-index: 10; transform: translate(0px, 0px);">
                                 <div class="error-msg-bg">
                                     <div class="error-msg-icon">
                                         <img src="./assets/images/error-notification-icon.svg" alt="">
@@ -154,60 +271,57 @@
                                     </div>
                                 </div>
                             </div> -->
-                            <div class="otp-inputs">
-                                <div class="site_input-group">
-                                    <input type="number" class="site_input" maxlength="1">
-                                </div>
-                               <div class="site_input-group">
-                                    <input type="number" class="site_input" maxlength="1">
-                                </div>
-                                <div class="site_input-group">
-                                    <input type="number" class="site_input" maxlength="1">
-                                </div>
-                                <div class="site_input-group">
-                                    <input type="number" class="site_input" maxlength="1">
-                                </div>
-                            </div>
-                            </form>
-                            <div class="send-again">
-                                <div class="dont-revice">
-                                    <p>Have you not received a message?</p>
-                                </div>
-                                <div class="send-again-otp">
-                                    <a href="#">Send it Again</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="verify-number-btn site_btn-bg">
-                            <a href="#">
-                                Verify Phone Number
-                            </a>
-                        </div>
+                    <div class="otp-inputs">
+                      <div class="site_input-group">
+                        <input type="number" class="site_input" maxlength="1" />
+                      </div>
+                      <div class="site_input-group">
+                        <input type="number" class="site_input" maxlength="1" />
+                      </div>
+                      <div class="site_input-group">
+                        <input type="number" class="site_input" maxlength="1" />
+                      </div>
+                      <div class="site_input-group">
+                        <input type="number" class="site_input" maxlength="1" />
+                      </div>
                     </div>
+                  </form>
+                  <div class="send-again">
+                    <div class="dont-revice">
+                      <p>Have you not received a message?</p>
+                    </div>
+                    <div class="send-again-otp">
+                      <a href="#">Send it Again</a>
+                    </div>
+                  </div>
                 </div>
-             </div>
 
+                <div class="verify-number-btn site_btn-bg">
+                  <a href="#"> Verify Phone Number </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-             <div class="thank-you-message">
-                <div class="thank-you-verify">
-                    <div class="verify-badge">
-                        <img src="./assets/images/Thank_you_white-and-blue_V2.gif" alt="">
-                         <!-- <video autoplay loop muted>
+          <div class="thank-you-message">
+            <div class="thank-you-verify">
+              <div class="verify-badge">
+                <img
+                  src="./assets/images/Thank_you_white-and-blue_V2.gif"
+                  alt=""
+                />
+                <!-- <video autoplay loop muted>
                             <source src="./assets/images/main_comp.mp4" type="video/mp4">
                         </video> -->
-                    </div>
-                    <div class="verify-text">
-                        <p>The number has been verified</p>
-                    </div>
-                </div>
-             </div>
-
+              </div>
+              <div class="verify-text">
+                <p>The number has been verified</p>
+              </div>
+            </div>
+          </div>
         </div>
-     </div>
- </section>
-
-
+      </div>
+    </section>
 
     <!-- Js -->
     <script src="./assets/js/gsap.min.js" defer></script>
@@ -215,138 +329,228 @@
     <script src="./js/ScrollTrigger.min.js" defer></script>
     <script src="./js/app.js" defer></script>
 
-
     <!-- Otp FOrm Fiil -->
 
     <script>
-       document.addEventListener("DOMContentLoaded", () => {
-  const openBtn = document.querySelector(".verify-num-btn a");
-  const popup = document.querySelector(".verify-number");
-  const popupScreen = document.querySelector(".verify-number-screen");
-  const closeBtn = document.querySelector(".verify-number-close a");
-  const otpInputs = document.querySelectorAll(".otp-form .site_input");
-  const verifyBtn = document.querySelector(".verify-number-btn a");
-  const thankYou = document.querySelector(".thank-you-message");
-  const errorBox = document.querySelector(".error-msg");
+      document.addEventListener("DOMContentLoaded", () => {
+         /*------------------------
+          Animate Profile 
+        --------------------------*/
+        function animateProfile() {
 
-  // Add focus effect for input groups
-  document.querySelectorAll(".site_input-group").forEach(group => {
-    const input = group.querySelector(".site_input");
-    if (!input) return;
-    input.addEventListener("focus", () => group.classList.add("focus"));
-    input.addEventListener("blur", () => group.classList.remove("focus"));
-  });
+          const screenHide = document.querySelector(".complete__profile-screen");
+          const screenShow = document.querySelector(".complete-your-profile");
+            const animationButtons = document.querySelectorAll( ".complete__profile-screen .keep_cta");
 
-  // Initial GSAP states
-  gsap.set([popup, errorBox, thankYou], { display: "none", opacity: 0 });
-  gsap.set(popupScreen, { y: "100%" });
-  gsap.set(errorBox, { y: -100, xPercent: -50, left: "50%", position: "fixed", top: "20px", zIndex: 9999 });
+          animationButtons.forEach((button) => {
+            button.addEventListener("click", function (e) {
+              e.preventDefault();
+              screenHide.style.display = "none";
+              screenShow.style.display = "block";
 
-  // Open OTP popup
-  openBtn.addEventListener("click", e => {
-    e.preventDefault();
-    gsap.set(popup, { display: "block" });
-    gsap.to(popup, { opacity: 1, duration: 0.3 });
-    gsap.to(popupScreen, { y: 0, duration: 0.5, onComplete: () => otpInputs[0]?.focus() });
-  });
-
-  // Close OTP popup
-  const closePopup = () => {
-    gsap.to(popupScreen, { y: "100%", duration: 0.5, onComplete: () =>
-      gsap.to(popup, { opacity: 0, duration: 0.3, onComplete: () => {
-        gsap.set(popup, { display: "none" });
-        otpInputs.forEach(i => i.value = "");
-      }})
-    });
-  };
-  closeBtn.addEventListener("click", e => { e.preventDefault(); closePopup(); });
-
-  // OTP input behavior
-  otpInputs.forEach((input, i) => {
-    input.addEventListener("input", () => {
-      input.value = input.value.slice(0,1);
-      if (input.value && i < otpInputs.length - 1) otpInputs[i+1].focus();
-    });
-    input.addEventListener("keydown", e => {
-      if (e.key === "Backspace" && !input.value && i > 0) otpInputs[i-1].focus();
-    });
-    input.addEventListener("paste", e => {
-      e.preventDefault();
-      const paste = e.clipboardData.getData("text").trim().slice(0, otpInputs.length);
-      otpInputs.forEach((box, idx) => box.value = paste[idx] || "");
-      otpInputs[Math.min(paste.length, otpInputs.length)-1]?.focus();
-    });
-  });
-
-  // Show error message
-  const showError = (title = "Invalid OTP", text = "Please enter a valid OTP.") => {
-    errorBox.querySelector("h4").textContent = title;
-    errorBox.querySelector("p").textContent = text;
-    gsap.set(errorBox, { display: "flex", opacity: 0, y: -100 });
-    gsap.to(errorBox, { opacity: 1, y: 20, duration: 0.5, ease: "power4.out" });
-    setTimeout(() => gsap.to(errorBox, { opacity: 0, y: -100, duration: 0.4, ease: "power4.in", onComplete: () => gsap.set(errorBox, { display: "none" }) }), 3000);
-  };
-
-  // Verify OTP and show Thank You
-  verifyBtn.addEventListener("click", e => {
-    e.preventDefault();
-    const otpValue = Array.from(otpInputs).map(i => i.value).join("");
-
-    if (otpValue.length < otpInputs.length) return showError("Missing OTP", "Please enter a valid OTP.");
-    if (otpValue !== "1234") return showError("Invalid OTP", "Please enter a valid OTP."); // Replace "1234" with your correct OTP
-
-    // Correct OTP → close popup & show thank you
-    closePopup();
-    gsap.set(thankYou, { display: "flex", opacity: 0 });
-    gsap.to(thankYou, { opacity: 1, duration: 0.5 });
-    setTimeout(() => gsap.to(thankYou, { opacity: 0, duration: 0.5, onComplete: () => gsap.set(thankYou, { display: "none" }) }), 5000);
-  });
-});
+            });
+          });
+        }
+        animateProfile();
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        const openBtn = document.querySelector(".verify-num-btn a");
+        const popup = document.querySelector(".verify-number");
+        const popupScreen = document.querySelector(".verify-number-screen");
+        const closeBtn = document.querySelector(".verify-number-close a");
+        const otpInputs = document.querySelectorAll(".otp-form .site_actual_input");
+        const verifyBtn = document.querySelector(".verify-number-btn a");
+        const thankYou = document.querySelector(".thank-you-message");
+        const errorBox = document.querySelector(".error-msg");
+
+        // Add focus effect for input groups
+        document.querySelectorAll(".site_input-group").forEach((group) => {
+          const input = group.querySelector(".site_actual_input");
+          if (!input) return;
+          input.addEventListener("focus", () => group.classList.add("focus"));
+          input.addEventListener("blur", () => group.classList.remove("focus"));
+        });
+
+        // Initial GSAP states
+        gsap.set([popup, errorBox, thankYou], { display: "none", opacity: 0 });
+        gsap.set(popupScreen, { y: "100%" });
+        gsap.set(errorBox, {
+          y: -100,
+          xPercent: -50,
+          left: "50%",
+          position: "fixed",
+          top: "20px",
+          zIndex: 9999,
+        });
+
+        // Open OTP popup
+        openBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          gsap.set(popup, { display: "block" });
+          gsap.to(popup, { opacity: 1, duration: 0.3 });
+          gsap.to(popupScreen, {
+            y: 0,
+            duration: 0.5,
+            onComplete: () => otpInputs[0]?.focus(),
+          });
+        });
+
+        // Close OTP popup
+        const closePopup = () => {
+          gsap.to(popupScreen, {
+            y: "100%",
+            duration: 0.5,
+            onComplete: () =>
+              gsap.to(popup, {
+                opacity: 0,
+                duration: 0.3,
+                onComplete: () => {
+                  gsap.set(popup, { display: "none" });
+                  otpInputs.forEach((i) => (i.value = ""));
+                },
+              }),
+          });
+        };
+        closeBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          closePopup();
+        });
+
+        // OTP input behavior
+        otpInputs.forEach((input, i) => {
+          input.addEventListener("input", () => {
+            input.value = input.value.slice(0, 1);
+            if (input.value && i < otpInputs.length - 1)
+              otpInputs[i + 1].focus();
+          });
+          input.addEventListener("keydown", (e) => {
+            if (e.key === "Backspace" && !input.value && i > 0)
+              otpInputs[i - 1].focus();
+          });
+          input.addEventListener("paste", (e) => {
+            e.preventDefault();
+            const paste = e.clipboardData
+              .getData("text")
+              .trim()
+              .slice(0, otpInputs.length);
+            otpInputs.forEach((box, idx) => (box.value = paste[idx] || ""));
+            otpInputs[Math.min(paste.length, otpInputs.length) - 1]?.focus();
+          });
+        });
+
+        // Show error message
+        const showError = (
+          title = "Invalid OTP",
+          text = "Please enter a valid OTP."
+        ) => {
+          errorBox.querySelector("h4").textContent = title;
+          errorBox.querySelector("p").textContent = text;
+          gsap.set(errorBox, { display: "flex", opacity: 0, y: -100 });
+          gsap.to(errorBox, {
+            opacity: 1,
+            y: 20,
+            duration: 0.5,
+            ease: "power4.out",
+          });
+          setTimeout(
+            () =>
+              gsap.to(errorBox, {
+                opacity: 0,
+                y: -100,
+                duration: 0.4,
+                ease: "power4.in",
+                onComplete: () => gsap.set(errorBox, { display: "none" }),
+              }),
+            3000
+          );
+        };
+
+        // Verify OTP and show Thank You
+        verifyBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          const otpValue = Array.from(otpInputs)
+            .map((i) => i.value)
+            .join("");
+
+          if (otpValue.length < otpInputs.length)
+            return showError("Missing OTP", "Please enter a valid OTP.");
+          if (otpValue !== "1234")
+            return showError("Invalid OTP", "Please enter a valid OTP."); // Replace "1234" with your correct OTP
+
+          // Correct OTP → close popup & show thank you
+          closePopup();
+          gsap.set(thankYou, { display: "flex", opacity: 0 });
+          gsap.to(thankYou, { opacity: 1, duration: 0.5 });
+          setTimeout(
+            () =>
+              gsap.to(thankYou, {
+                opacity: 0,
+                duration: 0.5,
+                onComplete: () => gsap.set(thankYou, { display: "none" }),
+              }),
+            5000
+          );
+        });
+      });
     </script>
 
+    <!-- Input Field runtime data chnage -->
+    <script>
+      // Get references to the input field and display elements
+      const nameInput = document.querySelector(
+        '.site_input.site_actual_input[placeholder="Your Full Name"]'
+      );
+      const displayName = document.getElementById("displayName_actual");
+      const displayRole = document.getElementById("displayRole__actual");
 
-<!-- Input Field runtime data chnage -->
-<script>
-    // Get references to the input field and display elements
-const nameInput = document.querySelector('.site_input[placeholder="Your Full Name"]');
-const displayName = document.getElementById('displayName');
-const displayRole = document.getElementById('displayRole');
+      // Function to update the profile preview
+      function updateProfilePreview() {
+        const inputValue = nameInput.value.trim();
 
-// Function to update the profile preview
-function updateProfilePreview() {
-    const inputValue = nameInput.value.trim();
-    
-    if (inputValue) {
-        // Update the name display - remove the skeleton loader styling
-        displayName.textContent = inputValue;
-        displayName.style.background = 'none';
-        displayName.style.width = 'auto';
-        displayName.style.height = 'auto';
-        displayName.style.opacity = '1';
-        
-     
-    } else {
-        // Reset to skeleton loader if input is empty
-        displayName.textContent = '';
-        displayName.style.background = 'linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.01) 100%)';
-        displayName.style.height = '11px';
-        displayName.style.width = '120px';
-        displayName.style.borderRadius = '10px';
-        displayName.style.opacity = '0.5';
-    }
-}
+        if (inputValue) {
+          // Update the name display - remove the skeleton loader styling
+          displayName.textContent = inputValue;
+          displayName.style.background = "none";
+          displayName.style.width = "auto";
+          displayName.style.height = "auto";
+          displayName.style.opacity = "1";
+        } else {
+          // Reset to skeleton loader if input is empty
+          displayName.textContent = "";
+          displayName.style.background =
+            "linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.01) 100%)";
+          displayName.style.height = "11px";
+          displayName.style.width = "120px";
+          displayName.style.borderRadius = "10px";
+          displayName.style.opacity = "0.5";
+        }
+      }
 
-// Add event listeners for real-time updates
-nameInput.addEventListener('input', updateProfilePreview);
-nameInput.addEventListener('keyup', updateProfilePreview);
+      // Add event listeners for real-time updates
+      nameInput.addEventListener("input", updateProfilePreview);
+      nameInput.addEventListener("keyup", updateProfilePreview);
 
-
-// Initialize on page load
-document.addEventListener('DOMContentLoaded', function() {
-    updateProfilePreview();
-});
-</script>
-</body>
+      // Initialize on page load
+      document.addEventListener("DOMContentLoaded", function () {
+        updateProfilePreview();
+      });
+    </script>
+  </body>
 </html>

@@ -1,173 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elink | Onboarding</title>
     <link rel="icon" type="image/png" href="./assets/images/fav-ico.png" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <style>
+      .photo_ready__screen {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
     <section class="onboarding-section-main">
-     <div class="e-link_container">
-         <div class="onboarding-inner">
-            <div class="setup-profile-progress">
-                <div class="setup-profile-progress-bg start-profile">
-                    <div class="setup-profile-progress-inner">
-                        <div class="bar">
-                            <span class="bar-progress"></span>
-                        </div>
-                        <div class="step-count">
-                            <div class="setps">
-                                <p>Top Section <span>1</span>/<span>9</span> steps</p>
-                            </div>
-                            <div class="progress">
-                                <p><span>0%</span></p>
-                            </div>
-                        </div>
-                    </div>
+      <div class="e-link_container">
+        <div class="onboarding-inner">
+          <div class="setup-profile-progress">
+            <div class="setup-profile-progress-bg start-profile">
+              <div class="setup-profile-progress-inner">
+                <div class="bar">
+                  <span class="bar-progress"></span>
                 </div>
+                <div class="step-count">
+                  <div class="setps">
+                    <p>Top Section <span>1</span>/<span>9</span> steps</p>
+                  </div>
+                  <div class="progress">
+                    <p><span>0%</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="add-photo-profile">
+            <div class="add-photo-profile-heading">
+              <h2>
+                Great, now use AI magic to animate your image in just a few
+                minutes
+              </h2>
+              <p>
+                Use AI magic to animate your image with Runway in just a few
+                taps.
+              </p>
             </div>
 
-            <div class="add-photo-profile">
-                <div class="add-photo-profile-heading">
-                    <h2>Great, now use AI magic to animate your image in just a few minutes</h2>
-                    <p>Use AI magic to animate your image with Runway in just a few taps.</p>
+            <div class="add-photo-profile-preview">
+              <div class="add-photo-profile-image">
+                <img
+                  src="https://images.unsplash.com/photo-1586250890303-622708245b2e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODd8fHdvbWVufGVufDB8fDB8fHww"
+                  alt=""
+                />
+              </div>
+              <div class="add-photo-profile-preview-btn">
+                <div class="add-photo-profile-ratio">
+                  <a href="#" class="profile-ratio-btn">
+                    <img src="./assets/images/info-icon.svg" alt="" />
+                    <div class="profile-ratio-pix">
+                      <p class="in-ratio">2x3</p>
+                      <p class="in-pixel">1200x1755</p>
+                    </div>
+                  </a>
                 </div>
-
-                <div class="add-photo-profile-preview">
-                    <div class="add-photo-profile-image">
-                        <img src="https://images.unsplash.com/photo-1586250890303-622708245b2e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODd8fHdvbWVufGVufDB8fDB8fHww" alt="">
-                    </div>
-                    <div class="add-photo-profile-preview-btn">
-                        <div class="add-photo-profile-ratio">
-                            <a href="#" class="profile-ratio-btn">
-                                <img src="./assets/images/info-icon.svg" alt="">
-                                <div class="profile-ratio-pix">
-                                    <p class="in-ratio">2x3</p>
-                                    <p class="in-pixel">1200x1755</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="add-photo-profile-preview-replace">
-                            <div class="image-preview">
-                                <a href="#">
-                                    <img src="./assets/images/preview-icon.svg" alt="">
-                                    <span>Preview</span>
-                                </a>
-                            </div>
-                            <div class="replace-image">
-                                <a href="#">
-                                    <img src="./assets/images/replace-icon.svg" alt="">
-                                </a>
-                            </div>
-                            <div class="close-image">
-                                <a href="#">
-                                    <img src="./assets/images/close-icon-red.svg" alt="">
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- Profile Preview -->
-                     <div class="profile-preview-photo">
-                        <div class="profile-preview-photo-inner">
-                            <div class="profile-preview-photo-heading">
-                                <h3>Preview</h3>
-                                <div class="profile-preview-photo-close">
-                                    <a href="#">
-                                        <img src="./assets/images/close-icon.svg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="profile-preview-animation">
-                                <div class="profile-preview-img">
-                                    <img src="https://images.unsplash.com/photo-1586250890303-622708245b2e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODd8fHdvbWVufGVufDB8fDB8fHww" alt="">
-                                </div>
-                                <div class="profile-preview-bottom">
-                                    <img src="./assets/images/profile-privew-img.png" alt="">
-                                </div>
-                            </div>
-
-
-                            <div class="preview-profile-button">
-                                <div class="site_btn-bg animate-photo">
-                                    <a href="#">Animate Photo <span>One time for a free</span></a>
-                                </div>
-                                <div class="site_btn-bg replace-previe">
-                                    <a href="#">Replace Photo</a>
-                                </div>
-                                <div class="site_btn-bg delete-preview">
-                                    <a href="#">Delete</a>
-                                </div>
-                            </div>
-                        </div>
-                     </div>
-
-                     <!-- animation profile -->
-                      <div class="profile-animation-process">
-                        <div class="profile-animation-process-img">
-                            <img src="https://images.unsplash.com/photo-1586250890303-622708245b2e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODd8fHdvbWVufGVufDB8fDB8fHww" alt="">
-                            <div class="animation-progress-svg">
-
-                            <svg width="408" height="597" viewBox="0 0 408 597" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g style="mix-blend-mode:plus-lighter" filter="url(#filter0_f_298_4305)">
-                                <rect x="444.282" y="-84.0791" width="22" height="815" transform="rotate(35.5872 444.282 -84.0791)" fill="white" fill-opacity="0.5"/>
-                                </g>
-                                <defs>
-                                <filter id="filter0_f_298_4305" x="-44.6" y="-98.6791" width="521.373" height="704.786" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                                <feGaussianBlur stdDeviation="7.3" result="effect1_foregroundBlur_298_4305"/>
-                                </filter>
-                                </defs>
-                            </svg>
-
-                            <svg width="408" height="597" viewBox="0 0 408 597" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g style="mix-blend-mode:plus-lighter" filter="url(#filter0_f_298_4306)">
-                                <rect x="473.559" y="-63.1289" width="54" height="815" transform="rotate(35.5872 473.559 -63.1289)" fill="white" fill-opacity="0.5"/>
-                                </g>
-                                <defs>
-                                <filter id="filter0_f_298_4306" x="-15.3236" y="-77.7289" width="547.397" height="723.408" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                                <feGaussianBlur stdDeviation="7.3" result="effect1_foregroundBlur_298_4306"/>
-                                </filter>
-                                </defs>
-                            </svg>
-
-                        </div>
-                        </div>
-                        <div class="profile-animation-process-btn">
-                            <div class="site_btn-bg animate-photo">
-                                <a href="#">Animate Photo <span>One time for a free</span></a>
-                            </div>
-                        </div>
-                      </div>
+                <div class="add-photo-profile-preview-replace">
+                  <div class="image-preview">
+                    <a href="#">
+                      <img src="./assets/images/preview-icon.svg" alt="" />
+                      <span>Preview</span>
+                    </a>
+                  </div>
+                  <div class="replace-image">
+                    <a href="#">
+                      <img src="./assets/images/replace-icon.svg" alt="" />
+                    </a>
+                  </div>
+                  <div class="close-image">
+                    <a href="#">
+                      <img src="./assets/images/close-icon-red.svg" alt="" />
+                    </a>
+                  </div>
                 </div>
-                <div class="animatiopn-btn">
-                    <div class="site_btn-bg animate-photo">
-                        <a href="#">Animate Photo <span>One time for a free</span></a>
+              </div>
+
+              <!-- Profile Preview -->
+              <div class="profile-preview-photo">
+                <div class="profile-preview-photo-inner">
+                  <div class="profile-preview-photo-heading">
+                    <h3>Preview</h3>
+                    <div class="profile-preview-photo-close">
+                      <a href="#">
+                        <img src="./assets/images/close-icon.svg" alt="" />
+                      </a>
                     </div>
-                    <div class="site_btn-bg skip-now">
-                        <a href="#">Skip for Now</a>
+                  </div>
+
+                  <div class="profile-preview-animation">
+                    <div class="profile-preview-img">
+                      <img
+                        src="https://images.unsplash.com/photo-1586250890303-622708245b2e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODd8fHdvbWVufGVufDB8fDB8fHww"
+                        alt=""
+                      />
                     </div>
+                    <div class="profile-preview-bottom">
+                      <img
+                        src="./assets/images/profile-privew-img.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="preview-profile-button">
+                    <div class="site_btn-bg animate-photo showAnimationBtn">
+                      <a href="#">Animate Photo <span>One time for a free</span></a>
+                    </div>
+                    <div class="site_btn-bg replace-previe">
+                      <a href="#">Replace Photo</a>
+                    </div>
+                    <div class="site_btn-bg delete-preview">
+                      <a href="#">Delete</a>
+                    </div>
+                  </div>
                 </div>
+              </div>
+
+              <!-- animation profile -->
+              <div class="profile-animation-process" id="animationProcess">
+                <div class="profile-animation-process-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1586250890303-622708245b2e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODd8fHdvbWVufGVufDB8fDB8fHww"
+                    alt=""
+                  />
+                  <div class="animation-progress-svg">
+                    <svg
+                      width="408"
+                      height="597"
+                      viewBox="0 0 408 597"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g
+                        style="mix-blend-mode: plus-lighter"
+                        filter="url(#filter0_f_298_4305)"
+                      >
+                        <rect
+                          x="444.282"
+                          y="-84.0791"
+                          width="22"
+                          height="815"
+                          transform="rotate(35.5872 444.282 -84.0791)"
+                          fill="white"
+                          fill-opacity="0.5"
+                        />
+                      </g>
+                      <defs>
+                        <filter
+                          id="filter0_f_298_4305"
+                          x="-44.6"
+                          y="-98.6791"
+                          width="521.373"
+                          height="704.786"
+                          filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB"
+                        >
+                          <feFlood
+                            flood-opacity="0"
+                            result="BackgroundImageFix"
+                          />
+                          <feBlend
+                            mode="normal"
+                            in="SourceGraphic"
+                            in2="BackgroundImageFix"
+                            result="shape"
+                          />
+                          <feGaussianBlur
+                            stdDeviation="7.3"
+                            result="effect1_foregroundBlur_298_4305"
+                          />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <svg
+                      width="408"
+                      height="597"
+                      viewBox="0 0 408 597"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g
+                        style="mix-blend-mode: plus-lighter"
+                        filter="url(#filter0_f_298_4306)"
+                      >
+                        <rect
+                          x="473.559"
+                          y="-63.1289"
+                          width="54"
+                          height="815"
+                          transform="rotate(35.5872 473.559 -63.1289)"
+                          fill="white"
+                          fill-opacity="0.5"
+                        />
+                      </g>
+                      <defs>
+                        <filter
+                          id="filter0_f_298_4306"
+                          x="-15.3236"
+                          y="-77.7289"
+                          width="547.397"
+                          height="723.408"
+                          filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB"
+                        >
+                          <feFlood
+                            flood-opacity="0"
+                            result="BackgroundImageFix"
+                          />
+                          <feBlend
+                            mode="normal"
+                            in="SourceGraphic"
+                            in2="BackgroundImageFix"
+                            result="shape"
+                          />
+                          <feGaussianBlur
+                            stdDeviation="7.3"
+                            result="effect1_foregroundBlur_298_4306"
+                          />
+                        </filter>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="animatiopn-btn">
+                <div class="site_btn-bg animate-photo showAnimationBtn">
+                  <a href="#">
+                    <span class="text__update">Animate Photo</span>
+                    <span>One time for a free</span>
+                  </a>
+                </div>
+                <div class="site_btn-bg skip-now">
+                  <a href="#">Skip for Now</a>
+                </div>
+              </div>
             </div>
-
-
-
-
-         </div>
-
-     </div>
+          </div>
+          <div class="photo_ready__screen">
+            <div class="add-photo-profile-heading">
+              <h2>Your Photo is Ready</h2>
+              <p>
+                We’ve animated your image with AI. You can use the video now, or
+                stick with the photo and switch anytime later.
+              </p>
+            </div>
+            <div class="add-photo-profile-preview">
+              <div class="add-photo-profile-image">
+                <img
+                  src="https://images.unsplash.com/photo-1586250890303-622708245b2e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODd8fHdvbWVufGVufDB8fDB8fHww"
+                  alt=""
+                />
+              </div>
+              <div class="add-photo-profile-preview-btn">
+                <div class="add-photo-profile-ratio">
+                  <a href="#" class="profile-ratio-btn">
+                    <img src="./assets/images/info-icon.svg" alt="" />
+                    <div class="profile-ratio-pix">
+                      <p class="in-ratio">2x3</p>
+                      <p class="in-pixel">Video 2K</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="add-photo-profile-preview-replace">
+                  <div class="image-preview">
+                    <a href="#">
+                      <img src="./assets/images/preview-icon.svg" alt="" />
+                      <span>Preview</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="animatiopn-btn">
+                <div class="site_btn-bg animate-photo">
+                  <a href="#"> Keep Photo for Now </a>
+                </div>
+                <div class="site_btn-bg skip-now">
+                  <a href="#">Use Animated Video</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
 
     <!-- Js -->
     <script src="./assets/js/gsap.min.js" defer></script>
@@ -175,88 +300,140 @@
     <script src="./js/ScrollTrigger.min.js" defer></script>
     <script src="./js/app.js" defer></script>
 
-
     <!-- Show Animation step -->
-     
-
-
-
     <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const previewBtn = document.querySelector(".image-preview a");
-  const previewPopup = document.querySelector(".profile-preview-photo");
-  const previewInner = document.querySelector(".profile-preview-photo-inner");
-  const closePreviewBtn = document.querySelector(".profile-preview-photo-close a");
+      document.addEventListener("DOMContentLoaded", () => {
+        /*------------------------
+          Animate Profile 
+        --------------------------*/
+        function animateProfile() {
+          const animationButtons = document.querySelectorAll(".showAnimationBtn");
+          const animationProcess = document.querySelector("#animationProcess");
+          const screenHide = document.querySelector(".add-photo-profile-image");
+          const expandingCta = document.querySelector(".animatiopn-btn");
+          const expandingCtaText = document.querySelector(
+            ".site_btn-bg.animate-photo a span.text__update"
+          );
+          const addPhotoProfile = document.querySelector(".add-photo-profile");
+          const photoReadyScreen = document.querySelector(".photo_ready__screen");
 
-  // Set initial GSAP state
-  gsap.set(previewPopup, { display: "none", opacity: 0 });
-  gsap.set(previewInner, { y: "100%", opacity: 0 });
+          animationButtons.forEach((button) => {
+            button.addEventListener("click", function (e) {
+              e.preventDefault();
+              // Show animation process
+              gsap.set(animationProcess, { display: "block" });
+              screenHide.style.display = "none";
+              expandingCta.classList.add("cta__expended");
+              expandingCtaText.textContent = "Animating Photo...";
 
-  // Open preview popup
-  previewBtn.addEventListener("click", e => {
-    e.preventDefault();
+              // After 2 seconds, transition to photo_ready__screen
+              gsap.to(addPhotoProfile, {
+                opacity: 0,
+                duration: 0.5,
+                delay: 2,
+                ease: "power2.in",
+                onComplete: () => {
+                  gsap.set(addPhotoProfile, { display: "none" });
+                  gsap.set(photoReadyScreen, { display: "block", opacity: 0 });
+                  gsap.to(photoReadyScreen, {
+                    opacity: 1,
+                    duration: 0.5,
+                    ease: "power2.out",
+                  });
+                },
+              });
+            });
+          });
+        }
+        animateProfile();
 
-    gsap.set(previewPopup, { display: "flex" });
-    gsap.to(previewPopup, { opacity: 1, duration: 0.3, ease: "power2.out" });
-    gsap.to(previewInner, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" });
-  });
+        /*------------------------
+          Show Popup
+        --------------------------*/
+        function showPopup() {
+          const previewBtn = document.querySelector(".image-preview a");
+          const previewPopup = document.querySelector(".profile-preview-photo");
+          const previewInner = document.querySelector(
+            ".profile-preview-photo-inner"
+          );
+          const closePreviewBtn = document.querySelector(
+            ".profile-preview-photo-close a"
+          );
 
-  // Close preview popup
-  const closePreview = () => {
-    gsap.to(previewInner, {
-      y: "100%",
-      opacity: 0,
-      duration: 0.4,
-      ease: "power2.in",
-      onComplete: () => {
-        gsap.to(previewPopup, {
-          opacity: 0,
-          duration: 0.3,
-          onComplete: () => gsap.set(previewPopup, { display: "none" })
-        });
-      }
-    });
-  };
+          gsap.set(previewPopup, { display: "none", opacity: 0 });
+          gsap.set(previewInner, { y: "100%", opacity: 0 });
 
-  closePreviewBtn.addEventListener("click", e => {
-    e.preventDefault();
-    closePreview();
-  });
+          previewBtn.addEventListener("click", (e) => {
+            e.preventDefault();
 
-  // Optional: Close preview on clicking outside content
-  previewPopup.addEventListener("click", e => {
-    if (e.target === previewPopup) closePreview();
-  });
-});
-</script>
+            gsap.set(previewPopup, { display: "flex" });
+            gsap.to(previewPopup, {
+              opacity: 1,
+              duration: 0.3,
+              ease: "power2.out",
+            });
+            gsap.to(previewInner, {
+              y: 0,
+              opacity: 1,
+              duration: 0.5,
+              ease: "power3.out",
+            });
+          });
 
-<!-- image animation -->
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-  // Target the SVG rectangles (light streaks)
-  const svgRects = document.querySelectorAll(".animation-progress-svg rect");
+          const closePreview = () => {
+            gsap.to(previewInner, {
+              y: "100%",
+              opacity: 0,
+              duration: 0.4,
+              ease: "power2.in",
+              onComplete: () => {
+                gsap.to(previewPopup, {
+                  opacity: 0,
+                  duration: 0.3,
+                  onComplete: () => gsap.set(previewPopup, { display: "none" }),
+                });
+              },
+            });
+          };
 
-  // Set initial positions and opacity
-  gsap.set(svgRects, {
-    xPercent: -150,
-    opacity: 0.6,
-  });
+          closePreviewBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            closePreview();
+          });
 
-  // Create looping animation
-  svgRects.forEach((rect, i) => {
-    gsap.to(rect, {
-      xPercent: 200,          // move across image
-      opacity: 1,
-      duration: 2.5,
-      delay: i * 1.2,         // stagger for layered effect
-      ease: "power2.inOut",
-      repeat: -1,             // infinite loop
-      yoyo: true,             // go back and forth
-    });
-  });
-});
-</script>
+          previewPopup.addEventListener("click", (e) => {
+            if (e.target === previewPopup) closePreview();
+          });
+        }
+        showPopup();
 
+        /*------------------------
+          Loading Animation
+        --------------------------*/
+        function loadingAnimation() {
+          const svgRects = document.querySelectorAll(
+            ".animation-progress-svg rect"
+          );
 
-</body>
+          gsap.set(svgRects, {
+            xPercent: -600,
+            opacity: 0.6,
+          });
+
+          svgRects.forEach((rect, i) => {
+            gsap.to(rect, {
+              xPercent: 200,
+              opacity: 1,
+              duration: 2.5,
+              delay: i * 1.2,
+              ease: "power2.inOut",
+              repeat: -1,
+              yoyo: true,
+            });
+          });
+        }
+        loadingAnimation();
+      });
+    </script>
+  </body>
 </html>

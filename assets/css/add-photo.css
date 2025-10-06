@@ -11,6 +11,7 @@
 
 .add-photo-profile-preview{
     position: relative;
+    overflow: hidden;
 }
 .add-photo-profile-image img{
     border-radius: 24px;
@@ -95,6 +96,7 @@
     flex-direction: column;
     gap: 5px;
     padding: 12px;
+    transition: 0.3s all ease;
 }
 .animate-photo{
     flex: 1;
@@ -104,18 +106,34 @@
     font-size: var(--f-12);
 }
 .animatiopn-btn{
-    display: flex;
-    gap: 15px;
-    position: fixed;
-    width: 100%;
-    bottom: 20px;
-    max-width: 440px;
+   display: flex;
+  gap: 15px;
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  max-width: 440px;
+  padding: 0 15px;
+  transition: 0.3s all ease;
 }
+
+.animatiopn-btn .site_btn-bg{
+    transition: 0.3s all ease;
+}
+
+.animatiopn-btn.cta__expended .site_btn-bg.animate-photo {
+  flex: 100%;
+}
+
 
 .skip-now{
-    opacity: 0.5;
+    opacity: 0.5;transition: 0.3s all ease;
 }
 
+.animatiopn-btn.cta__expended .site_btn-bg.skip-now{
+
+    transform: translateX(400%);
+    display: none;
+}
 
 .profile-preview-img img{
     border-radius: 24px;
@@ -270,6 +288,8 @@
     transition: 0.3s;
 }
 
-
+ #animationProcess {
+    display: none;
+  }
 
 
