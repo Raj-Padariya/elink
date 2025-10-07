@@ -792,25 +792,29 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const colorOptions = document.querySelectorAll(".dropdown-select-colors-opetion-bg");
-  const body = document.body; // or any container
+    function lightDarkScreen(){
 
-  function updateMode(option) {
-    if (option.classList.contains("light")) {
-      body.classList.add("light-mode");
-    } else if (option.classList.contains("dark")) {
-      body.classList.remove("light-mode");
+        const colorOptions = document.querySelectorAll(".dropdown-select-colors-opetion-bg");
+        const body = document.body; // or any container
+      
+        function updateMode(option) {
+          if (option.classList.contains("light")) {
+            body.classList.add("light-mode");
+          } else if (option.classList.contains("dark")) {
+            body.classList.remove("light-mode");
+          }
+        }
+      
+        // Click event for all options
+        colorOptions.forEach(option => {
+          option.addEventListener("click", () => {
+            const radio = option.querySelector("input[type='radio']");
+            radio.checked = true;
+            updateMode(option); // Update body class based on clicked option
+          });
+        });
     }
-  }
-
-  // Click event for all options
-  colorOptions.forEach(option => {
-    option.addEventListener("click", () => {
-      const radio = option.querySelector("input[type='radio']");
-      radio.checked = true;
-      updateMode(option); // Update body class based on clicked option
-    });
-  });
+    lightDarkScreen();
 });
 </script>
 

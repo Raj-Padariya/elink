@@ -225,7 +225,7 @@
               </div>
 
 
-              <div class="animatiopn-btn">
+              <div class="animatiopn-btn initial-btn">
                 <div class="site_btn-bg animate-photo showAnimationBtn">
                   <a href="#">
                     <span class="text__update">Animate Photo</span>
@@ -247,50 +247,6 @@
               </div>
             </div>
           </div>
-          <!-- <div class="photo_ready__screen">
-            <div class="add-photo-profile-heading">
-              <h2>Your Photo is Ready</h2>
-              <p>
-                We’ve animated your image with AI. You can use the video now, or
-                stick with the photo and switch anytime later.
-              </p>
-            </div>
-            <div class="add-photo-profile-preview">
-              <div class="add-photo-profile-image">
-                <img
-                  src="https://images.unsplash.com/photo-1688597168913-67bb25da1c22?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJldXRpZnVsbCUyMGdpcmx8ZW58MHx8MHx8fDA%3D"
-                  alt=""
-                />
-              </div>
-              <div class="add-photo-profile-preview-btn">
-                <div class="add-photo-profile-ratio">
-                  <a href="#" class="profile-ratio-btn">
-                    <img src="./assets/images/info-icon.svg" alt="" />
-                    <div class="profile-ratio-pix">
-                      <p class="in-ratio">2x3</p>
-                      <p class="in-pixel">Video 2K</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="add-photo-profile-preview-replace">
-                  <div class="image-preview">
-                    <a href="#">
-                      <img src="./assets/images/preview-icon.svg" alt="" />
-                      <span>Preview</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="animatiopn-btn">
-                <div class="site_btn-bg animate-photo">
-                  <a href="#"> Keep Photo for Now </a>
-                </div>
-                <div class="site_btn-bg skip-now">
-                  <a href="#">Use Animated Video</a>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </section>
@@ -312,6 +268,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const svgAnimation = document.querySelector(".animation-progress-svg");
     const previewButtons = document.querySelector(".add-photo-profile-preview-btn");
     const keepBtnSection = document.querySelector(".animatiopn-btn.keep-btn");
+    const initialBtnSection = document.querySelectorAll(".animatiopn-btn.initial-btn, .close-image, .replace-image");
     const skipButton = document.querySelector(".skip-now");
 
     if (!animationButtons.length || !svgAnimation) return;
@@ -358,6 +315,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           // Show keep-btn section at the bottom
           if (keepBtnSection) gsap.set(keepBtnSection, { autoAlpha: 1, display: "flex" });
+          if (initialBtnSection) gsap.set(initialBtnSection, { autoAlpha: 0, display: "none " });
           if (skipButton) gsap.set(skipButton, { autoAlpha: 1, display: "flex" });
         }, 3000); // duration of animation
       });
