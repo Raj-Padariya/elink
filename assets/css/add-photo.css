@@ -1,305 +1,52 @@
-
 .add-photo-profile-heading{text-align: center;margin-bottom: 25px;}
-
 .add-photo-profile-heading h2{margin-bottom: 15px;}
 .add-photo-profile-heading p{opacity: 0.5;font-size: var(--f-12);}
-
-
-.add-photo-profile{
-    padding-bottom: 100px;
-}
-
-.add-photo-profile-preview{
-    position: relative;
-    overflow: hidden;
-}
-.add-photo-profile-image{
-    position: relative;
-    border-radius: 24px;
-    overflow: hidden;
-}
-.add-photo-profile-image img{
-    border-radius: 24px;
-    border-radius: 24px;
-    aspect-ratio: 7.5 / 8.9;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    display: flex;
-}
-
-.add-photo-profile-preview-btn{
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    width: 100%;
-    top: 15px;
-    padding: 0 15px;
-}
-.profile-ratio-btn{
-    display: flex;
-    gap: 8px;
-    justify-content: space-between;
-    align-items: center;
-    /* margin-bottom: 15px; */
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 25%), inset 0 0 5px rgba(255, 255, 255, 25%);
-    border-radius: 10px;
-    padding: 5px 12px;
-    color: var(--white);
-}
-
-.profile-ratio-btn img{
-    width: 18px;
-}
-
-.profile-ratio-pix .in-ratio{
-    font-size: var(--f-16);
-}
-.profile-ratio-pix .in-pixel{
-    font-size: var(--f-12);
-    opacity: 0.5;
-}
-
-.add-photo-profile-preview-replace{
-    display: flex;
-    gap: 8px;
-    align-items: center;
-}
-.image-preview{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
+.add-photo-profile{padding-bottom: 100px;}
+.add-photo-profile-preview{position: relative;overflow: hidden;}
+.add-photo-profile-image{position: relative;border-radius: 24px;overflow: hidden;}
+.add-photo-profile-image img{border-radius: 24px;border-radius: 24px;aspect-ratio: 7.5 / 8.9;height: 100%;width: 100%;object-fit: cover;display: flex;}
+.add-photo-profile-preview-btn{display: flex;justify-content: space-between;position: absolute;width: 100%;top: 15px;padding: 0 15px;}
+.profile-ratio-btn{display: flex;gap: 8px;justify-content: space-between;align-items: center;backdrop-filter: blur(30px);-webkit-backdrop-filter: blur(30px);box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 25%), inset 0 0 5px rgba(255, 255, 255, 25%);border-radius: 10px;padding: 5px 12px;color: var(--white);}
+.profile-ratio-btn img{width: 18px;}
+.profile-ratio-pix .in-ratio{font-size: var(--f-16);}
+.profile-ratio-pix .in-pixel{font-size: var(--f-12);opacity: 0.5;}
+.add-photo-profile-preview-replace{display: flex;gap: 8px;align-items: center;}
+.image-preview{display: flex;align-items: center;gap: 8px;}
 .image-preview a,
 .replace-image a,
-.close-image a{
-    display: flex;
-    gap: 8px;
-    justify-content: space-between;
-    align-items: center;
-    /* margin-bottom: 15px; */
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 25%), inset 0 0 5px rgba(255, 255, 255, 25%);
-    border-radius: 10px;
-    padding: 12px;
-    color: var(--white);
-}
-
-.close-image a{
-        background: #F51D1D1A;
-}
-
-.close-image a img{
-    width: 20px;
-}
-
-.animate-photo a{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 12px;
-    transition: 0.3s all ease;
-}
-.animate-photo{
-    flex: 1;
-}
-.animate-photo a span{
-    opacity: 0.5;
-    font-size: var(--f-12);
-}
-.animatiopn-btn{
-   display: flex;
-  gap: 15px;
-  position: absolute;
-  width: 100%;
-  bottom: 20px;
-  max-width: 440px;
-  padding: 0 15px;
-  transition: 0.3s all ease;
-}
-
-.animatiopn-btn .site_btn-bg{
-    transition: 0.3s all ease;
-}
-
-.animatiopn-btn.cta__expended .site_btn-bg.animate-photo {
-  flex: 100%;
-}
-
-
-.skip-now{
-    opacity: 0.5;transition: 0.3s all ease;
-}
-
-.animatiopn-btn.cta__expended .site_btn-bg.skip-now{
-
-    transform: translateX(400%);
-    display: none;
-}
-
-.profile-preview-img img{
-    border-radius: 24px;
-    aspect-ratio: 7.5 / 8.9;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-
-.profile-preview-photo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #FFFFFF05;
-    backdrop-filter: blur(30px);
-    display: none;
-    z-index: 2;
-    max-width: 440px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.profile-preview-photo-inner {
-    background: var(--black);
-    padding: 25px;
-    border-radius: 25px 25px 0 0;
-    height: 100%;
-    margin-top: 80px;
-}
-
-.profile-preview-photo-heading  {
-    position: relative;
-    margin-bottom: 25px;
-}
-.profile-preview-photo-heading h3 {
-    text-align: center;
-    padding: 12px 0;
-}
-.profile-preview-photo-close {
-    display: flex
-;
-    justify-content: center;
-    align-items: center;
-    background: var(--black);
-    border-radius: 10px;
-    padding: 18px 16px;
-    flex: fit-content;
-    color: var(--white);
-    gap: 10px;
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 25%), inset 0 0 5px rgba(255, 255, 255, 25%);
-}
-.profile-preview-photo-close{
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 44px;
-    width: 44px;
-}
-
-.profile-preview-animation{
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.profile-preview-bottom{
-    position: absolute;
-    bottom: 15px;
-    width: 100%;
-    text-align: center;
-}
-
-.preview-profile-button{
-    display: flex;
-    gap: 15px;
-}
-
-.delete-preview{
-    background: #F51D1D0D;
-    transition: 0.3s;
-}
-
-.delete-preview a{
-    background: #F51D1D1A;
-    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 25%), inset 0 0 5px rgba(255, 255, 255, 25%);
-    color: #F51D1D;
-    transition: 0.3s;
-}
-
-.delete-preview:hover {
-    background: #F51D1D1A;
-    /* box-shadow: var(--shadow-one); */
-    box-shadow: 0px 0px 8px 0px #F51D1D;
-}
+.close-image a{display: flex;gap: 8px;justify-content: space-between;align-items: center;backdrop-filter: blur(30px);-webkit-backdrop-filter: blur(30px);box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 25%), inset 0 0 5px rgba(255, 255, 255, 25%);border-radius: 10px;padding: 12px;color: var(--white);}
+.close-image a{background: #F51D1D1A;}
+.close-image a img{width: 20px;}
+.animate-photo a{display: flex;flex-direction: column;gap: 5px;padding: 12px;transition: 0.3s all ease;}
+.animate-photo{flex: 1;}
+.animate-photo a span{opacity: 0.5;font-size: var(--f-12);}
+.animatiopn-btn{display: flex;gap: 15px;position: absolute;width: 100%;bottom: 20px;max-width: 440px;padding: 0 15px;transition: 0.3s all ease;}
+.animatiopn-btn .site_btn-bg{transition: 0.3s all ease;}
+.animatiopn-btn.cta__expended .site_btn-bg.animate-photo {flex: 100%;}
+.skip-now{opacity: 0.5;transition: 0.3s all ease;}
+.animatiopn-btn.cta__expended .site_btn-bg.skip-now{transform: translateX(400%);display: none;}
+.profile-preview-img img{border-radius: 24px;aspect-ratio: 7.5 / 8.9;height: 100%;width: 100%;object-fit: cover;}
+.profile-preview-photo {position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: #FFFFFF05;backdrop-filter: blur(30px);display: none;z-index: 2;max-width: 440px;left: 50%;transform: translateX(-50%);}
+.profile-preview-photo-inner {background: var(--black);padding: 25px;border-radius: 25px 25px 0 0;height: 100%;margin-top: 80px;}
+.profile-preview-photo-heading  {position: relative;margin-bottom: 25px;}
+.profile-preview-photo-heading h3 {text-align: center;padding: 12px 0;}
+.profile-preview-photo-close {display: flex;justify-content: center;align-items: center;background: var(--black);border-radius: 10px;padding: 18px 16px;flex: fit-content;color: var(--white);gap: 10px;backdrop-filter: blur(30px);-webkit-backdrop-filter: blur(30px);box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 25%), inset 0 0 5px rgba(255, 255, 255, 25%);}
+.profile-preview-photo-close{position: absolute;top: 0;right: 0;height: 44px;width: 44px;}
+.profile-preview-animation{position: relative;margin-bottom: 20px;}
+.profile-preview-bottom{position: absolute;bottom: 15px;width: 100%;text-align: center;}
+.preview-profile-button{display: flex;gap: 15px;}
+.delete-preview{background: #F51D1D0D;transition: 0.3s;}
+.delete-preview a{background: #F51D1D1A;box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 25%), inset 0 0 5px rgba(255, 255, 255, 25%);color: #F51D1D;transition: 0.3s;}
+.delete-preview:hover {background: #F51D1D1A;box-shadow: 0px 0px 8px 0px #F51D1D;}
 
 /* Animation precess */
-.profile-animation-process-img {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  border-radius: 24px;
-}
-
-.profile-animation-process-img img {
-  border-radius: 24px;
-    aspect-ratio: 7.5 / 8.9;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.animation-progress-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* so clicks go through */
-  overflow: hidden;
-}
-.animation-progress-svg svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  /* height: 100%; */
-}
-
-.profile-animation-process{
-    position: relative;
-}
-.profile-animation-process-btn{
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    padding: 0 15px;
-}
-
-.profile-animation-process-btn .animate-photo{
-    background: #0000000D;
-    transition: 0.3s;
-    backdrop-filter: blur(5px);
-}
-
-.profile-animation-process-btn .animate-photo a{
-    background: #0000000D;
-    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 25%), inset 0 0 5px rgba(255, 255, 255, 25%);
-    transition: 0.3s;
-}
-
- #animationProcess {
-    display: none;
-  }
-
-
-
-  .animation-progress-svg {
-  pointer-events: none; /* allow clicking through the SVG layer */
-}
+.profile-animation-process-img {position: relative;display: inline-block;overflow: hidden;border-radius: 24px;}
+.profile-animation-process-img img {border-radius: 24px;aspect-ratio: 7.5 / 8.9;height: 100%;width: 100%;object-fit: cover;}
+.animation-progress-svg {position: absolute;top: 0;left: 0;width: 100%;height: 100%;pointer-events: none;overflow: hidden;}
+.animation-progress-svg svg {position: absolute;top: 0;left: 0;width: 100%;}
+.profile-animation-process{position: relative;}
+.profile-animation-process-btn{position: absolute;bottom: 20px;width: 100%;padding: 0 15px;}
+.profile-animation-process-btn .animate-photo{background: #0000000D;transition: 0.3s;backdrop-filter: blur(5px);}
+.profile-animation-process-btn .animate-photo a{background: #0000000D;box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 25%), inset 0 0 5px rgba(255, 255, 255, 25%);transition: 0.3s;}
+ #animationProcess {display: none;}
+.animation-progress-svg {pointer-events: none;}
