@@ -13,6 +13,11 @@
     position: relative;
     overflow: hidden;
 }
+.add-photo-profile-image{
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+}
 .add-photo-profile-image img{
     border-radius: 24px;
     border-radius: 24px;
@@ -20,6 +25,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    display: flex;
 }
 
 .add-photo-profile-preview-btn{
@@ -293,3 +299,7 @@
   }
 
 
+
+  .animation-progress-svg {
+  pointer-events: none; /* allow clicking through the SVG layer */
+}
