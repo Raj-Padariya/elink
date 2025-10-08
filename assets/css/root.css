@@ -103,6 +103,11 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
 /* Firefox */
 input[type=number] {-moz-appearance: textfield;}
 
+
+/* If you have a label above input */
+input:-webkit-autofill + label {
+    color: #333 !important; /* Change label color when autofilled */
+}
 /*----------------------------
   Anchor Hover Effect
   ---------*/

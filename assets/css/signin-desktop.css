@@ -1,0 +1,16 @@
+.signin-desktop-inner::before{content: "";width: 1139px;height: 657px;position: fixed;top: -587px;right: -740px;filter: blur(130px);background: linear-gradient(270deg, #0D1B2A 0%, #1B263B 27.88%, #415A77 62.98%, #778DA9 100%);border-radius: 500px;}
+.signin-desktop-inner::after{content: "";width: 1139px;height: 642px;position: fixed;bottom: -545px;left: -600px;filter: blur(130px);background: linear-gradient(270deg, #0D1B2A 0%, #1B263B 27.88%, #415A77 62.98%, #778DA9 100%);border-radius: 500px;}
+.signin-desktop-screen{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);   width: 100%;max-width: 470px;padding: 0 15px;}
+.continue-btn-bg{position: relative;overflow: hidden;}
+.signin-desktop .continue-btn-bg.site_btn-bg{background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.01) 100%);transition: 0.5s all ease;}
+.signin-desktop .continue-btn-bg::after{content: "";position: absolute;top: -10px;left: 50%;width: 100%;height: 25px;filter: blur(12px);transform: translateX(-50%);background: #FFFFFF33;transition: 0.5s all ease;}
+.signin-desktop .continue-btn-bg::before{content: "";position: absolute;bottom: -10px;left: 50%;width: 100%;height: 25px;filter: blur(12px);transform: translateX(-50%);background: #FFFFFF33;transition: 0.5s all ease;}
+.signin-desktop .continue-btn-bg:hover{box-shadow: 0px 0px 8px 0px #FFFFFF50;}
+.signin-desktop .continue-btn-bg:hover::after,
+.signin-desktop .continue-btn-bg:hover::before{background: #FFFFFF50;}
+.signin-desktop .signin-secreen-form-btn{background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.01) 100%);transition: 0.5s all ease;position: relative;overflow: hidden;}
+.signin-desktop .signin-secreen-form-btn::after{content: "";position: absolute;top: -10px;left: 50%;width: 100%;height: 25px;filter: blur(12px);transform: translateX(-50%);opacity: 0.6;background: #0084FF;transition: 0.5s all ease;}
+.signin-desktop .signin-secreen-form-btn::before{content: "";position: absolute;bottom: -10px;left: 50%;width: 100%;height: 25px;filter: blur(12px);transform: translateX(-50%);opacity: 0.6;background: #0084FF;transition: 0.5s all ease;}
+.signin-desktop .signin-secreen-form-btn:hover::after,
+.signin-desktop .signin-secreen-form-btn:hover::before{opacity: 1;}
+.signin-desktop .signin-secreen-form-btn button{color: var(--white);}
