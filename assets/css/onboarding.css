@@ -58,7 +58,7 @@
 .image-upload.dragover {border-color: #3b82f6;background: rgba(59, 130, 246, 0.1);}
 .image-upload.uploaded {border-color: #10b981;background: rgba(16, 185, 129, 0.1);}
 .upload-image-input{position: relative;margin: 20px 0;}
-.upload-content{position: absolute;top: 0;text-align: center;top: 50%;left: 50%;width: 100%;transform: translate(-50%, -50%);max-width: 390px;z-index: -1;}
+.upload-content{position: absolute;top: 0;text-align: center;top: 50%;left: 50%;width: 100%;transform: translate(-50%, -50%);max-width: 390px;z-index: -1;padding: 0 10px;}
 .upload-icon{margin-bottom: 15px;}
 .upload-title{font-size: var(--f-20);margin-bottom: 10px;}
 .upload-description{font-size: var(--f-14);margin-bottom: 15px;opacity: 0.5;}

@@ -30,10 +30,10 @@
 .bottom-inner-top{display: flex;justify-content: space-between;margin-bottom: 8px;}
 .bottom-contact__ctas {width: 100%;}
 .contact-ctas {display: flex;justify-content: space-between;align-items: center;width: 100%;gap: 5px;text-align: center;}
-.cta {display: flex;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.1);backdrop-filter: blur(66px);-webkit-backdrop-filter: blur(66px);border-radius: 4px;padding: 7px;flex: fit-content;gap: 10px;}
+.cta {background: rgba(255, 255, 255, 0.1);backdrop-filter: blur(66px);-webkit-backdrop-filter: blur(66px);border-radius: 4px;padding: 6px;flex: fit-content;gap: 10px;}
 .cta img{max-width: 11px;}
 .contact-ctas .cta:first-child:not(.contact-ctas.on__header .cta:first-child) {flex: 55%;}
-.contact-ctas a{color: var(--white);font-size: 9px;}
+.contact-ctas a{color: var(--white);font-size: 8px;}
 .select-profile-heading h3{opacity: 0.5;margin-bottom: 20px;}
 .select-profile{display: flex;gap: 12px;flex-wrap: wrap;}
 .select-profile_block_bg img{width: 100%;height: 100%;object-fit: cover;border-radius: 12px;aspect-ratio: 16 / 17.3;}
@@ -67,6 +67,15 @@
 .block-5 .contact-ctas .cta:first-child:not(.contact-ctas.on__header .cta:first-child), 
 .block-6 .contact-ctas .cta:first-child:not(.contact-ctas.on__header .cta:first-child){flex: 100%;}
 .content-bottom-inner-shape{position: absolute;right: -20px;top: 0px;filter: blur(10px);}
+
+.block-5 .cta, 
+.block-6 .cta{display: flex;align-items: center;justify-content: center;}
+
+.cta.cta__call,
+.cta.cta__msg,
+.cta.cta__mail{display: flex;
+    align-items: center;
+    justify-content: center;}
 
 /* From Uiverse.io by chase2k25 */ 
 .select-profile_block-radio-bg {position: absolute;display: inline-block;right: 7px;top: 7px;}
@@ -110,3 +119,16 @@ span.slection-name {opacity: 0.5;}
 .radio-label-color-tint.none-label{display: flex;align-items: center;justify-content: center;}
 .none-text{font-size: var(--f-10);}
 .tint-selected .none-label .checkmark{height: 100%;width: 100%;background: var(--black);border-radius: 12px;display: flex;align-items: center;justify-content: center;}
+
+@media (max-width: 420px) {
+    .cta.cta__contact span{
+        display: none;
+    }
+}
+@media (max-width: 400px) {
+    .choose-color-bg-dropdown-heading{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+}

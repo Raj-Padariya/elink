@@ -14,7 +14,7 @@
 .image-preview{display: flex;align-items: center;gap: 8px;}
 .image-preview a,
 .replace-image a,
-.close-image a{display: flex;gap: 8px;justify-content: space-between;align-items: center;backdrop-filter: blur(30px);-webkit-backdrop-filter: blur(30px);box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 25%), inset 0 0 5px rgba(255, 255, 255, 25%);border-radius: 10px;padding: 12px;color: var(--white);}
+.close-image a{display: flex;gap: 8px;justify-content: space-between;align-items: center;backdrop-filter: blur(30px);-webkit-backdrop-filter: blur(30px);box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 25%), inset 0 0 5px rgba(255, 255, 255, 25%);border-radius: 10px;padding: 12px;color: var(--white);height: 44px;}
 .close-image a{background: #F51D1D1A;}
 .close-image a img{width: 20px;}
 .animate-photo a{display: flex;flex-direction: column;gap: 5px;padding: 12px;transition: 0.3s all ease;}
@@ -50,3 +50,23 @@
 .profile-animation-process-btn .animate-photo a{background: #0000000D;box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 25%), inset 0 0 5px rgba(255, 255, 255, 25%);transition: 0.3s;}
  #animationProcess {display: none;}
 .animation-progress-svg {pointer-events: none;}
+
+
+@media (max-width: 400px) {
+    .image-preview a span {display: none;}
+
+    .preview-profile-button .animate-photo {
+    flex: 100%;
+}
+.preview-profile-button{
+    flex-wrap: wrap;
+}
+.replace-previe{
+    flex: 1;
+}
+.site_btn-bg a{
+    padding: 12px;
+    font-size: 12px;
+}
+    
+}
