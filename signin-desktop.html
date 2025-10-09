@@ -1,403 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signin Desktop</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In with Email</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script src="./assets/js/gsap.min.js" defer></script>
 </head>
 <body>
-    <section class="signin-desktop">
-        <div class="signin-desktop-inner">
-            <div class="e-link_container">
-                <div class="signin-desktop-screen">
-                    <div class="signin-secreen-logo">
-                        <img src="./assets/images/e-link-logo.svg" alt="">
-                        <h1>Welcome back! Sign In here.</h1>
-                    </div>
-    
-    
-                    <div class="signin-secreen-form">
-                        <form action="action.php">
-                            <div class="error-msg" style="opacity: 0; display: none;">
-                                <div class="error-msg-bg">
-                                    <div class="error-msg-icon">
-                                        <img src="./assets/images/error-notification-icon.svg" alt="">
-                                    </div>
-                                    <div class="error-msg-desc">
-                                        <h4>Missing digits</h4>
-                                        <p>Please enter the phone number.</p>
-                                    </div>
-                                    </div>
-                                </div>
-                            
-                                <div class="site_input-group input-group-phone">
-                                <div class="site_input-group-dropdown">
-                                    <div class="dropdown-wrapper">
-                                    <div class="dropdown-select">
-                                        <div class="dropdown-toggle-bg">
-                                        <button class="country_dropdown">
-                                            <span class="dropdown-country code">+1</span>
-                                            <img class="arrow-icon" src="./assets/images/dropdown-icon.svg" alt="">
-                                        </button>
-                                        </div>
-                                    </div>
-            
-                                    <div class="dropdown-panel" id="sideHustleDropdown" data-lenis-prevent="">
-                                        <div class="dropdown-fade-effect">
-                                        <a href="javascript:void(0);">+1</a>
-                                        <a href="javascript:void(0);">+61</a>
-                                        <a href="javascript:void(0);">+91</a>
-                                        <a href="javascript:void(0);">+20</a>
-                                        <a href="javascript:void(0);">+001</a>
-                                        </div>
-                                    </div>
-                                    </div>
-            
-                                    <input type="number" name="phone" class="site_input" placeholder="Phone" required>
-                                    <label class="site_input-phone">Phone*</label>
-                                    <div class="error-input-icon" style="opacity: 0;">
-                                    <img src="./assets/images/error-input-icon.svg" alt="">
-                                    </div>
-                                </div>
-                                </div>
-        
-                                <div class="site_input-group input-group-email" style="opacity: 0; transform: translateY(20px); display: none;">
-                                    <input type="email" name="email" class="site_input" placeholder="Your Email Address">
-                                    <label>Email*</label>
-                                    <span class="fake-caret"></span>
-                                    <div class="error-input-icon" style="opacity: 0;">
-                                    <img src="./assets/images/error-input-icon.svg" alt="">
-                                    </div>
-                                </div>
-        
-                            <div class="signin-secreen-form-btn">
-                                <button type="submit">Continue</button>
-                            </div>
-                        </form>
-                    </div>
-        
-                    <div class="continue-btn">
-                        <div class="continue-btn-bg site_btn-bg">
-                        <a href="#" class="toggle-input"><img src="./assets/images/email.svg" alt=""> Continue with Email</a>
-                        </div>
-                    </div>
-    
-                    <div class="create-account-text">
-                    <p>Don’t have an account? <a href="">Create One</a></p>
-                    </div>
-            </div>
-            </div>
+  <section class="signin-desktop">
+    <div class="signin-desktop-inner">
+      <div class="e-link_container">
+        <div class="signin-desktop-screen">
+          <div class="signin-secreen-logo">
+            <img src="./assets/images/e-link-logo.svg" alt="">
+            <h1>Welcome back! Sign In here.</h1>
+          </div>
+
+          <!-- Signin Form -->
+          <div class="signin-secreen-form">
+            <form action="action.php">
+              <!-- Email Input -->
+              <div class="site_input-group input-group-email">
+                <input type="email" name="email" class="site_input" placeholder="Your Email Address" required />
+                <label>Email*</label>
+                <span class="fake-caret"></span>
+                <div class="error-input-icon">
+                  <img src="./assets/images/error-input-icon.svg" alt="">
+                </div>
+              </div>
+
+              <div class="signin-secreen-form-btn">
+                <button type="button" class="open-verify-email">Verify Email</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="create-account-text">
+            <p>Don’t have an account? <a href="#">Create One</a></p>
+          </div>
         </div>
-    </section>
+      </div>
 
+      <!-- Verify Email Popup -->
+      <div class="verify-email">
+        <div class="verify-email-popup">
+          <div class="verify-email-screen">
+            <div class="verify-email-close">
+              <a href="#"><img src="./assets/images/close-icon.svg" alt=""></a>
+            </div>
+            <div class="verify-email-heading">
+              <h3>Confirm Your Email</h3>
+              <div class="verify-email-otp-desc">
+                <p>Enter the code sent to your email address <span>example@email.com</span></p>
+              </div>
+            </div>
+            <div class="verify-email-otp">
+              <form id="otp-form" class="otp-form">
+                <div class="otp-inputs">
+                  <div class="site_input-group"><input type="number" class="site_input" maxlength="1"></div>
+                  <div class="site_input-group"><input type="number" class="site_input" maxlength="1"></div>
+                  <div class="site_input-group"><input type="number" class="site_input" maxlength="1"></div>
+                  <div class="site_input-group"><input type="number" class="site_input" maxlength="1"></div>
+                </div>
+              </form>
+              <div class="send-again">
+                <div class="dont-revice"><p>Didn’t receive a message?</p></div>
+                <div class="send-again-otp"><a href="#">Send it Again</a></div>
+              </div>
+            </div>
 
+            <div class="verify-email-btn site_btn-bg">
+              <a href="#">Verify Email Address</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Js -->
-    <script src="./assets/js/gsap.min.js" defer></script>
-    <script src="./assets/js/lenis.min.js" defer></script>
-    <script src="./js/ScrollTrigger.min.js" defer></script>
-    <script src="./js/app.js" defer></script>
+      <!-- Custom Thank You Message -->
+      <div class="thank-you-message">
+        <div class="thank-you-verify">
+          <div class="verify-badge">
+            <img src="./assets/images/Thank_you_white-and-blue_V2.gif" alt="">
+          </div>
+          <div class="verify-text">
+            <p>The email has been verified</p>
+          </div>
+        </div>
+      </div>
 
+      <!-- Custom Error Message -->
+      <div class="error-msg">
+        <div class="error-msg-bg">
+          <div class="error-msg-icon">
+            <img src="./assets/images/error-notification-icon.svg" alt="">
+          </div>
+          <div class="error-msg-desc">
+            <h4></h4>
+            <p></p>
+          </div>
+        </div>
+      </div>
 
+    </div>
+  </section>
 
-    <script>
+  <!-- JS -->
+  <script>
     document.addEventListener("DOMContentLoaded", () => {
-      const form = document.querySelector(".signin-secreen-form form");
-      const phoneGroup = form.querySelector(".input-group-phone");
-      const emailGroup = form.querySelector(".input-group-email");
-      const phoneInput = phoneGroup.querySelector('input[type="number"]');
-      const emailInput = emailGroup.querySelector('input[type="email"]');
-      const errorBox = form.querySelector(".error-msg");
+      const verifyOpenBtn = document.querySelector(".open-verify-email");
+      const popup = document.querySelector(".verify-email");
+      const popupScreen = document.querySelector(".verify-email-screen");
+      const closeBtn = document.querySelector(".verify-email-close a");
+      const otpInputs = document.querySelectorAll(".otp-form .site_input");
+      const verifyBtn = document.querySelector(".verify-email-btn a");
+
+      const thankYou = document.querySelector(".thank-you-message");
+      const errorBox = document.querySelector(".error-msg");
       const errorTitle = errorBox.querySelector("h4");
       const errorText = errorBox.querySelector("p");
-      const phoneErrorIcon = phoneInput.parentElement.querySelector(".error-input-icon");
-      const emailErrorIcon = emailInput.parentElement.querySelector(".error-input-icon");
-      const toggleButton = document.querySelector(".toggle-input");
+      const otpContainer = document.querySelector(".otp-inputs");
 
-      let isPhoneMode = true;
-      let hasError = false;
+      // Initial GSAP setup
+      gsap.set([popup, popupScreen, thankYou, errorBox], { opacity: 0, display: "none" });
+      gsap.set(popupScreen, { y: 80, scale: 0.95 });
+      gsap.set(errorBox, { y: -100, xPercent: -50, left: "50%", position: "fixed", top: "20px", zIndex: 9999 });
 
-      // Initialize error UI and email group with GSAP
-      gsap.set(errorBox, { opacity: 0, y: 10, display: "none", zIndex: 10 });
-      gsap.set(phoneErrorIcon, { opacity: 0, y: 10 });
-      gsap.set(emailErrorIcon, { opacity: 0, y: 10 });
-      gsap.set(emailGroup, { opacity: 0, y: 20, display: "none" });
+      // --- OPEN POPUP ---
+      verifyOpenBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        gsap.set(popup, { display: "block" });
+        gsap.timeline()
+          .to(popup, { opacity: 1, duration: 0.4, ease: "power2.out" })
+          .set(popupScreen, { display: "block" })
+          .to(popupScreen, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power4.out", onComplete: () => otpInputs[0]?.focus() });
+      });
 
-      // Set initial required state
-      phoneInput.setAttribute("required", "");
-      emailInput.removeAttribute("required");
-
-      // Function to reset error state with smooth animation
-      const resetErrorState = () => {
-        if (hasError) {
-          console.log("Resetting error state");
-          phoneGroup.classList.remove("error");
-          emailGroup.classList.remove("error");
-          phoneInput.style.borderColor = "";
-          emailInput.style.borderColor = "";
-          gsap.to([phoneErrorIcon, emailErrorIcon], { 
-            opacity: 0, 
-            y: 10, 
-            duration: 0.3, 
-            ease: "power2.in", 
-            stagger: 0.1
-          });
-          gsap.to(errorBox, { 
-            opacity: 0, 
-            y: 10, 
-            duration: 0.3, 
-            ease: "power2.in", 
-            delay: 0.2, 
-            onComplete: () => {
-              phoneErrorIcon.style.opacity = "0";
-              emailErrorIcon.style.opacity = "0";
-              errorBox.style.display = "none";
-              hasError = false;
-            }
-          });
-        }
+      // --- CLOSE POPUP ---
+      const closePopup = () => {
+        gsap.timeline()
+          .to(popupScreen, { y: 80, scale: 0.95, opacity: 0, duration: 0.4, ease: "power2.inOut" })
+          .to(popup, { opacity: 0, duration: 0.3, ease: "power1.inOut", onComplete: () => {
+            gsap.set([popup, popupScreen], { display: "none" });
+            otpInputs.forEach(i => i.value = "");
+          }});
       };
+      closeBtn.addEventListener("click", (e) => { e.preventDefault(); closePopup(); });
 
-      // Toggle between phone and email fields with GSAP stagger
-      toggleButton.addEventListener("click", (e) => {
-        e.preventDefault();
-        resetErrorState();
-        if (isPhoneMode) {
-          // Hide phone group, show email group
-          phoneInput.removeAttribute("required");
-          emailInput.setAttribute("required", "");
-          gsap.to(phoneGroup, {
-            opacity: 0,
-            y: 20,
-            duration: 0.3,
-            ease: "power2.out",
-            onComplete: () => {
-              phoneGroup.style.display = "none";
-              emailGroup.style.display = "block";
-              gsap.to(emailGroup, {
-                opacity: 1,
-                y: 0,
-                duration: 0.3,
-                ease: "power2.out",
-                stagger: 0.1
-              });
-            }
-          });
-          toggleButton.innerHTML = '<img src="./assets/images/phone.svg" alt=""> Continue with Phone';
-          isPhoneMode = false;
-        } else {
-          // Hide email group, show phone group
-          emailInput.removeAttribute("required");
-          phoneInput.setAttribute("required", "");
-          gsap.to(emailGroup, {
-            opacity: 0,
-            y: 20,
-            duration: 0.3,
-            ease: "power2.out",
-            onComplete: () => {
-              emailGroup.style.display = "none";
-              phoneGroup.style.display = "block";
-              gsap.to(phoneGroup, {
-                opacity: 1,
-                y: 0,
-                duration: 0.3,
-                ease: "power2.out",
-                stagger: 0.1
-              });
-            }
-          });
-          toggleButton.innerHTML = '<img src="./assets/images/email.svg" alt=""> Continue with Email';
-          isPhoneMode = true;
-        }
-        // Reset form state
-        phoneInput.value = "";
-        emailInput.value = "";
-        phoneGroup.classList.remove("focus");
-        emailGroup.classList.remove("focus");
-      });
-
-      // Add active class on input focus
-      phoneInput.addEventListener("focus", () => {
-        phoneGroup.classList.add("focus");
-      });
-      phoneInput.addEventListener("blur", () => {
-        phoneGroup.classList.remove("focus");
-      });
-
-      emailInput.addEventListener("focus", () => {
-        emailGroup.classList.add("focus");
-      });
-      emailInput.addEventListener("blur", () => {
-        emailGroup.classList.remove("focus");
-      });
-
-      // Reset errors on input change
-      phoneInput.addEventListener("input", () => {
-        if (phoneInput.value.length > 10) {
-          phoneInput.value = phoneInput.value.slice(0, 10);
-        }
-        resetErrorState();
-      });
-
-      emailInput.addEventListener("input", () => {
-        resetErrorState();
-      });
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        console.log("Submit button clicked, isPhoneMode:", isPhoneMode);
-
-        // Reset errors only if no validation error occurs
-        if (hasError) {
-          resetErrorState();
-        }
-
-        if (isPhoneMode) {
-          // Validate phone
-          console.log("Validating phone:", phoneInput.value);
-          if (!/^\d{10}$/.test(phoneInput.value.trim())) {
-            console.log("Phone validation failed");
-            errorTitle.textContent = "Missing digits";
-            errorText.textContent = "Please enter a valid 10-digit phone number.";
-            phoneGroup.classList.add("error");
-            phoneInput.style.borderColor = "red";
-            gsap.set(errorBox, { display: "block" });
-            gsap.to(errorBox, { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" });
-            gsap.set(phoneErrorIcon, { opacity: 0, y: 10 });
-            gsap.to(phoneErrorIcon, { opacity: 1, y: 0, duration: 0.3, ease: "power2.out", delay: 0.1 });
-            hasError = true;
-            return;
-          }
-        } else {
-          // Validate email
-          console.log("Validating email:", emailInput.value);
-          if (!/^\S+@\S+\.\S+$/.test(emailInput.value.trim())) {
-            console.log("Email validation failed");
-            errorTitle.textContent = "Invalid Email";
-            errorText.textContent = "Please enter a valid email address.";
-            emailGroup.classList.add("error");
-            emailInput.style.borderColor = "red";
-            gsap.set(errorBox, { display: "block" });
-            gsap.to(errorBox, { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" });
-            gsap.set(emailErrorIcon, { opacity: 0, y: 10 });
-            gsap.to(emailErrorIcon, { opacity: 1, y: 0, duration: 0.3, ease: "power2.out", delay: 0.1 });
-            hasError = true;
-            return;
-          }
-        }
-
-        // If all validations pass, submit form
-        console.log("Validation passed, submitting form");
-        form.submit();
-      });
-    });
-    </script>
-
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const wrapper = document.querySelector('.dropdown-wrapper');
-      const button = wrapper.querySelector('.country_dropdown');
-      const panel = wrapper.querySelector('.dropdown-panel');
-      const content = panel.querySelector('.dropdown-fade-effect');
-      const links = content.querySelectorAll('a');
-      const label = button.querySelector('.dropdown-country');
-
-      // Hide links initially
-      gsap.set(links, { opacity: 0, y: 20 });
-
-      let isOpen = false;
-
-      // Toggle dropdown
-      button.addEventListener('click', (e) => {
-        e.stopPropagation();
-        if (isOpen) {
-          closeDropdown();
-        } else {
-          openDropdown();
-        }
-      });
-
-      // Select option
-      links.forEach(link => {
-        link.addEventListener('click', () => {
-          const selectedValue = link.textContent.trim();
-          if (label) label.textContent = selectedValue;
-          closeDropdown();
+      // OTP input logic
+      otpInputs.forEach((input, i) => {
+        input.addEventListener("input", () => { 
+          input.value = input.value.slice(0, 1); 
+          if(input.value && i < otpInputs.length-1) otpInputs[i+1].focus(); 
+        });
+        input.addEventListener("keydown", (e) => { 
+          if(e.key==="Backspace" && !input.value && i>0) otpInputs[i-1].focus(); 
+        });
+        input.addEventListener("paste", (e) => {
+          e.preventDefault();
+          const paste = e.clipboardData.getData("text").trim().slice(0, otpInputs.length);
+          otpInputs.forEach((box, idx) => box.value = paste[idx] || "");
+          otpInputs[Math.min(paste.length, otpInputs.length)-1]?.focus();
         });
       });
 
-      // Close on outside click
-      document.addEventListener('click', (e) => {
-        if (isOpen && !wrapper.contains(e.target)) {
-          closeDropdown();
-        }
+      // --- SHOW ERROR WITH SHAKE & CLEAR OTP ---
+      const showError = (title, text) => {
+        errorTitle.textContent = title;
+        errorText.textContent = text;
+
+        // Show error box
+        gsap.set(errorBox, { display: "flex", opacity: 0, y: -100 });
+        gsap.timeline()
+          .to(errorBox, { opacity: 1, y: 20, duration: 0.6, ease: "elastic.out(1,0.5)" })
+          .to(errorBox, { opacity: 0, y: -100, duration: 0.4, ease: "power1.in", delay: 3, onComplete: () => gsap.set(errorBox, { display: "none" }) });
+
+        // Shake OTP container
+        gsap.fromTo(
+          otpContainer,
+          { x: -10 },
+          { x: 10, duration: 0.05, repeat: 5, yoyo: true, ease: "power1.inOut" }
+        );
+
+        // Flash red border effect
+        otpInputs.forEach(input => {
+          gsap.fromTo(
+            input,
+            { borderColor: "#ccc" },
+            { borderColor: "#ff4d4f", duration: 0.1, repeat: 2, yoyo: true }
+          );
+        });
+
+        // Clear inputs after shake
+        otpInputs.forEach(input => input.value = "");
+        otpInputs[0]?.focus();
+      };
+
+      // --- VERIFY OTP ---
+      verifyBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const otpValue = Array.from(otpInputs).map(i => i.value).join("");
+        if(otpValue.length < otpInputs.length) return showError("Missing OTP", "Please enter the full code.");
+        if(otpValue !== "1234") return showError("Invalid OTP", "Please enter a valid OTP.");
+
+        // Success → show thank you
+        closePopup();
+        gsap.set(thankYou, { display: "flex", opacity: 0, scale: 0.8 });
+        gsap.timeline()
+          .to(thankYou, { opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.7)" })
+          .to(thankYou, { opacity: 0, scale: 0.9, duration: 0.5, ease: "power2.inOut", delay: 4, onComplete: () => gsap.set(thankYou, { display: "none" }) });
       });
-
-      // Scroll fade effect
-      content.addEventListener('scroll', () => {
-        const scrollTop = content.scrollTop;
-        const scrollHeight = content.scrollHeight;
-        const clientHeight = content.clientHeight;
-
-        if (scrollTop + clientHeight >= scrollHeight - 1) {
-          panel.classList.add('at-bottom');
-        } else {
-          panel.classList.remove('at-bottom');
-        }
-      });
-
-      function openDropdown() {
-        wrapper.classList.add('dropdown-open');
-        wrapper.parentElement.classList.add('active');
-        const currentHeight = panel.offsetHeight;
-        panel.style.height = 'auto';
-        const autoHeight = panel.offsetHeight;
-        panel.style.height = currentHeight + 'px';
-
-        gsap.to(panel, { height: autoHeight, duration: 0.3, ease: "power2.out" });
-        gsap.to(links, { opacity: 1, y: 0, duration: 0.2, stagger: 0.05, ease: "power2.out" });
-
-        isOpen = true;
-      }
-
-      function closeDropdown() {
-        wrapper.classList.remove('dropdown-open');
-        wrapper.parentElement.classList.remove('active');
-        gsap.to(panel, { height: 0, duration: 0.3, ease: "power2.out" });
-        gsap.to(links, { opacity: 0, y: 20, duration: 0.2, ease: "power2.out" });
-        isOpen = false;
-      }
     });
-    </script>
-
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const emailInput = document.querySelector('input[type="email"]');
-      const caret = document.querySelector(".fake-caret");
-
-      function updateCaret() {
-        const text = emailInput.value;
-        const span = document.createElement("span");
-
-        // Temp span to measure text width
-        span.style.visibility = "hidden";
-        span.style.position = "absolute";
-        span.style.font = window.getComputedStyle(emailInput).font;
-        span.textContent = text.replace(/ /g, "\u00a0"); // Keep spacing
-
-        document.body.appendChild(span);
-        const textWidth = span.offsetWidth;
-        document.body.removeChild(span);
-
-        // Move fake caret
-        caret.style.left = 10 + textWidth + "px"; // 10px = input padding
-      }
-
-      // Update on input & click
-      emailInput.addEventListener("input", updateCaret);
-      emailInput.addEventListener("click", updateCaret);
-    });
-    </script>
+  </script>
 </body>
 </html>
