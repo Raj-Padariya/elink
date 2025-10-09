@@ -432,7 +432,7 @@
                     <div class="site_btn-bg skip-now">
                       <a href="#">Use Animated Video</a>
                     </div>
-                       <div class="site_btn-bg error_light--cta">
+                    <div class="site_btn-bg error_light--cta">
                       <a href="" class="goto-step-3">GOTO STEP 3</a>
                     </div>
                   </div>
@@ -442,94 +442,290 @@
 
             <!-- Complete Profile Screen -->
             <div id="complete__profile" data-step="3">
-               <div class="complete__profile-screen">
-            <div class="complete-your-profile-heading">
-              <h2>Great, Now Complete Your Profile</h2>
-              <p>
-                Add your key details, one by one, from your name to your contact
-                information, to make your card feel complete and ready to share.
-              </p>
-            </div>
-          
+              <div class="complete__profile-screen">
+                <div class="complete-your-profile-heading">
+                  <h2>Great, Now Complete Your Profile</h2>
+                  <p>
+                    Add your key details, one by one, from your name to your
+                    contact information, to make your card feel complete and
+                    ready to share.
+                  </p>
+                </div>
 
-            <div class="your-profile-preview">
-              <div class="preview_container">
-                <div class="your-profile-top">
-                  <div class="your-profile-left">
-                    <div class="your-profile-detail">
-                      <div class="your-profile-img">
-                        <img src="./assets/images/profile-pic.png" alt="" />
+                <div class="your-profile-preview">
+                  <div class="preview_container">
+                    <div class="your-profile-top">
+                      <div class="your-profile-left">
+                        <div class="your-profile-detail">
+                          <div class="your-profile-img">
+                            <img src="./assets/images/profile-pic.png" alt="" />
+                          </div>
+                          <div class="your-profile-text">
+                            <h2 class="your-profile-name">
+                              <span id="displayName"></span
+                              ><img
+                                src="./assets/images/verify-badge.svg"
+                                alt=""
+                              />
+                            </h2>
+                            <p class="your-profile-role">
+                              <span id="displayRole"></span>
+                            </p>
+                          </div>
+                        </div>
                       </div>
-                      <div class="your-profile-text">
-                        <h2 class="your-profile-name">
-                          <span id="displayName"></span
-                          ><img src="./assets/images/verify-badge.svg" alt="" />
-                        </h2>
-                        <p class="your-profile-role">
-                          <span id="displayRole"></span>
+                      <div class="your-profile-right">
+                        <div class="your-profile-right-inner">
+                          <div class="your-profile-post">
+                            <p class="prifile_statistics_text"><span></span></p>
+                            <p class="profile_statistics_subtext">Posts</p>
+                          </div>
+                          <div class="your-profile-post">
+                            <p class="prifile_statistics_text"><span></span></p>
+                            <p class="profile_statistics_subtext">Followers</p>
+                          </div>
+                          <div class="your-profile-post">
+                            <p class="prifile_statistics_text"><span></span></p>
+                            <p class="profile_statistics_subtext">Following</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="profile_bottom-contact_ctas">
+                      <div class="profile_contact-ctas">
+                        <a href="" class="profile_cta profile_cta__contact">
+                          Save Contact</a
+                        >
+                        <a href="" class="profile_cta profile_cta__call">
+                          <img src="./assets/images/call.svg" alt="" />
+                        </a>
+                        <a href="" class="profile_cta profile_cta__msg">
+                          <img src="./assets/images/msg.svg" alt="" />
+                        </a>
+                        <a href="" class="profile_cta profile_cta__mail">
+                          <img src="./assets/images/email.svg" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom_next-prev-btn">
+                    <div class="bottom_prev keep_cta">
+                      <a href="#"> Keep This Photo for Avatar </a>
+                    </div>
+
+                    <div class="bottom-skip">
+                      <a href="#">Choose a New Photo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Complete Profile -->
+              <div class="complete-your-profile">
+                <div class="complete-your-profile-heading">
+                  <h2>Great, Now Complete Your Profile</h2>
+                  <p>
+                    Add your key details, one by one, from your name to your
+                    contact information, to make your card feel complete and
+                    ready to share.
+                  </p>
+                </div>
+
+                <div class="your-profile-preview">
+                  <div class="preview_container">
+                    <div class="your-profile-top">
+                      <div class="your-profile-left">
+                        <div class="your-profile-detail">
+                          <div class="your-profile-img">
+                            <img src="./assets/images/profile-pic.png" alt="" />
+                          </div>
+                          <div class="your-profile-text">
+                            <h2 class="your-profile-name">
+                              <span id="displayName_actual"></span
+                              ><img
+                                src="./assets/images/verify-badge.svg"
+                                alt=""
+                              />
+                            </h2>
+                            <p class="your-profile-role">
+                              <span id="displayRole__actual"></span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="your-profile-right">
+                        <div class="your-profile-right-inner">
+                          <div class="your-profile-post">
+                            <p class="prifile_statistics_text"><span></span></p>
+                            <p class="profile_statistics_subtext">Posts</p>
+                          </div>
+                          <div class="your-profile-post">
+                            <p class="prifile_statistics_text"><span></span></p>
+                            <p class="profile_statistics_subtext">Followers</p>
+                          </div>
+                          <div class="your-profile-post">
+                            <p class="prifile_statistics_text"><span></span></p>
+                            <p class="profile_statistics_subtext">Following</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="profile_bottom-contact_ctas">
+                      <div class="profile_contact-ctas">
+                        <a href="" class="profile_cta profile_cta__contact">
+                          Save Contact</a
+                        >
+                        <a href="" class="profile_cta profile_cta__call">
+                          <img src="./assets/images/call.svg" alt="" />
+                        </a>
+                        <a href="" class="profile_cta profile_cta__msg">
+                          <img src="./assets/images/msg.svg" alt="" />
+                        </a>
+                        <a href="" class="profile_cta profile_cta__mail">
+                          <img src="./assets/images/email.svg" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="profile-fill-detail">
+                  <div
+                    class="error-msg"
+                    style="
+                      opacity: 0;
+                      display: none;
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      z-index: 10;
+                      transform: translate(0px, 10px);
+                    "
+                  >
+                    <div class="error-msg-bg">
+                      <div class="error-msg-icon">
+                        <img
+                          src="./assets/images/error-notification-icon.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="error-msg-desc">
+                        <h4>Missing digits</h4>
+                        <p>Please enter the phone number.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="site_input-group">
+                    <input
+                      type="text"
+                      class="site_input site_actual_input"
+                      placeholder="Your Full Name"
+                    />
+                    <label for="Full Name">Full Name</label>
+                    <span class="fake-caret"></span>
+                  </div>
+                </div>
+
+                <div class="bottom_next-prev-btn">
+                  <div class="bottom_prev">
+                    <a href="#">
+                      <img src="./assets/images/arrow.svg" alt="" />
+                    </a>
+                  </div>
+                  <div class="bottom-continue">
+                    <a href="#">
+                      <span>Continue</span>
+                      <img src="./assets/images/arrow.svg" alt="" />
+                    </a>
+                  </div>
+                  <div class="bottom-skip">
+                    <a href="#">Skip</a>
+                  </div>
+                </div>
+
+                <div class="verify-num-btn site_btn-bg">
+                  <a href="">Verify Phone Number</a>
+                </div>
+
+                <div class="verify-number">
+                  <div class="verify-number-screen">
+                    <div class="verify-number-heading">
+                      <h3>Confirm Your Number</h3>
+                      <div class="verify-number-close">
+                        <a href="#">
+                          <img src="./assets/images/close-icon.svg" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="verify-number-otp">
+                      <div class="verify-number-otp-desc">
+                        <p>
+                          Enter the code that has been sent to you by text
+                          message to <span>0660624948</span>
                         </p>
                       </div>
+                      <form id="otp-form" class="otp-form">
+                        <div class="otp-inputs">
+                          <div class="site_input-group">
+                            <input
+                              type="number"
+                              class="site_input"
+                              maxlength="1"
+                            />
+                          </div>
+                          <div class="site_input-group">
+                            <input
+                              type="number"
+                              class="site_input"
+                              maxlength="1"
+                            />
+                          </div>
+                          <div class="site_input-group">
+                            <input
+                              type="number"
+                              class="site_input"
+                              maxlength="1"
+                            />
+                          </div>
+                          <div class="site_input-group">
+                            <input
+                              type="number"
+                              class="site_input"
+                              maxlength="1"
+                            />
+                          </div>
+                        </div>
+                      </form>
+                      <div class="send-again">
+                        <div class="dont-revice">
+                          <p>Have you not received a message?</p>
+                        </div>
+                        <div class="send-again-otp">
+                          <a href="#">Send it Again</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="verify-number-btn site_btn-bg">
+                      <a href="#"> Verify Phone Number </a>
                     </div>
                   </div>
-                  <div class="your-profile-right">
-                    <div class="your-profile-right-inner">
-                      <div class="your-profile-post">
-                        <p class="prifile_statistics_text"><span></span></p>
-                        <p class="profile_statistics_subtext">Posts</p>
-                      </div>
-                      <div class="your-profile-post">
-                        <p class="prifile_statistics_text"><span></span></p>
-                        <p class="profile_statistics_subtext">Followers</p>
-                      </div>
-                      <div class="your-profile-post">
-                        <p class="prifile_statistics_text"><span></span></p>
-                        <p class="profile_statistics_subtext">Following</p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-                <div class="profile_bottom-contact_ctas">
-                  <div class="profile_contact-ctas">
-                    <a href="" class="profile_cta profile_cta__contact">
-                      Save Contact</a
-                    >
-                    <a href="" class="profile_cta profile_cta__call">
-                      <img src="./assets/images/call.svg" alt="" />
-                    </a>
-                    <a href="" class="profile_cta profile_cta__msg">
-                      <img src="./assets/images/msg.svg" alt="" />
-                    </a>
-                    <a href="" class="profile_cta profile_cta__mail">
-                      <img src="./assets/images/email.svg" alt="" />
-                    </a>
+              </div>
+
+              <div class="thank-you-message">
+                <div class="thank-you-verify">
+                  <div class="verify-badge">
+                    <img
+                      src="./assets/images/Thank_you_white-and-blue_V2.gif"
+                      alt=""
+                    />
+                  </div>
+                  <div class="verify-text">
+                    <p>The number has been verified</p>
                   </div>
                 </div>
               </div>
-              <div class="bottom_next-prev-btn">
-                <div class="bottom_prev keep_cta">
-                  <a href="#"> Keep This Photo for Avatar </a>
-                </div>
-
-                <div class="bottom-skip">
-                  <a href="#">Choose a New Photo</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="thank-you-message">
-            <div class="thank-you-verify">
-              <div class="verify-badge">
-                <img
-                  src="./assets/images/Thank_you_white-and-blue_V2.gif"
-                  alt=""
-                />
-              </div>
-              <div class="verify-text">
-                <p>The number has been verified</p>
-              </div>
-            </div>
-          </div>
             </div>
 
             <!-- Choose Your Style Screen -->
@@ -1792,367 +1988,33 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        // New scalable and robust onboarding steps function
-        function initOnboardingSteps() {
-          // Configuration for scalability
-          const stepConfig = {
-            animation: {
-              duration: 0.6,
-              ease: "power2.out",
-              stagger: 0.1,
-              transitionDuration: 0.4,
-              transitionEase: "power2.inOut",
-            },
-            selectors: {
-              loader: ".onboarding-frist-loader",
-              letsStart: ".lets-start",
-              startBtn: ".start-onboarding", // Targets the "Let’s Start" button
-              setupProfile: ".setup-profile-main",
-              steps: "[data-step]",
-              step1Subscreen1: ".upload__screen-one",
-              step1Subscreen2: ".upload__screen-two",
-              step1Subscreen3: ".upload__screen-three",
-              progressBar: ".bar-progress",
-              currentStepEl: ".current-step",
-              totalStepsEl: ".total-steps",
-              progressPercentEl: ".progress-percent",
-              continueBtn: ".bottom-continue",
-              backBtn: ".bottom_prev",
-              skipBtn: ".bottom-skip",
-            },
-            stepSubscreens: {
-              // For steps with sub-screens (e.g., Step 1)
-              1: {
-                initial: 1, // Start with subscreen 1
-                screens: [
-                  ".upload__screen-one",
-                  ".upload__screen-two",
-                  ".upload__screen-three",
-                ],
-              },
-              // Add more: e.g., 2: { initial: 1, screens: [...] }
-            },
-          };
-
-          // State management
-          let currentStep = 1;
-                   const setupProfileProgress = document.querySelector(".setup-profile-progress");
-        const totalSteps = parseInt(setupProfileProgress?.getAttribute("data-total-steps")) || 0;
-         
-        if (!totalSteps) {
-          console.warn("Total steps not defined.");
-        } else {
-          console.log("Total steps:", totalSteps);
-        }
-
-
-          const elements = {
-            loader: document.querySelector(stepConfig.selectors.loader),
-            letsStart: document.querySelector(stepConfig.selectors.letsStart),
-            startBtn: document.querySelector(stepConfig.selectors.startBtn),
-            setupProfile: document.querySelector(
-              stepConfig.selectors.setupProfile
-            ),
-            steps: document.querySelectorAll(stepConfig.selectors.steps),
-            progressBar: document.querySelector(
-              stepConfig.selectors.progressBar
-            ),
-            currentStepEl: document.querySelector(
-              stepConfig.selectors.currentStepEl
-            ),
-            totalStepsEl: document.querySelector(
-              stepConfig.selectors.totalStepsEl
-            ),
-            progressPercentEl: document.querySelector(
-              stepConfig.selectors.progressPercentEl
-            ),
-          };
-
-          // Robust check for required elements
-          if (
-            !elements.loader ||
-            !elements.letsStart ||
-            !elements.setupProfile ||
-            !elements.steps.length
-          ) {
-            console.error("Missing required onboarding elements.");
-            return;
-          }
-
-          // Initial setup: Hide everything except loader
-          gsap.set(elements.letsStart, { autoAlpha: 0 });
-          gsap.set(elements.setupProfile, { autoAlpha: 0, display: "none" });
-          gsap.set(elements.steps, { autoAlpha: 0, display: "none" }); // Hide all steps
-
-          // For Step 1 subscreens: Hide all except first
-          const step1Subscreens = stepConfig.stepSubscreens[1]?.screens;
-          if (step1Subscreens) {
-            step1Subscreens.forEach((selector, index) => {
-              const el = document.querySelector(selector);
-              if (el) {
-                gsap.set(el, {
-                  autoAlpha: index === 0 ? 1 : 0,
-                  display: index === 0 ? "block" : "none",
-                });
-              }
-            });
-          }
-
-          // Initial loader to Let's Start animation
-          const initialTimeline = gsap.timeline({
-            defaults: { ease: stepConfig.animation.ease },
-          });
-          initialTimeline
-           initialTimeline
-  .to(elements.loader, { duration: 2, autoAlpha: 1 })
-  .to(elements.loader, {
-    duration: 0.5,
-    autoAlpha: 0,
-    onComplete: () => (elements.loader.style.display = "none"),
-  })
-  .set(elements.letsStart, { autoAlpha: 1 })
-  .from(
-    elements.letsStart.children,
-    {
-      y: 30,
-      opacity: 0,
-      duration: stepConfig.animation.duration,
-      stagger: stepConfig.animation.stagger,
-    },
-    "<0.1"
-  );
-
-          // Event: Start onboarding (Let's Start → Step 1)
-          if (elements.startBtn) {
-            elements.startBtn.addEventListener("click", (e) => {
-              e.preventDefault();
-              transitionToStep(1); // Show Step 1
-            });
-          }
-
-          // Existing sub-screen transitions within Step 1 (unchanged)
-          const proceedToLoadingBtn = document.querySelector(
-            ".proceed-to-loading"
-          );
-          const proceedToErrorBtn = document.querySelector(".proceed-to-error");
-          if (proceedToLoadingBtn) {
-      proceedToLoadingBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const screen2 = document.querySelector('.upload__screen-two');
-        
-        // Set display first, THEN animate
-        screen2.style.display = 'block';
-        
-        gsap.timeline()
-          .to('.upload__screen-one', {
-            autoAlpha: 0,
-            y: -30,
-            duration: 0.4,
-            onComplete: () => {
-              document.querySelector('.upload__screen-one').style.display = 'none';
-            }
-          })
-          .set(screen2, { autoAlpha: 0, y: 30 })
-          .to(screen2, {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.6
-          });
-      });
-    }
-
-if (proceedToErrorBtn) {
-      proceedToErrorBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const screen3 = document.querySelector('.upload__screen-three');
-        
-        // KEY FIX: Set display AND ensure visibility styles
-        screen3.style.display = 'block';
-        screen3.style.visibility = 'visible';
-        
-        gsap.timeline()
-          .to('.upload__screen-two', {
-            autoAlpha: 0,
-            y: -30,
-            duration: 0.4,
-            onComplete: () => {
-              document.querySelector('.upload__screen-two').style.display = 'none';
-            }
-          })
-          .set(screen3, { 
-            autoAlpha: 0,  // This sets opacity: 0 AND visibility: hidden
-            y: 30 
-          })
-          .to(screen3, {
-            autoAlpha: 1,  // This sets opacity: 1 AND visibility: visible
-            y: 0,
-            duration: 0.6,
-            ease: 'power2.out'
-          });
-      });
-    }
-
-function transitionToStep(stepIndex) {
-  if (stepIndex < 1 || stepIndex > totalSteps) {
-    console.warn(`Invalid step: ${stepIndex}`);
-    return;
-  }
-
-  const targetStep = Array.from(elements.steps).find(
-    (step) => parseInt(step.getAttribute("data-step")) === stepIndex
-  );
-  if (!targetStep) {
-    console.warn(`Step ${stepIndex} not found.`);
-    return;
-  }
-
-  // Only hide current step if it's different from the target step
-  if (currentStep !== stepIndex) {
-    const currentStepEl = Array.from(elements.steps).find(
-      (step) => parseInt(step.getAttribute("data-step")) === currentStep
-    );
-    if (currentStepEl) {
-      gsap.to(currentStepEl.children, {
-        y: -30,
-        opacity: 0,
-        duration: stepConfig.animation.transitionDuration,
-        stagger: -0.05,
-      });
-      gsap.to(currentStepEl, {
-        autoAlpha: 0,
-        duration: 0,
-        onComplete: () => (currentStepEl.style.display = "none"),
-      });
-    }
-  }
-
-  // Show target step
-  elements.setupProfile.style.display = "block"; // Ensure parent is visible
-  gsap.set(elements.setupProfile, { autoAlpha: 1 });
-  targetStep.style.display = "block";
-  gsap.set(targetStep, { autoAlpha: 1 });
-  gsap.set(targetStep.children, {
-    autoAlpha: 0,
-    y: 30,
+          const loader = document.querySelector(".onboarding-frist-loader");
+          const letsStart = document.querySelector(".lets-start");
+ 
+ 
+  const initialTimeline = gsap.timeline({
+    defaults: { ease: "power2.out" },
   });
-
-  const stepTimeline = gsap.timeline({
-    defaults: { ease: stepConfig.animation.transitionEase },
-  });
-  stepTimeline
-    .to(
-      targetStep.children,
+ 
+  initialTimeline
+    .to(loader, { duration: 2, autoAlpha: 1 })
+    .to(loader, {
+      duration: 0.5,
+      autoAlpha: 0,
+      onComplete: () => (loader.style.display = "none"),
+    })
+    .set(letsStart, { autoAlpha: 1 })
+    .from(
+      ".lets-start > *",
       {
-        y: 0,
-        autoAlpha: 1,
-        duration: stepConfig.animation.duration,
-        stagger: stepConfig.animation.stagger,
+        y: 30,
+        opacity: 0,
+        duration: 0.6,
+        stagger: 0.1,
       },
       "<0.1"
-    )
-    .call(() => {
-      currentStep = stepIndex;
-      updateProgress();
-      // Handle initial subscreen for this step if applicable
-      const subscreens = stepConfig.stepSubscreens[stepIndex];
-      if (subscreens && subscreens.initial) {
-        console.log(
-          `Showing initial subscreen ${subscreens.initial} for Step ${stepIndex}`
-        );
-      }
-    });
-
-  // Hide Let's Start if transitioning from it
-  if (elements.letsStart.style.display !== "none") {
-    gsap.to(elements.letsStart.children, {
-      y: -30,
-      opacity: 0,
-      duration: stepConfig.animation.transitionDuration,
-      stagger: -0.05,
-    });
-    gsap.to(elements.letsStart, {
-      autoAlpha: 0,
-      duration: 0,
-      onComplete: () => (elements.letsStart.style.display = "none"),
-    });
-  }
-}
-          // Function to update progress bar
-          function updateProgress() {
-            const percent = Math.round((currentStep / totalSteps) * 100);
-            if (elements.progressBar)
-              gsap.to(elements.progressBar, {
-                scaleX: percent / 100,
-                duration: 0.5,
-                ease: "power2.out",
-              });
-            if (elements.currentStepEl)
-              elements.currentStepEl.textContent = currentStep;
-            if (elements.totalStepsEl)
-              elements.totalStepsEl.textContent = totalSteps;
-            if (elements.progressPercentEl)
-              elements.progressPercentEl.textContent = `${percent}%`;
-          }
-
-          // Navigation event delegation (scalable for all steps)
-          document.addEventListener("click", (e) => {
-            if (e.target.closest(stepConfig.selectors.continueBtn)) {
-              e.preventDefault();
-              if (currentStep < totalSteps) transitionToStep(currentStep + 1);
-            } else if (e.target.closest(stepConfig.selectors.backBtn)) {
-              e.preventDefault();
-              if (currentStep > 1) transitionToStep(currentStep - 1);
-            } else if (e.target.closest(stepConfig.selectors.skipBtn)) {
-              e.preventDefault();
-              // Skip: Optionally advance or just log (extend as needed)
-              console.log(`Skipped Step ${currentStep}`);
-              if (currentStep < totalSteps) transitionToStep(currentStep + 1);
-            }
-          });
-
-          // Add this after the existing navigation event delegation
-document.addEventListener("click", (e) => {
-  if (e.target.closest(stepConfig.selectors.continueBtn)) {
-    e.preventDefault();
-    if (currentStep < totalSteps) transitionToStep(currentStep + 1);
-  } else if (e.target.closest(stepConfig.selectors.backBtn)) {
-    e.preventDefault();
-    if (currentStep > 1) transitionToStep(currentStep - 1);
-  } else if (e.target.closest(stepConfig.selectors.skipBtn)) {
-    e.preventDefault();
-    console.log(`Skipped Step ${currentStep}`);
-    if (currentStep < totalSteps) transitionToStep(currentStep + 1);
-  } else if (e.target.closest('.goto-step-2')) {
-    // NEW: Handle goto step 2 button
-    e.preventDefault();
-    transitionToStep(2);
-  }
-});
-          // Add this after the existing navigation event delegation
-document.addEventListener("click", (e) => {
-  if (e.target.closest(stepConfig.selectors.continueBtn)) {
-    e.preventDefault();
-    if (currentStep < totalSteps) transitionToStep(currentStep + 1);
-  } else if (e.target.closest(stepConfig.selectors.backBtn)) {
-    e.preventDefault();
-    if (currentStep > 1) transitionToStep(currentStep - 1);
-  } else if (e.target.closest(stepConfig.selectors.skipBtn)) {
-    e.preventDefault();
-    console.log(`Skipped Step ${currentStep}`);
-    if (currentStep < totalSteps) transitionToStep(currentStep + 1);
-  } else if (e.target.closest('.goto-step-3')) {
-    // NEW: Handle goto step 3 button
-    e.preventDefault();
-    transitionToStep(3);
-  }
-});
-
-          // Initial progress setup
-          updateProgress();
-        }
-
-        // Initialize the new function
-        initOnboardingSteps();
+    );
+ 
 
         // Existing functions (unchanged)
         function lightDarkScreen() {
