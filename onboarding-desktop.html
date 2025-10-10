@@ -15,7 +15,51 @@
             <span>elnk</span>
           </h1>
         </div>
- <div class="onboarding__lets-start" data-lets-start-show>
+
+        <div class="onboarding__steps">
+          <div class="setup-profile-main">
+            <div class="onboarding__progress e-link_desktop-container">
+              <div class="setup-profile-bg">
+                <img
+                  decoding="async"
+                  src="./assets/images/desktop-bg.png"
+                  alt=""
+                />
+              </div>
+              <div class="e-link_desktop--top" data-show>
+                <div class="elnk__logo site_flex site_align-center">
+                  <h2 class="logo">elnk</h2>
+                  <div class="close__cta">
+                    <button class="close__btn">
+                      <img
+                        decoding="async"
+                        src="./assets/images/close-icon.svg"
+                        alt="Close Icon"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="setup-profile-progress">
+                <div class="setup-profile-progress-bg start-profile">
+                  <div class="setup-profile-progress-inner">
+                    <div class="bar">
+                      <span class="bar-progress"></span>
+                    </div>
+                    <div class="step-count">
+                      <div class="setps">
+                        <p>Top Section <span>1</span>/<span>9</span> steps</p>
+                      </div>
+                      <div class="progress">
+                        <p><span>0%</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="onboarding__lets-start" data-show>
               <div
                 class="lets-start__inner site_flex site_align-center site_justify-center site_flex-column"
                 data-stagger-animation
@@ -49,33 +93,203 @@
                 </div>
               </div>
             </div>
-        <div class="e-link_desktop-container">
-          <div class="setup-profile-main">
-            <div class="setup-profile-bg">
-              <img
-                decoding="async"
-                src="./assets/images/desktop-bg.png"
-                alt=""
-              />
-            </div>
-            <div class="setup-profile-progress">
-              <div class="setup-profile-progress-bg start-profile">
-                <div class="setup-profile-progress-inner">
-                  <div class="bar">
-                    <span class="bar-progress"></span>
-                  </div>
-                  <div class="step-count">
-                    <div class="setps">
-                      <p>Top Section <span>1</span>/<span>9</span> steps</p>
+
+            <div class="main-screen site_flex site_align-center site_justify-center site_flex-column">
+              <div class="common-style-heading">
+                <h2>Great, Now Complete Your Profile</h2>
+                <p>
+                  Add your key details, one by one, from your name to your
+                  contact information, to make your card feel complete and ready
+                  to share.
+                </p>
+              </div>
+              <div class="desktop-mockup-screen">
+                <div class="desktop-mockup-img">
+                  <img src="./assets/images/mockup.png" alt="" />
+
+                  <div class="desktop-main-content">
+                    <div class="desktop-your-profile-preview">
+                      <div class="profile__image">
+                        <picture>
+                          <source
+                            media="(min-width: 992px)"
+                            srcset="./assets/images/demo-profile-image.png"
+                          />
+                          <img
+                            src="./assets/images/demo-profile-image.png"
+                            alt="Profile Photo"
+                          />
+                        </picture>
+                      </div>
+                      <div class="your-profile-preview">
+                        <div class="preview_container">
+                          <div class="your-profile-top">
+                            <div class="your-profile-left">
+                              <div class="your-profile-detail">
+                                <div class="your-profile-img">
+                                  <img
+                                    src="./assets/images/image-placeholder.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="your-profile-text">
+                                  <h2 class="your-profile-name">
+                                    <span id="displayName_actual" data-step-change="1"></span>
+                                    <!-- <img src="./assets/images/verify-badge.svg" alt=""> -->
+                                  </h2>
+                                  <p class="your-profile-role">
+                                    <span id="displayRole__actual" data-step-change="2"></span>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="your-profile-right">
+                              <div class="your-profile-right-inner">
+                                <div class="your-profile-post">
+                                  <p class="prifile_statistics_text">
+                                    <span></span>
+                                  </p>
+                                  <p class="profile_statistics_subtext">
+                                    Posts
+                                  </p>
+                                </div>
+                                <div class="your-profile-post">
+                                  <p class="prifile_statistics_text">
+                                    <span></span>
+                                  </p>
+                                  <p class="profile_statistics_subtext">
+                                    Followers
+                                  </p>
+                                </div>
+                                <div class="your-profile-post">
+                                  <p class="prifile_statistics_text">
+                                    <span></span>
+                                  </p>
+                                  <p class="profile_statistics_subtext">
+                                    Following
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="profile_bottom-contact_ctas">
+                            <div class="profile_contact-ctas">
+                              <a
+                                href=""
+                                class="profile_cta profile_cta__contact"
+                              >
+                                Save Contact
+                              </a>
+                              <a href="" class="profile_cta profile_cta__call">
+                                <img src="./assets/images/call.svg" alt="" />
+                              </a>
+                              <a href="" class="profile_cta profile_cta__msg">
+                                <img src="./assets/images/msg.svg" alt="" />
+                              </a>
+                              <a href="" class="profile_cta profile_cta__mail">
+                                <img src="./assets/images/email.svg" alt="" />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="progress">
-                      <p><span>0%</span></p>
+                    <div class="content__text">
+                      <h3>Bio</h3>
                     </div>
                   </div>
                 </div>
+                <div class="image-picker-popup" id="imagePickerPopup">
+                  <div class="popup-content">
+                    <div class="upload-image-input">
+                      <div class="image-upload">
+                        <input
+                          type="file"
+                          class="file-input"
+                          accept="image/*"
+                        />
+                      </div>
+                      <div class="upload-content" id="uploadContent">
+                        <div class="upload-icon">
+                          <img
+                            decoding="async"
+                            src="./assets/images/upload-ico-onbdg-desktop.png"
+                            alt=""
+                          />
+                        </div>
+                        <h3 class="upload-title">
+                          Add your avatar photo
+                        </h3>
+                        <p class="upload-description">
+                          <span>Click to Upload</span>
+                          or Drag & Drop it. For the best result, upload a
+                          high-quality photo or video.
+                        </p>
+                        <p>
+                          <span class="upload-specs">Min Size:</span> 400x400
+                        </p>
+                        
+                      </div>
+                    </div>
+                    
+                    <div class="or-separator"> <span class="separator__text"> or </span></div>
+                    <div class="site_input-group">
+                      <input
+                        type="text"
+                        class="site_input site_actual_input"
+                        placeholder="Import from URL"
+                      />
+                      <label for="Full Name">Import from URL</label>
+                    </div>
+                    <div class="upload-options site_btn-bg site_glow-btn">
+           
+                      <button class="popup_upload-btn"
+                        >Upload</button
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Add a container for dynamic input -->
+<div class="dynamic-input-container" style="margin-top: 20px; display: none;">
+  <div class="site_input-group">
+    <input type="text" class="site_input site_actual_input dynamic-input" placeholder="Enter text" />
+    <label for="dynamic-input"></label>
+  </div>
+</div>
               </div>
             </div>
-           
+
+            <div class="screen-btns">
+              <div class="screen-btns-left">
+                <div class="site_btn-bg site_glow-btn">
+                  <button>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.25 12L3.75 12M3.75 12L10.5 5.25M3.75 12L10.5 18.75"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="screen-btns-right site_flex">
+                <div class="site_btn-bg">
+                  <button>Crop Current Photo</button>
+                </div>
+                <div class="site_btn-bg site_glow-btn" data-step-change data-step="0" >
+                  <button class="chagne__steps"> <span class="step__text">Continue with this Photo</span></button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
