@@ -36,65 +36,13 @@
 }
 
 
-.verify-email-close {
-    position: absolute;
-    top: 0;
-    right: -50px;
-    height: 44px;
-    width: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--black);
-    border-radius: 10px;
-    padding: 18px 16px;
-    flex: fit-content;
-    color: var(--white);
-    gap: 10px;
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 25%), inset 0 0 5px rgba(255, 255, 255, 25%);
-}
-
-.verify-email-screen{
-    padding: 40px;
-    border-radius: 25px;
-    backdrop-filter: blur(132px);
-    background: var(--White-Transparency-White-5, #FFFFFF0D);
-    max-width: 500px;
-    margin: 0 auto;
-}
-.verify-email-heading {
-    position: relative;
-    margin-bottom: 50px;
-    text-align: center;
-}
-.verify-email-heading h3{
-    font-size: var(--f-24);
-    margin-bottom: 10px;
-}
-
-.verify-email-otp {
-    margin-bottom: 50px;
-}
-
-.verify-email-otp-desc p {
-    opacity: 0.8;
-    font-weight: 300;
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-
-.verify-email-popup{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    max-width: 600px;
-    z-index: 1;
-}
+.verify-email-close { position: absolute; top: 0; right: -50px; height: 44px; width: 44px; display: flex; justify-content: center; align-items: center; background: var(--black); border-radius: 10px; padding: 18px 16px; flex: fit-content;color: var(--white); gap: 10px;backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px); box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 25%), inset 0 0 5px rgba(255, 255, 255, 25%); }
+.verify-email-screen{ padding: 40px; border-radius: 25px; backdrop-filter: blur(132px); background: var(--White-Transparency-White-5, #FFFFFF0D); max-width: 500px; margin: 0 auto; }
+.verify-email-heading { position: relative; margin-bottom: 50px; text-align: center; }
+.verify-email-heading h3{ font-size: var(--f-24); margin-bottom: 10px; }
+.verify-email-otp { margin-bottom: 50px; }
+.verify-email-otp-desc p { opacity: 0.8; font-weight: 300; margin-bottom: 25px; text-align: center; }
+.verify-email-popup{ position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%;  max-width: 600px; z-index: 1; }
 
 .thank-you-message{display: none;position: fixed;top: 0; left: 0;width: 100%;height: 100%;background: #FFFFFF05;backdrop-filter: blur(20px);z-index: 1000;justify-content: center;align-items: center;}
 .thank-you-verify{display: flex;flex-direction: column;justify-content: center;align-items: center;height: 100%;}
