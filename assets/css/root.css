@@ -73,58 +73,32 @@
     --color-option:linear-gradient(90deg, #B8E8FF 0%, #B8C5FE 100%);
 }
 
-
-
-/* Common CSS */
 * {margin: 0px;padding: 0px;box-sizing: border-box;}
 
-body {background-color: var(--black);font-family: 'Switzer';color: #fff;font-size: var(--f-14);transition: 0.5s;}
+body {background-color:var(--black); background-repeat: no-repeat; background-position: center center; background-size: 0px; font-family: 'Switzer';color: #fff;font-size: var(--f-14);transition: 1s all ease; transition-delay: 2.5s;}
+body.js {background-image:url(../images/ocean-noir-bg-site.png); background-size: 1200px;}
 body.light-mode{background: var(--white);}
 body.light-mode :is(h1, h2, h3, h4, h5, h6, p){color: var(--black);}
 body::before{content: "";width: 1139px;height: 657px; scale: 0;   transition: 1s all ease;  position: fixed;top: -587px;right: -740px;filter: blur(130px);background: linear-gradient(270deg, #0D1B2A 0%, #1B263B 27.88%, #415A77 62.98%, #778DA9 100%);border-radius: 500px; z-index: -99999; pointer-events: none; user-select: none; -webkit-user-select: none;}
 body::after{content: "";width: 1139px;height: 642px; scale: 0;   transition: 1s all ease;  position: fixed;bottom: -545px;left: -600px;filter: blur(130px);background: linear-gradient(270deg, #0D1B2A 0%, #1B263B 27.88%, #415A77 62.98%, #778DA9 100%);border-radius: 500px; z-index: -99999; pointer-events: none; user-select: none; -webkit-user-select: none;}
-body.js::before,
-body.js::after{scale: 1;}
-h1,
-h2,
-h3,
-h4,
-h5,
-p {margin: 0;}
+body.js::before, body.js::after{scale: 1;}
+h1, h2, h3, h4, h5, p {margin: 0;}
 ul {margin: 0;padding: 0;}
 li {margin: 0;padding: 0;list-style: none;}
-video,
-iframe {width: 100%;}
+video, iframe {width: 100%;}
 a {text-decoration: none;}
 input {outline: none;}
 button {cursor: pointer;border: none;outline: none;font-family: 'Switzer';}
 img{max-width: 100%;}
-
-h2{
-    font-size: var(--f-24);
-}
-p{
-    font-size: var(--f-14);
-}
+h2{ font-size: var(--f-24); }
+p{ font-size: var(--f-14); }
 
 
-button{
-    background: transparent;
-    outline: none;
-}
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
-
-/* Firefox */
+button{ background: transparent; outline: none; }
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
 input[type=number] {-moz-appearance: textfield;}
+input:-webkit-autofill + label { color: #333 !important; }
 
-
-/* If you have a label above input */
-input:-webkit-autofill + label {
-    color: #333 !important; /* Change label color when autofilled */
-}
 
 
 

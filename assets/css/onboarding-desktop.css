@@ -8,10 +8,11 @@
 /*----------------------
   Let's Start Section
   ----------------*/
-.onboarding__lets-start{height: 100vh;}
-.lets-start__content-title{max-width: 380px; font-size: var(--f-32); font-weight: 500; line-height: 1;}
-.lets-start__btn { width: 100%; max-width: 410px;  margin-bottom: 20px;}
-.lets-start__inner { text-align: center; gap: 32px; }
+  .lets-start__content-title{max-width: 380px; font-size: var(--f-32); font-weight: 500; line-height: 1;}
+  .lets-start__btn { width: 100%; max-width: 410px;  margin-bottom: 20px;}
+
+.lets-start__inner { height: 100vh; text-align: center; gap: 32px; }
 .lets-start__content { margin-bottom: 20px; gap:16px; }
 .lets-start__content-desc, .have-acc__text { color: #ffffff50; }
 .have-acc__anchor{color:#fff; margin-left: 6px;}
+[data-lets-start-show]{display: none;}
