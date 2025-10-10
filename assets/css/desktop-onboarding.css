@@ -1,9 +1,9 @@
-.onboarding-section-main-desktop .bar{
+.bar{
     background-repeat: repeat;
     background-size: contain;
 }
 
-.onboarding-section-main-desktop .setup-profile-bg{
+.setup-profile-bg{
     top: -30%;
     left: 50%;
     transform: translateX(-50%);
