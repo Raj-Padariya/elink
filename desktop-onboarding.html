@@ -172,6 +172,40 @@
                        
                     </div>
                 </div>
+
+
+                <div class="profile-previw-popup">
+                    <div class="profile-previw-popup-close">
+                        <div class="profile-previw-popup-inner">
+                            <div class="example-close">
+                                <a href="">
+                                    <img src="./assets/images/close-icon.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="profile-previw-popup-example">
+                                <div class="profile-previw-popup-heading">
+                                    <h3>Examples</h3>
+                                </div>
+                                <div class="profile-previw-popup-exampel-content">
+                                    <div class="profile-previw-popup-exampel-img">
+                                        <img src="./assets/images/example-01.png" alt="">
+                                    </div>
+                                    <div class="profile-previw-popup-exampel-img">
+                                        <img src="./assets/images/example-02.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-previw-popup-mokup-scroll">
+                                <div class="profile-previw-popup-phone">
+                                    <img src="./assets/images/E-Link-Phone-Block.png" alt="">
+                                    <div class="profile-previw-popup-phone-content">
+                                        <img src="./assets/images/Elnk-Entreprenuer-scroll-1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -199,6 +233,35 @@
         closeBtn.addEventListener("click", (e) => {
             e.preventDefault();
             sidePopup.classList.add("hide");
+        });
+        });
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+        const exampleBtn = document.querySelector('.screen-btns-left a'); // "Examples" button
+        const profilePopup = document.querySelector('.profile-previw-popup');
+        const popupClose = document.querySelector('.profile-previw-popup .example-close a');
+
+        // Hide by default
+        profilePopup.classList.remove('active');
+
+        // Open popup smoothly
+        exampleBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            profilePopup.classList.add('active');
+        });
+
+        // Close popup smoothly
+        popupClose.addEventListener('click', (e) => {
+            e.preventDefault();
+            profilePopup.classList.remove('active');
+        });
+
+        // Optional: Close popup when clicking outside the inner box
+        profilePopup.addEventListener('click', (e) => {
+            if (e.target === profilePopup) {
+            profilePopup.classList.remove('active');
+            }
         });
         });
     </script>
