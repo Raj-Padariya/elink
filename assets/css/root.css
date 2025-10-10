@@ -9,7 +9,7 @@
 }
 
 @font-face {
-    font-family: 'Switzer-Regular';
+    font-family: 'Switzer';
     src: url('../fonts/Switzer-Regular.woff2') format('woff2'),
         url('../fonts/Switzer-Regular.woff') format('woff');
     font-weight: 400;
@@ -76,7 +76,7 @@
 * {margin: 0px;padding: 0px;box-sizing: border-box;}
 
 body {background-color:var(--black); background-repeat: no-repeat; background-position: center center; background-size: 0px; font-family: 'Switzer';color: #fff;font-size: var(--f-14);transition: 1s all ease; transition-delay: 2.5s;}
-body.js {background-image:url(../images/ocean-noir-bg-site.png); background-size: 1200px;}
+body.js {background-image:url(../images/ocean-noir-bg-site.png); background-size: 1200px; background-attachment: fixed;}
 body.light-mode{background: var(--white);}
 body.light-mode :is(h1, h2, h3, h4, h5, h6, p){color: var(--black);}
 body::before{content: "";width: 1139px;height: 657px; scale: 0;   transition: 1s all ease;  position: fixed;top: -587px;right: -740px;filter: blur(130px);background: linear-gradient(270deg, #0D1B2A 0%, #1B263B 27.88%, #415A77 62.98%, #778DA9 100%);border-radius: 500px; z-index: -99999; pointer-events: none; user-select: none; -webkit-user-select: none;}
@@ -89,7 +89,8 @@ video, iframe {width: 100%;}
 a {text-decoration: none;}
 input {outline: none;}
 button {cursor: pointer;border: none;outline: none;font-family: 'Switzer';}
-img{max-width: 100%;}
+video, img{max-width: 100%; display: flex;}
+picture{display: flex;}
 h2{ font-size: var(--f-24); }
 p{ font-size: var(--f-14); }
 
@@ -129,9 +130,9 @@ input:-webkit-autofill + label { color: #333 !important; }
 .e-link_container {max-width: 470px;margin: 0 auto;padding: 15px;}
 
 .site_btn-bg {background: var(--gradient-secondry);backdrop-filter: blur(30px);border-radius: var(--radius);display: flex;align-items: center;justify-content: center;padding: 1px;}
-.site_btn-bg a {background-color: var(--black);border-radius: var(--radius);color: var(--white);padding: 18px;display: flex;align-items: center;justify-content: center;width: 100%;height: 100%; gap: 10px;}
-.site_btn-bg a img {width: 16px;}
-.site_btn-bg a:hover {color: var(--white);}
+.site_btn-bg :is(a, button) {background-color: var(--black);border-radius: var(--radius);color: var(--white);padding: 18px;display: flex;align-items: center;justify-content: center;width: 100%;height: 100%; gap: 10px;}
+.site_btn-bg :is(a, button) img {width: 16px;}
+.site_btn-bg :is(a, button):hover {color: var(--white);}
 .site_btn-bg:not(.site_glow-btn):hover {background: var(--gradient-primary);box-shadow: var(--shadow-one);}
 
 
@@ -168,3 +169,17 @@ input:-webkit-autofill + label { color: #333 !important; }
 .light-mode .dropdown-btn-bg button{border: 1px solid #00000030;}
 .light-mode .color-radio-choose{border: 1.5px solid #FFFFFF;box-shadow: inset 0px 4px 2px 0px #0000000D,  inset 0px 8px 4px 0px #0000001A,  inset 0px -4px 4px 0px #FFFFFF1A, 0px 3px 4px 0px #0000001A;       }
 .light-mode .color-radio-choose-bg{background: linear-gradient(118.8deg, rgba(0, 0, 0, 0.02) -45.59%, rgba(0, 0, 0, 0.2) 54.83%, rgba(0, 0, 0, 0.02) 165.4%);}
+
+
+
+
+
+
+/*-----------------------------------------    
+  Top Elnk Logo And Close Icon Styles
+  --------------------------*/
+
+  .elnk__logo{justify-content: space-between; width: 100%;}
+  .progress__on-start :is(.setup-profile-bg, .setup-profile-progress){display: none;}
+  .onboarding__progress{gap:24px;}
+  .e-link_desktop--top { margin-top: 36px; }
