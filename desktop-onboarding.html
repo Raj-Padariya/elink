@@ -147,14 +147,26 @@
                     </div>
                 </div>
 
+
+                <div class="upload-photo-side-pop">
+                    <div class="upload-photo-side-pop-inner">
+                        <div class="example-close">
+                            <a href="">
+                                <img src="./assets/images/close-icon.svg" alt="">
+                            </a>
+                        </div>
+                        <img src="./assets/images/exampe-img.png" alt="">
+                    </div>
+                </div>
+
                 <div class="screen-btns">
                     <div class="screen-btns-left">
-                        <div class="site_btn-bg">
-                            <a href="" >Examples</a>
+                        <div class="site_btn-bg site_glow-btn">
+                            <a href=""> <img src="./assets/images/example-vector.svg" alt="">Examples</a>
                         </div>
                     </div>
                     <div class="screen-btns-right">
-                        <div class="site_btn-bg">
+                        <div class="site_btn-bg site_glow-btn">
                              <a href="">Add Photo or Video</a>
                         </div>
                        
@@ -174,5 +186,22 @@
     <script src="./assets/js/lenis.min.js" defer></script>
     <script src="./js/ScrollTrigger.min.js" defer></script>
     <script src="./js/app.js" defer></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const sidePopup = document.querySelector(".upload-photo-side-pop");
+        const closeBtn = document.querySelector(".example-close a");
+
+        // Popup open by default
+        sidePopup.classList.remove("hide");
+
+        // Close popup on click
+        closeBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            sidePopup.classList.add("hide");
+        });
+        });
+    </script>
+
 </body>
 </html>
