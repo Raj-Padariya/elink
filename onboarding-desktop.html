@@ -94,7 +94,9 @@
               </div>
             </div>
 
-            <div class="main-screen site_flex site_align-center site_justify-center site_flex-column">
+            <div
+              class="main-screen site_flex site_align-center site_justify-center site_flex-column"
+            >
               <div class="common-style-heading">
                 <h2>Great, Now Complete Your Profile</h2>
                 <p>
@@ -134,11 +136,17 @@
                                 </div>
                                 <div class="your-profile-text">
                                   <h2 class="your-profile-name">
-                                    <span id="displayName_actual" data-step-change="1"></span>
+                                    <span
+                                      id="displayName_actual"
+                                      data-step-change="1"
+                                    ></span>
                                     <!-- <img src="./assets/images/verify-badge.svg" alt=""> -->
                                   </h2>
                                   <p class="your-profile-role">
-                                    <span id="displayRole__actual" data-step-change="2"></span>
+                                    <span
+                                      id="displayRole__actual"
+                                      data-step-change="2"
+                                    ></span>
                                   </p>
                                 </div>
                               </div>
@@ -217,9 +225,7 @@
                             alt=""
                           />
                         </div>
-                        <h3 class="upload-title">
-                          Add your avatar photo
-                        </h3>
+                        <h3 class="upload-title">Add your avatar photo</h3>
                         <p class="upload-description">
                           <span>Click to Upload</span>
                           or Drag & Drop it. For the best result, upload a
@@ -228,34 +234,42 @@
                         <p>
                           <span class="upload-specs">Min Size:</span> 400x400
                         </p>
-                        
                       </div>
                     </div>
-                    
-                    <div class="or-separator"> <span class="separator__text"> or </span></div>
-                    <div class="site_input-group">
+
+                    <div class="or-separator">
+                      <span class="separator__text"> or </span>
+                    </div>
+                    <div class="site_input-group onboarding__input-group">
                       <input
                         type="text"
-                        class="site_input site_actual_input"
+                        class="site_input site_actual_input onboarding__input"
                         placeholder="Import from URL"
                       />
                       <label for="Full Name">Import from URL</label>
                     </div>
                     <div class="upload-options site_btn-bg site_glow-btn">
-           
-                      <button class="popup_upload-btn"
-                        >Upload</button
-                      >
+                      <button class="popup_upload-btn">Upload</button>
                     </div>
                   </div>
                 </div>
                 <!-- Add a container for dynamic input -->
-<div class="dynamic-input-container" style="margin-top: 20px; display: none;">
-  <div class="site_input-group">
-    <input type="text" class="site_input site_actual_input dynamic-input" placeholder="Enter text" />
-    <label for="dynamic-input"></label>
-  </div>
-</div>
+                <div
+                  class="dynamic-input-container"
+                  style="margin-top: 20px; display: none"
+                >
+                  <span style="margin-bottom: 12px; display: flex"
+                    >Add your full name</span
+                  >
+                  <div class="site_input-group onboarding__input-group">
+                    <input
+                      type="text"
+                      class="site_input site_actual_input dynamic-input onboarding__input"
+                      placeholder="Enter text"
+                    />
+                    <label for="dynamic-input"></label>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -285,8 +299,14 @@
                 <div class="site_btn-bg">
                   <button>Crop Current Photo</button>
                 </div>
-                <div class="site_btn-bg site_glow-btn" data-step-change data-step="0" >
-                  <button class="chagne__steps"> <span class="step__text">Continue with this Photo</span></button>
+                <div
+                  class="site_btn-bg site_glow-btn"
+                  data-step-change
+                  data-step="0"
+                >
+                  <button class="chagne__steps">
+                    <span class="step__text">Continue with this Photo</span>
+                  </button>
                 </div>
               </div>
             </div>
