@@ -1,0 +1,124 @@
+.onboarding-section-main-desktop .bar{
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+.onboarding-section-main-desktop .setup-profile-bg{
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.e-link_desktop-container{
+    padding: 0 35px;
+}
+
+.common-style-heading{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.common-style-heading h2{
+    font-size: var(--f-24);
+    margin-bottom: 15px;
+    font-weight: var(--w-500);
+}
+
+.common-style-heading p{
+    font-size: var(--f-12);
+    opacity: 0.5;
+}
+
+
+/* In Mockup screen Css */
+.desktop-mockup-img{
+    /* text-align: center; */
+    position: relative;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+/* .desktop-mockup-img img{
+    background-color: var(--black);
+} */
+.desktop-mockup-screen{
+    position: relative;
+}
+.desktop-main-content{
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    padding: 0 35px;
+    z-index: 1;
+}
+
+.import_photo-url{
+    margin-bottom: 20px;
+}
+
+.desktop-your-profile-preview .your-profile-preview{
+    background: #FFFFFF1A;
+    padding: 13px;
+    border-radius: 24px;
+}
+
+.desktop-your-profile-preview{
+    background: linear-gradient(93.19deg, rgba(255, 255, 255, 0.1) 1.47%, rgba(255, 255, 255, 0.04) 98.25%);
+    border-radius: 24px;
+    padding: 1px;
+}
+.desktop-your-profile-preview .your-profile-img {
+    background: linear-gradient(90deg, #7BD1FF 0%, #7E9AFE 100% 100%);
+    padding: 2px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.desktop-your-profile-preview .your-profile-top{
+    box-shadow: none;
+    padding: 0;
+}
+
+.desktop-your-profile-preview .profile_cta__contact, 
+.desktop-your-profile-preview .profile_cta__call, 
+.desktop-your-profile-preview .profile_cta__msg, 
+.desktop-your-profile-preview .profile_cta__mail {
+    opacity: 1;
+}
+
+.desktop-your-profile-preview .preview_container{
+    margin-bottom: 0;
+}
+
+.desktop-your-profile-preview .profile_cta{
+    background-color: #FFFFFF1A;
+    box-shadow: none;
+    border: 1px solid #FFFFFF1A;
+    opacity: 0.5;
+    padding: 13px;
+}
+
+.desktop-your-profile-preview .your-profile-right-inner{
+    gap: 10px;
+}
+
+.onboarding-section-main-desktop .image-upload{
+    border: 2px dashed #FFFFFF1A;
+    height: 280px;
+}
+
+.upload-description span{
+    opacity: 1;
+    font-weight: var(--w-500);}
+
+
+
+
+.screen-btns{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    bottom: 100px;
+    left: 0;
+    padding: 0 35px;
+}
