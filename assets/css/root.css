@@ -181,5 +181,6 @@ input:-webkit-autofill + label { color: #333 !important; }
 
   .elnk__logo{justify-content: space-between; width: 100%;}
   .progress__on-start :is(.setup-profile-bg, .setup-profile-progress){display: none;}
-  .onboarding__progress{gap:24px;}
+  .onboarding__progress{gap:24px; position: fixed; width: 100%; z-index: 9;}
+  .onboarding__progress .setup-profile-progress{padding: 0;}
   .e-link_desktop--top { margin-top: 36px; }

@@ -47,4 +47,4 @@
 .site_input-group-dropdown.active {z-index: 2;}
 .site_input {caret-color: #26B7FF;}
 ::placeholder{opacity: 0;transition: 0.3s;}
-.site_input-group.focus ::placeholder{color: var(--white) !important;opacity: 1;}
+.site_input-group.focus:not(.onboarding__input-group.focus) ::placeholder{color: var(--white) !important;opacity: 1;}

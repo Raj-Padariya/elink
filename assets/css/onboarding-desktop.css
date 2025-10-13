@@ -5,6 +5,16 @@
 .onboarding__loader{display: flex;align-items: center;justify-content: center;height: 100vh;}
 .onboarding__logo{font-size:50px;}
 
+.close__cta .site_btn-bg.site_glow-btn .close__btn {
+  border: 1px solid #ffffff30;
+  background: #FFFFFF1A;
+  box-shadow: none;
+}
+
+.close__cta .site_btn-bg.site_glow-btn::after, .close__cta .site_btn-bg.site_glow-btn::before {
+  display: none;
+}
+
 /*----------------------
   Let's Start Section
   ----------------*/
@@ -30,6 +40,40 @@
   min-height: 100vh;
 }
 
+.onbording__screen-photo { width: 100%;  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;}
+.onbording__screen-photo .desktop-main-content{top: 20px; padding: 0 21px; z-index: -1; height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;}
+
+.onbording__screen-photo .desktop-your-profile-preview .your-profile-preview{position: absolute;
+  bottom: 0;
+  width: calc(100% - 30px);}
+.onbording__screen-photo .desktop-mockup-img{overflow: hidden;}
+.onbording__screen-photo .profile__image {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.profile__image img {
+    object-fit: cover;
+  width: 100%;
+}
+.onbording__screen-photo .desktop-your-profile-preview{border-radius: 64px 64px 0 0; overflow: hidden; position: relative; display: flex; max-height: 532px; height: 100%;
+  justify-content: center;
+  align-items: center; padding: 0;}
+
+.screen-btns-right.site_flex .white:before,.screen-btns-right.site_flex .white:after {
+  opacity: 0;
+}
+.screen-btns-right.site_flex .white:hover:before,.screen-btns-right.site_flex .white:hover:after {
+  opacity: 0.8;
+}
+
 
 .dynamic-input-container {
   max-width: 300px;
@@ -49,7 +93,7 @@
 /*----------------------
   Image Select Popup Styles
   ----------------*/
-.content__text{padding: 0 0 0 20px; color: #ffffff80; font-weight: 400;}  
+.content__text{padding: 0 0 0 20px; color: #ffffff80; font-weight: 400; margin-top: 30px;}   
 .image-picker-popup { display: none; position: absolute; top: 5%; left: 24%; justify-content: center; align-items: center; z-index: 1000; }
 .image-picker-popup .image-upload { height: 236px; border-radius: 10px; border: 1px dashed #FFFFFF40;  z-index: 1;}
 .image-picker-popup .upload-image-input { margin: 0px; }
@@ -59,7 +103,8 @@
 .image-picker-popup .upload-description { font-size: 12px; color: #ffffff80; opacity: inherit;}
 .image-picker-popup .upload-description span {  color: #ffffff;}
 .image-picker-popup .upload-description + p { font-size: 10px; }
-.image-picker-popup .site_input-group, .onboarding__input-group { background: transparent; box-shadow: none; }
+.image-picker-popup .site_input-group, .onboarding__input-group{ background: transparent; box-shadow: none; }
+.image-picker-popup .site_input-group.focus, .onboarding__input-group.focus { box-shadow: var(--shadow-one); }
 .image-picker-popup .site_input.site_actual_input{ background: #0003; }
 .or-separator::after { content: ''; position: absolute; width: 100%; height: 2px; background: linear-gradient(90deg, #ffffff01, #ffffff80, #ffffff01); }
 .or-separator { color: #ccc; position: relative; display: flex; align-items: center; justify-content: center; }

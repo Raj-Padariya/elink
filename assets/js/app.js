@@ -2,6 +2,7 @@ $(document).ready(function () {
   // Add JS class to body
   $('body').removeClass('no-js').addClass('js');
 
+
   // Initially hide data-show
   $('[data-show]').css('display', 'none');
 
@@ -100,30 +101,11 @@ $(document).ready(function () {
       $('.dynamic-input-container').show();
       $('.dynamic-input-container label').text('Enter Your Name');
       $('.dynamic-input').attr('placeholder', 'Enter Your Name');
-      $('.dynamic-input').val(''); // Clear input
-      hideImagePicker(); // Hide popup after photo selection
-    } else if (currentStep === 2) {
-      $('.step__text').text('Continue with Role');
-      $('.dynamic-input-container').show();
-      $('.dynamic-input-container label').text('Enter Your Role');
-      $('.dynamic-input').attr('placeholder', 'Enter Your Role');
-      $('.dynamic-input').val(''); // Clear input
-    } else if (currentStep > 2) {
-      $('.dynamic-input-container').hide(); // Hide input after both steps
-      $('.chagne__steps').prop('disabled', true); // Optionally disable button
-      $('.step__text').text('Completed');
+      $('.dynamic-input').val('');
+      hideImagePicker();
     }
   });
 
-  // Update span text based on input
-  $('.dynamic-input').on('input', function () {
-    const inputText = $(this).val();
-    if (currentStep === 1) {
-      $('#displayName_actual').text(inputText);
-    } else if (currentStep === 2) {
-      $('#displayRole__actual').text(inputText);
-    }
-  });
 
   // Image picker popup logic (unchanged)
   function showImagePicker() {
@@ -133,4 +115,17 @@ $(document).ready(function () {
   function hideImagePicker() {
     $('#imagePickerPopup').fadeOut(300);
   }
+
+ /*-------------------------
+  Adding Class On Focus To All Input who contains "site_input" class 
+ -----------------*/
+   $('.site_input').focus(function() {
+
+        $(this).parent().addClass('focus');
+    }).blur(function() {
+        
+        $(this).parent().removeClass('focus');
+    });
+
+
 });
