@@ -174,38 +174,49 @@
                 </div>
 
 
-                <div class="profile-previw-popup">
-                    <div class="profile-previw-popup-close">
-                        <div class="profile-previw-popup-inner">
-                            <div class="example-close">
-                                <a href="">
-                                    <img src="./assets/images/close-icon.svg" alt="">
-                                </a>
-                            </div>
-                            <div class="profile-previw-popup-example">
-                                <div class="profile-previw-popup-heading">
-                                    <h3>Examples</h3>
-                                </div>
-                                <div class="profile-previw-popup-exampel-content">
-                                    <div class="profile-previw-popup-exampel-img">
-                                        <img src="./assets/images/example-01.png" alt="">
-                                    </div>
-                                    <div class="profile-previw-popup-exampel-img">
-                                        <img src="./assets/images/example-02.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="profile-previw-popup-mokup-scroll">
-                                <div class="profile-previw-popup-phone">
-                                    <img src="./assets/images/E-Link-Phone-Block.png" alt="">
-                                    <div class="profile-previw-popup-phone-content">
-                                        <img src="./assets/images/Elnk-Entreprenuer-scroll-1.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               <div class="profile-previw-popup">
+  <div class="profile-previw-popup-close">
+    <div class="profile-previw-popup-inner">
+
+      <div class="example-close">
+        <a href="">
+          <img src="./assets/images/close-icon.svg" alt="">
+        </a>
+      </div>
+
+      <div class="profile-previw-popup-example">
+        <div class="profile-previw-popup-heading">
+          <h3>Examples</h3>
+        </div>
+        <div class="profile-previw-popup-exampel-content">
+          <div class="profile-previw-popup-exampel-img active" data-index="1">
+            <img src="./assets/images/example-01.png" alt="">
+          </div>
+          <div class="profile-previw-popup-exampel-img" data-index="2">
+            <img src="./assets/images/example-02.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-previw-popup-mokup-scroll">
+        <div class="profile-previw-popup-phone">
+          <img src="./assets/images/E-Link-Phone-Block.png" alt="">
+
+          <!-- Mockup Screens -->
+          <div class="profile-previw-popup-phone-content active" data-index="1">
+            <img src="./assets/images/Elnk-Entreprenuer-scroll-1.png" alt="">
+          </div>
+          <div class="profile-previw-popup-phone-content" data-index="2">
+            <img src="./assets/images/Elnk-Entreprenuer-scroll-2.png" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
             </div>
         </div>
     </section>
@@ -264,6 +275,31 @@
             }
         });
         });
+    </script>
+
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const exampleImages = document.querySelectorAll(".profile-previw-popup-exampel-img");
+  const mockupContents = document.querySelectorAll(".profile-previw-popup-phone-content");
+
+  exampleImages.forEach(img => {
+    img.addEventListener("click", function() {
+      const index = this.getAttribute("data-index");
+
+      // Remove 'active' from all example images and mockup screens
+      exampleImages.forEach(i => i.classList.remove("active"));
+      mockupContents.forEach(c => c.classList.remove("active"));
+
+      // Add 'active' only to selected ones
+      this.classList.add("active");
+      const activeContent = document.querySelector(`.profile-previw-popup-phone-content[data-index="${index}"]`);
+      if (activeContent) activeContent.classList.add("active");
+    });
+  });
+});
+
+
     </script>
 
 </body>

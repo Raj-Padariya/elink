@@ -35,29 +35,20 @@
     /* text-align: center; */
     position: relative;
     max-width: fit-content;
-   margin: 0 auto;
-  overflow: hidden;
+    margin: 0 auto;
 }
-
 /* .desktop-mockup-img img{
     background-color: var(--black);
 } */
 .desktop-mockup-screen{
     position: relative;
-    width: 100%;
 }
-.desktop-main-content {
-  position: absolute;
-  width: 100%;
-  top: 20px;
-  padding: 0 21px;
-  z-index: -1;
-  max-width: 416px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 100%;
-  gap: 20px;
+.desktop-main-content{
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    padding: 0 35px;
+    z-index: 1;
 }
 
 .import_photo-url{
@@ -68,32 +59,18 @@
     background: #FFFFFF1A;
     padding: 13px;
     border-radius: 24px;
-    max-width: 340px;
-  margin: 0 auto;
-  width: 100%;
-  bottom: 0;
-  position: absolute;
 }
 
 .desktop-your-profile-preview{
     background: linear-gradient(93.19deg, rgba(255, 255, 255, 0.1) 1.47%, rgba(255, 255, 255, 0.04) 98.25%);
-    border-radius: 65px 65px 0 0; 
-    
-    position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  max-height: 532px;
-  height: 100%;
+    border-radius: 24px;
+    padding: 1px;
 }
 .desktop-your-profile-preview .your-profile-img {
     background: linear-gradient(90deg, #7BD1FF 0%, #7E9AFE 100% 100%);
     padding: 2px;
     border-radius: 50px;
     overflow: hidden;
-    
 }
 
 .desktop-your-profile-preview .your-profile-top{
@@ -134,6 +111,21 @@
     font-weight: var(--w-500);}
 
 
+
+
+
+.upload-icon img{
+   margin: 0 auto;
+}  
+.screen-btns{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    bottom: 100px;
+    left: 0;
+    padding: 0 35px;
+}
 
 
 .screen-btns{
@@ -195,7 +187,7 @@
     position: absolute;
     top: 70px;
     width: 100%;
-    padding: 20px;
+    padding: 0 20px;
     overflow-y: scroll;
     height: 582px;
 }
@@ -285,4 +277,35 @@
     backdrop-filter: blur(16px);
     position: absolute;
     top: -10%;
+}
+
+.profile-previw-popup-exampel-img {
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.profile-previw-popup-exampel-img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+.profile-previw-popup-exampel-img.active {
+  border: 2px solid #007bff;
+  box-shadow: var(--shadow-one);
+  border-radius: 14px;
+}
+
+.profile-previw-popup-phone-content {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.profile-previw-popup-phone-content.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+.profile-previw-popup-exampel-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
