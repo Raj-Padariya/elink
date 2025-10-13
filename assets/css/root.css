@@ -130,6 +130,8 @@ input:-webkit-autofill + label { color: #333 !important; }
 .e-link_container {max-width: 470px;margin: 0 auto;padding: 15px;}
 
 .site_btn-bg {background: var(--gradient-secondry);backdrop-filter: blur(30px);border-radius: var(--radius);display: flex;align-items: center;justify-content: center;padding: 1px;}
+.site_glow-btn.white::before,
+.site_glow-btn.white::after {background: var(--White-Transparency-White-20, #FFFFFF33);}
 .site_btn-bg :is(a, button) {background-color: var(--black);border-radius: var(--radius);color: var(--white);padding: 18px;display: flex;align-items: center;justify-content: center;width: 100%;height: 100%; gap: 10px;}
 .site_btn-bg :is(a, button) img {width: 16px;}
 .site_btn-bg :is(a, button):hover {color: var(--white);}
