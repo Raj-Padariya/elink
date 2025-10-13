@@ -254,7 +254,7 @@
   transform: scale(0.95);
   transition: all 0.4s ease;
   z-index: 999;
-  top: 50%;
+  top: 0;
 }
 
 
@@ -262,7 +262,7 @@
 .profile-previw-popup.active {
   opacity: 1;
   visibility: visible;
-  transform: scale(1) translateY(-40%);
+  transform: scale(1) translateY(10%);
   height: 100%;
 }
 
@@ -308,4 +308,18 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+
+.onboarding-section-main-desktop .upload-pregress{
+    height: 300px;
+}
+
+.onboarding-section-main-desktop .upload-photo-error .error__text{
+    padding-top: 0;
+}
+.onboarding-section-main-desktop .upload-photo-error .error__text img{
+    margin: 0 auto 10px;
+    max-width: 50px;
+    width: 100%;
 }
