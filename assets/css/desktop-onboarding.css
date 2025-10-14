@@ -374,3 +374,8 @@
     margin-bottom: 3px;
     list-style: disc;
 }
+
+
+.watch-photo-tips-popup{
+    display: none;
+}
