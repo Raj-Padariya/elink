@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Onboarding Desktop</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.11.3/build/css/intlTelInput.css"
+    />
+
     <script src="./assets/js/jquery.min.js"></script>
   </head>
+
   <body class="no-js">
     <div class="onboarding">
       <div class="onboarding__inner">
@@ -30,13 +36,15 @@
                 <div class="elnk__logo site_flex site_align-center">
                   <h2 class="logo">elnk</h2>
                   <div class="close__cta">
-                    <button class="close__btn">
-                      <img
-                        decoding="async"
-                        src="./assets/images/close-icon.svg"
-                        alt="Close Icon"
-                      />
-                    </button>
+                    <div class="site_btn-bg site_glow-btn white">
+                      <button class="close__btn">
+                        <img
+                          decoding="async"
+                          src="./assets/images/close-icon.svg"
+                          alt="Close Icon"
+                        />
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -97,217 +105,1189 @@
             <div
               class="main-screen site_flex site_align-center site_justify-center site_flex-column"
             >
-              <div class="common-style-heading">
-                <h2>Great, Now Complete Your Profile</h2>
-                <p>
-                  Add your key details, one by one, from your name to your
-                  contact information, to make your card feel complete and ready
-                  to share.
-                </p>
-              </div>
-              <div class="desktop-mockup-screen">
-                <div class="desktop-mockup-img">
-                  <img src="./assets/images/mockup.png" alt="" />
+              <div class="onbording__screen-photo">
+                <div class="common-style-heading">
+                  <h2>Great, Now Complete Your Profile</h2>
+                  <p>
+                    Add your key details, one by one, from your name to your
+                    contact information, to make your card feel complete and
+                    ready to share.
+                  </p>
+                </div>
+                <div class="desktop-mockup-screen">
+                  <div class="desktop-mockup-img">
+                    <img src="./assets/images/mockup.png" alt="" />
 
-                  <div class="desktop-main-content">
-                    <div class="desktop-your-profile-preview">
-                      <div class="profile__image">
-                        <picture>
-                          <source
-                            media="(min-width: 992px)"
-                            srcset="./assets/images/demo-profile-image.png"
-                          />
-                          <img
-                            src="./assets/images/demo-profile-image.png"
-                            alt="Profile Photo"
-                          />
-                        </picture>
-                      </div>
-                      <div class="your-profile-preview">
-                        <div class="preview_container">
-                          <div class="your-profile-top">
-                            <div class="your-profile-left">
-                              <div class="your-profile-detail">
-                                <div class="your-profile-img">
-                                  <img
-                                    src="./assets/images/image-placeholder.png"
-                                    alt=""
-                                  />
+                    <div class="desktop-main-content">
+                      <div class="desktop-your-profile-preview">
+                        <div class="profile__image">
+                          <picture>
+                            <source
+                              media="(min-width: 992px)"
+                              srcset="./assets/images/demo-profile-image.png"
+                            />
+                            <img
+                              src="./assets/images/demo-profile-image.png"
+                              alt="Profile Photo"
+                            />
+                          </picture>
+                        </div>
+                        <div class="your-profile-preview">
+                          <div class="preview_container">
+                            <div class="your-profile-top">
+                              <div class="your-profile-left">
+                                <div class="your-profile-detail">
+                                  <div class="your-profile-img">
+                                    <img
+                                      src="./assets/images/image-placeholder.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="your-profile-text">
+                                    <h2 class="your-profile-name">
+                                      <span
+                                        id="displayName_actual"
+                                        data-step-change="1"
+                                      ></span>
+                                    </h2>
+                                    <p class="your-profile-role">
+                                      <span
+                                        id="displayRole__actual"
+                                        data-step-change="2"
+                                      ></span>
+                                    </p>
+                                  </div>
                                 </div>
-                                <div class="your-profile-text">
-                                  <h2 class="your-profile-name">
-                                    <span
-                                      id="displayName_actual"
-                                      data-step-change="1"
-                                    ></span>
-                                    <!-- <img src="./assets/images/verify-badge.svg" alt=""> -->
-                                  </h2>
-                                  <p class="your-profile-role">
-                                    <span
-                                      id="displayRole__actual"
-                                      data-step-change="2"
-                                    ></span>
-                                  </p>
+                              </div>
+                              <div class="your-profile-right">
+                                <div class="your-profile-right-inner">
+                                  <div class="your-profile-post">
+                                    <p class="prifile_statistics_text">
+                                      <span></span>
+                                    </p>
+                                    <p class="profile_statistics_subtext">
+                                      Posts
+                                    </p>
+                                  </div>
+                                  <div class="your-profile-post">
+                                    <p class="prifile_statistics_text">
+                                      <span></span>
+                                    </p>
+                                    <p class="profile_statistics_subtext">
+                                      Followers
+                                    </p>
+                                  </div>
+                                  <div class="your-profile-post">
+                                    <p class="prifile_statistics_text">
+                                      <span></span>
+                                    </p>
+                                    <p class="profile_statistics_subtext">
+                                      Following
+                                    </p>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                            <div class="your-profile-right">
-                              <div class="your-profile-right-inner">
-                                <div class="your-profile-post">
-                                  <p class="prifile_statistics_text">
-                                    <span></span>
-                                  </p>
-                                  <p class="profile_statistics_subtext">
-                                    Posts
-                                  </p>
-                                </div>
-                                <div class="your-profile-post">
-                                  <p class="prifile_statistics_text">
-                                    <span></span>
-                                  </p>
-                                  <p class="profile_statistics_subtext">
-                                    Followers
-                                  </p>
-                                </div>
-                                <div class="your-profile-post">
-                                  <p class="prifile_statistics_text">
-                                    <span></span>
-                                  </p>
-                                  <p class="profile_statistics_subtext">
-                                    Following
-                                  </p>
+                            <div class="profile_bottom">
+                              <div class="profile_bottom-contact_ctas">
+                                <div class="profile_contact-ctas">
+                                  <a
+                                    href=""
+                                    class="profile_cta profile_cta__contact"
+                                  >
+                                    Save Contact
+                                  </a>
+                                  <a
+                                    href=""
+                                    class="profile_cta profile_cta__call"
+                                  >
+                                    <img
+                                      src="./assets/images/call.svg"
+                                      alt=""
+                                    />
+                                  </a>
+                                  <a
+                                    href=""
+                                    class="profile_cta profile_cta__msg"
+                                  >
+                                    <img src="./assets/images/msg.svg" alt="" />
+                                  </a>
+                                  <a
+                                    href=""
+                                    class="profile_cta profile_cta__mail"
+                                  >
+                                    <img
+                                      src="./assets/images/email.svg"
+                                      alt=""
+                                    />
+                                  </a>
                                 </div>
                               </div>
-                            </div>
-                          </div>
-                          <div class="profile_bottom-contact_ctas">
-                            <div class="profile_contact-ctas">
-                              <a
-                                href=""
-                                class="profile_cta profile_cta__contact"
-                              >
-                                Save Contact
-                              </a>
-                              <a href="" class="profile_cta profile_cta__call">
-                                <img src="./assets/images/call.svg" alt="" />
-                              </a>
-                              <a href="" class="profile_cta profile_cta__msg">
-                                <img src="./assets/images/msg.svg" alt="" />
-                              </a>
-                              <a href="" class="profile_cta profile_cta__mail">
-                                <img src="./assets/images/email.svg" alt="" />
-                              </a>
+                              <div class="profile_bottom-social_links">
+                                <div class="social__ctas">
+                                  <a
+                                    class="social__cta"
+                                    href="javascript:void(0)"
+                                  >
+                                    <img
+                                      src="./assets/images/instagram.svg"
+                                      alt="Visit Username's App Name Profile"
+                                    />
+                                  </a>
+                                  <a
+                                    class="social__cta"
+                                    href="javascript:void(0)"
+                                  >
+                                    <img
+                                      src="./assets/images/x-twitter.svg"
+                                      alt="Visit Username's App Name Profile"
+                                    />
+                                  </a>
+                                  <a
+                                    class="social__cta"
+                                    href="javascript:void(0)"
+                                  >
+                                    <img
+                                      src="./assets/images/Linkedin.svg"
+                                      alt="Visit Username's App Name Profile"
+                                    />
+                                  </a>
+                                  <a
+                                    class="social__cta"
+                                    href="javascript:void(0)"
+                                  >
+                                    <img
+                                      src="./assets/images/tiktok.svg"
+                                      alt="Visit Username's App Name Profile"
+                                    />
+                                  </a>
+                                  <a
+                                    class="social__cta"
+                                    href="javascript:void(0)"
+                                  >
+                                    <img
+                                      src="./assets/images/youtube.svg"
+                                      alt="Visit Username's App Name Profile"
+                                    />
+                                  </a>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="content__text">
-                      <h3>Bio</h3>
+                      <div class="content__text">
+                        <h3>Bio</h3>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="image-picker-popup" id="imagePickerPopup">
-                  <div class="popup-content">
-                    <div class="upload-image-input">
-                      <div class="image-upload">
-                        <input
-                          type="file"
-                          class="file-input"
-                          accept="image/*"
-                        />
-                      </div>
-                      <div class="upload-content" id="uploadContent">
-                        <div class="upload-icon">
-                          <img
-                            decoding="async"
-                            src="./assets/images/upload-ico-onbdg-desktop.png"
-                            alt=""
+                  <div class="image-picker-popup" id="imagePickerPopup">
+                    <div class="popup-content">
+                      <div class="upload-image-input">
+                        <div class="image-upload">
+                          <input
+                            type="file"
+                            class="file-input"
+                            accept="image/*"
                           />
                         </div>
-                        <h3 class="upload-title">Add your avatar photo</h3>
-                        <p class="upload-description">
-                          <span>Click to Upload</span>
-                          or Drag & Drop it. For the best result, upload a
-                          high-quality photo or video.
-                        </p>
-                        <p>
-                          <span class="upload-specs">Min Size:</span> 400x400
-                        </p>
+                        <div class="upload-content" id="uploadContent">
+                          <div class="upload-icon">
+                            <img
+                              decoding="async"
+                              src="./assets/images/upload-ico-onbdg-desktop.png"
+                              alt=""
+                            />
+                          </div>
+                          <h3 class="upload-title">Add your avatar photo</h3>
+                          <p class="upload-description">
+                            <span>Click to Upload</span>
+                            or Drag & Drop it. For the best result, upload a
+                            high-quality photo or video.
+                          </p>
+                          <p>
+                            <span class="upload-specs">Min Size:</span> 400x400
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="or-separator">
+                        <span class="separator__text"> or </span>
+                      </div>
+                      <div class="site_input-group onboarding__input-group">
+                        <input
+                          type="text"
+                          class="site_input site_actual_input onboarding__input"
+                          placeholder="Import from URL"
+                        />
+                        <label for="Full Name">Import from URL</label>
+                      </div>
+                      <div class="upload-options site_btn-bg site_glow-btn">
+                        <button class="popup_upload-btn">Upload</button>
                       </div>
                     </div>
-
-                    <div class="or-separator">
-                      <span class="separator__text"> or </span>
-                    </div>
+                  </div>
+                  <div
+                    class="dynamic-input-container"
+                    style="margin-top: 20px; display: none"
+                  >
+                    <span style="margin-bottom: 12px; display: flex"
+                      >Add your full name</span
+                    >
                     <div class="site_input-group onboarding__input-group">
                       <input
                         type="text"
-                        class="site_input site_actual_input onboarding__input"
-                        placeholder="Import from URL"
+                        class="site_input site_actual_input dynamic-input onboarding__input"
+                        placeholder="Enter text"
                       />
-                      <label for="Full Name">Import from URL</label>
-                    </div>
-                    <div class="upload-options site_btn-bg site_glow-btn">
-                      <button class="popup_upload-btn">Upload</button>
+                      <label for="dynamic-input"></label>
                     </div>
                   </div>
                 </div>
-                <!-- Add a container for dynamic input -->
-                <div
-                  class="dynamic-input-container"
-                  style="margin-top: 20px; display: none"
-                >
-                  <span style="margin-bottom: 12px; display: flex"
-                    >Add your full name</span
-                  >
-                  <div class="site_input-group onboarding__input-group">
-                    <input
-                      type="text"
-                      class="site_input site_actual_input dynamic-input onboarding__input"
-                      placeholder="Enter text"
-                    />
-                    <label for="dynamic-input"></label>
+              </div>
+
+              <div class="onbording__social-links onbording__screen-photo">
+                <div class="common-style-heading">
+                  <h2>Add Your Social Links</h2>
+                  <p>
+                    In case you want to share only links without contact
+                    details.
+                  </p>
+                </div>
+                <div class="desktop-mockup-screen">
+                  <div class="desktop-mockup-img">
+                    <img src="./assets/images/mockup.png" alt="" />
+
+                    <div class="desktop-main-content">
+                      <div class="desktop-your-profile-preview">
+                        <div class="profile__image">
+                          <picture>
+                            <source
+                              media="(min-width: 992px)"
+                              srcset="./assets/images/demo-profile-image.png"
+                            />
+                            <img
+                              src="./assets/images/demo-profile-image.png"
+                              alt="Profile Photo"
+                            />
+                          </picture>
+                        </div>
+                        <div class="your-profile-preview">
+                          <div class="preview_container">
+                            <div class="your-profile-top">
+                              <div class="your-profile-left">
+                                <div class="your-profile-detail">
+                                  <div class="your-profile-img">
+                                    <img
+                                      src="./assets/images/image-placeholder.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="your-profile-text">
+                                    <h2 class="your-profile-name">
+                                      <span
+                                        id="displayName_actual"
+                                        data-step-change="1"
+                                      ></span>
+                                      <!-- <img src="./assets/images/verify-badge.svg" alt=""> -->
+                                    </h2>
+                                    <p class="your-profile-role">
+                                      <span
+                                        id="displayRole__actual"
+                                        data-step-change="2"
+                                      ></span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="your-profile-right">
+                                <div class="your-profile-right-inner">
+                                  <div class="your-profile-post">
+                                    <p class="prifile_statistics_text">
+                                      <span></span>
+                                    </p>
+                                    <p class="profile_statistics_subtext">
+                                      Posts
+                                    </p>
+                                  </div>
+                                  <div class="your-profile-post">
+                                    <p class="prifile_statistics_text">
+                                      <span></span>
+                                    </p>
+                                    <p class="profile_statistics_subtext">
+                                      Followers
+                                    </p>
+                                  </div>
+                                  <div class="your-profile-post">
+                                    <p class="prifile_statistics_text">
+                                      <span></span>
+                                    </p>
+                                    <p class="profile_statistics_subtext">
+                                      Following
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="profile_bottom">
+                              <div class="profile_bottom-contact_ctas">
+                                <div class="profile_contact-ctas">
+                                  <a
+                                    href=""
+                                    class="profile_cta profile_cta__contact"
+                                  >
+                                    Save Contact
+                                  </a>
+                                  <a
+                                    href=""
+                                    class="profile_cta profile_cta__call"
+                                  >
+                                    <img
+                                      src="./assets/images/call.svg"
+                                      alt=""
+                                    />
+                                  </a>
+                                  <a
+                                    href=""
+                                    class="profile_cta profile_cta__msg"
+                                  >
+                                    <img src="./assets/images/msg.svg" alt="" />
+                                  </a>
+                                  <a
+                                    href=""
+                                    class="profile_cta profile_cta__mail"
+                                  >
+                                    <img
+                                      src="./assets/images/email.svg"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="profile_bottom-social_links">
+                                <div class="social__ctas">
+                                  <a
+                                    class="social__cta"
+                                    href="javascript:void(0)"
+                                  >
+                                    <img
+                                      src="./assets/images/instagram.svg"
+                                      alt="Visit Username's App Name Profile"
+                                    />
+                                  </a>
+                                  <a
+                                    class="social__cta"
+                                    href="javascript:void(0)"
+                                  >
+                                    <img
+                                      src="./assets/images/x-twitter.svg"
+                                      alt="Visit Username's App Name Profile"
+                                    />
+                                  </a>
+                                  <a
+                                    class="social__cta"
+                                    href="javascript:void(0)"
+                                  >
+                                    <img
+                                      src="./assets/images/Linkedin.svg"
+                                      alt="Visit Username's App Name Profile"
+                                    />
+                                  </a>
+                                  <a
+                                    class="social__cta"
+                                    href="javascript:void(0)"
+                                  >
+                                    <img
+                                      src="./assets/images/tiktok.svg"
+                                      alt="Visit Username's App Name Profile"
+                                    />
+                                  </a>
+                                  <a
+                                    class="social__cta"
+                                    href="javascript:void(0)"
+                                  >
+                                    <img
+                                      src="./assets/images/youtube.svg"
+                                      alt="Visit Username's App Name Profile"
+                                    />
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content__text">
+                        <h3>Bio</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="socialPopup" id="socialPopup">
+                    <div class="socialPopup-content" id="SocialContent">
+                      <div class="socialPopup__top">
+                        <div class="verfiy__content">
+                          <div class="site_flex">
+                            <span class="verfiy-ico">
+                              <img
+                                class="verify-badge"
+                                src="./assets/images/verify-badge.svg"
+                                alt="Verfiy Icon"
+                              />
+                            </span>
+                            <p>Share All Data</p>
+                          </div>
+                        </div>
+                        <div class="shield__content">
+                          <div class="site_flex">
+                            <span class="verfiy-ico">
+                              <img
+                                class="verify-badge data-shield__ico"
+                                src="./assets/images/data-shield-ico.svg"
+                                alt="Verfiy Icon"
+                              />
+                            </span>
+                            <p>Without Personal Data</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="socialPopup__center">
+                        <div class="center__inner">
+                          <div class="center__top-checkbox">
+                            <div class="top-checkbox__inner site_flex">
+                              <p>
+                                Share Personal Data
+                                <span
+                                  ><svg
+                                    width="12"
+                                    height="12"
+                                    viewBox="0 0 12 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M5.84375 0.3125C4.71887 0.3125 3.61925 0.646066 2.68395 1.27102C1.74864 1.89597 1.01966 2.78423 0.589188 3.82349C0.158714 4.86274 0.0460828 6.00631 0.265536 7.10958C0.48499 8.21284 1.02667 9.22626 1.82208 10.0217C2.61749 10.8171 3.63091 11.3588 4.73418 11.5782C5.83744 11.7977 6.98101 11.685 8.02026 11.2546C9.05952 10.8241 9.94779 10.0951 10.5727 9.15981C11.1977 8.2245 11.5313 7.12488 11.5313 6C11.5297 4.49207 10.9299 3.04636 9.86366 1.98009C8.7974 0.913821 7.35168 0.314092 5.84375 0.3125ZM5.625 2.9375C5.7548 2.9375 5.88168 2.97599 5.9896 3.0481C6.09752 3.12021 6.18163 3.2227 6.2313 3.34261C6.28097 3.46253 6.29396 3.59448 6.26864 3.72178C6.24332 3.84908 6.18082 3.96601 6.08904 4.05779C5.99726 4.14957 5.88033 4.21207 5.75303 4.23739C5.62573 4.26271 5.49378 4.24972 5.37387 4.20005C5.25395 4.15038 5.15146 4.06626 5.07935 3.95834C5.00724 3.85042 4.96875 3.72354 4.96875 3.59375C4.96875 3.4197 5.03789 3.25278 5.16096 3.12971C5.28403 3.00664 5.45095 2.9375 5.625 2.9375ZM6.28125 9.0625C6.04919 9.0625 5.82663 8.97031 5.66253 8.80622C5.49844 8.64212 5.40625 8.41956 5.40625 8.1875V6C5.29022 6 5.17894 5.95391 5.09689 5.87186C5.01485 5.78981 4.96875 5.67853 4.96875 5.5625C4.96875 5.44647 5.01485 5.33519 5.09689 5.25314C5.17894 5.17109 5.29022 5.125 5.40625 5.125C5.63832 5.125 5.86088 5.21719 6.02497 5.38128C6.18907 5.54538 6.28125 5.76794 6.28125 6V8.1875C6.39728 8.1875 6.50856 8.23359 6.59061 8.31564C6.67266 8.39769 6.71875 8.50897 6.71875 8.625C6.71875 8.74103 6.67266 8.85231 6.59061 8.93436C6.50856 9.01641 6.39728 9.0625 6.28125 9.0625Z"
+                                      fill="white"
+                                    />
+                                  </svg>
+                                </span>
+                              </p>
+                              <label class="switch">
+                                <input
+                                  type="checkbox"
+                                  id="toggleSwitch"
+                                  checked
+                                />
+                                <span class="slider">
+                                  <svg
+                                    class="swatch__checked"
+                                    width="27"
+                                    height="24"
+                                    viewBox="0 0 27 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g filter="url(#filter0_dd_2735_19926)">
+                                      <path
+                                        d="M25 12C25 6.47715 20.5228 2 15 2C9.47715 2 5 6.47715 5 12C5 17.5228 9.47715 22 15 22C20.5228 22 25 17.5228 25 12Z"
+                                        fill="url(#paint0_linear_2735_19926)"
+                                        shape-rendering="crispEdges"
+                                      />
+                                      <path
+                                        d="M25 12C25 6.47715 20.5228 2 15 2C9.47715 2 5 6.47715 5 12C5 17.5228 9.47715 22 15 22C20.5228 22 25 17.5228 25 12Z"
+                                        fill="url(#paint1_linear_2735_19926)"
+                                        fill-opacity="0.4"
+                                        shape-rendering="crispEdges"
+                                      />
+                                      <path
+                                        d="M25 12C25 6.47715 20.5228 2 15 2C9.47715 2 5 6.47715 5 12C5 17.5228 9.47715 22 15 22C20.5228 22 25 17.5228 25 12Z"
+                                        stroke="url(#paint2_linear_2735_19926)"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        shape-rendering="crispEdges"
+                                      />
+                                    </g>
+                                    <defs>
+                                      <filter
+                                        id="filter0_dd_2735_19926"
+                                        x="0.25"
+                                        y="-2.75"
+                                        width="29.5"
+                                        height="29.5"
+                                        filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB"
+                                      >
+                                        <feFlood
+                                          flood-opacity="0"
+                                          result="BackgroundImageFix"
+                                        />
+                                        <feColorMatrix
+                                          in="SourceAlpha"
+                                          type="matrix"
+                                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                          result="hardAlpha"
+                                        />
+                                        <feOffset />
+                                        <feGaussianBlur stdDeviation="1" />
+                                        <feComposite
+                                          in2="hardAlpha"
+                                          operator="out"
+                                        />
+                                        <feColorMatrix
+                                          type="matrix"
+                                          values="0 0 0 0 0.14902 0 0 0 0 0.717647 0 0 0 0 1 0 0 0 0.25 0"
+                                        />
+                                        <feBlend
+                                          mode="normal"
+                                          in2="BackgroundImageFix"
+                                          result="effect1_dropShadow_2735_19926"
+                                        />
+                                        <feColorMatrix
+                                          in="SourceAlpha"
+                                          type="matrix"
+                                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                          result="hardAlpha"
+                                        />
+                                        <feOffset />
+                                        <feGaussianBlur stdDeviation="2" />
+                                        <feComposite
+                                          in2="hardAlpha"
+                                          operator="out"
+                                        />
+                                        <feColorMatrix
+                                          type="matrix"
+                                          values="0 0 0 0 0.14902 0 0 0 0 0.717647 0 0 0 0 1 0 0 0 0.25 0"
+                                        />
+                                        <feBlend
+                                          mode="normal"
+                                          in2="effect1_dropShadow_2735_19926"
+                                          result="effect2_dropShadow_2735_19926"
+                                        />
+                                        <feBlend
+                                          mode="normal"
+                                          in="SourceGraphic"
+                                          in2="effect2_dropShadow_2735_19926"
+                                          result="shape"
+                                        />
+                                      </filter>
+                                      <linearGradient
+                                        id="paint0_linear_2735_19926"
+                                        x1="15"
+                                        y1="2"
+                                        x2="15"
+                                        y2="22"
+                                        gradientUnits="userSpaceOnUse"
+                                      >
+                                        <stop stop-opacity="0.2" />
+                                        <stop offset="1" />
+                                      </linearGradient>
+                                      <linearGradient
+                                        id="paint1_linear_2735_19926"
+                                        x1="5"
+                                        y1="12"
+                                        x2="25"
+                                        y2="12"
+                                        gradientUnits="userSpaceOnUse"
+                                      >
+                                        <stop stop-color="#26B7FF" />
+                                        <stop offset="1" stop-color="#1D4AFE" />
+                                      </linearGradient>
+                                      <linearGradient
+                                        id="paint2_linear_2735_19926"
+                                        x1="5"
+                                        y1="12"
+                                        x2="25"
+                                        y2="12"
+                                        gradientUnits="userSpaceOnUse"
+                                      >
+                                        <stop stop-color="#26B7FF" />
+                                        <stop offset="1" stop-color="#1D4AFE" />
+                                      </linearGradient>
+                                    </defs>
+                                  </svg>
+                                  <svg
+                                    class="swatch__unchecked"
+                                    width="22"
+                                    height="22"
+                                    viewBox="0 0 22 22"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21C16.5228 21 21 16.5228 21 11Z"
+                                      fill="url(#paint0_linear_2740_158)"
+                                      stroke="url(#paint1_linear_2740_158)"
+                                      stroke-width="1.5"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                    <defs>
+                                      <linearGradient
+                                        id="paint0_linear_2740_158"
+                                        x1="11"
+                                        y1="1"
+                                        x2="11"
+                                        y2="46.5"
+                                        gradientUnits="userSpaceOnUse"
+                                      >
+                                        <stop
+                                          stop-color="white"
+                                          stop-opacity="0.01"
+                                        />
+                                        <stop offset="1" />
+                                      </linearGradient>
+                                      <linearGradient
+                                        id="paint1_linear_2740_158"
+                                        x1="3"
+                                        y1="3"
+                                        x2="21"
+                                        y2="20"
+                                        gradientUnits="userSpaceOnUse"
+                                      >
+                                        <stop stop-color="white" />
+                                        <stop
+                                          offset="0.451923"
+                                          stop-color="white"
+                                          stop-opacity="0.2"
+                                        />
+                                        <stop
+                                          offset="0.995192"
+                                          stop-color="white"
+                                          stop-opacity="0.8"
+                                        />
+                                      </linearGradient>
+                                    </defs>
+                                  </svg>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="or-separator"></div>
+                          <div class="shared_data-items site_flex site_flex-column" >
+                            <div class="shared_data-item site_flex">
+                              <div class="data-item__input">
+                                <img
+                                  src="./assets/images/squre-rounded-checked-ico.svg"
+                                  alt="Squre Rounded CheckBox Icon"
+                                />
+                              </div>
+                              <div class="data-item__text">
+                                <p>Phone Number</p>
+                              </div>
+                            </div>
+                            <div class="shared_data-item site_flex">
+                              <div class="data-item__input">
+                                <img
+                                  src="./assets/images/squre-rounded-checked-ico.svg"
+                                  alt="Squre Rounded CheckBox Icon"
+                                />
+                              </div>
+                              <div class="data-item__text">
+                                <p>Email Address</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="social__enable-cta site_btn-bg site_glow-btn">
+                        <button class="popup_upload-btn">
+                          Add Your Socials
+                        </button>
+                      </div>
+                    </div>
+                    <div class="socialPopup-social-icons" id="socialIconsShowCase" >
+                      <div class="social-icons__inner">
+                        <div
+                          class="social-icons__top site_flex site_flex-column"
+                        >
+                          <h2>
+                            Select which social media platforms you want to add
+                          </h2>
+                          <p>
+                            Start with up to 5 links. You can always add more
+                            later.
+                          </p>
+                        </div>
+                        <div
+                          class="social-icons__center site_flex site_flex-column"
+                        >
+                          <div class="icons__center--search">
+                            <div class="search__box site_flex">
+                              <input
+                                type="text"
+                                class="search__input"
+                                placeholder="Search Social Media"
+                              />
+                              <div class="search__controls site_flex">
+                                <div class="controls__close">
+                                  <img
+                                    src="./assets/images/close-ico.svg"
+                                    alt="Click To Clear Search Result"
+                                  />
+                                </div>
+                                <div class="controls__search">
+                                  <img
+                                    src="./assets/images/search-ico.svg"
+                                    alt="Click To Search"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="icons__center--icons-lists">
+                            <div class="icon-item">
+                              <input
+                                type="checkbox"
+                                id="icon-instagram"
+                                name="social"
+                                class="icon-checkbox"
+                                checked
+                              />
+                              <label for="icon-instagram">
+                                <img
+                                  src="./assets/images/instagram.svg"
+                                  alt="Instagram"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item">
+                              <input
+                                type="checkbox"
+                                id="icon-twitter"
+                                name="social"
+                                class="icon-checkbox"
+                                checked
+                              />
+                              <label for="icon-twitter">
+                                <img
+                                  src="./assets/images/x-twitter.svg"
+                                  alt="Twitter"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item">
+                              <input
+                                type="checkbox"
+                                id="icon-tiktok"
+                                name="social"
+                                class="icon-checkbox"
+                                checked
+                              />
+                              <label for="icon-tiktok">
+                                <img
+                                  src="./assets/images/tiktok.svg"
+                                  alt="TikTok"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item">
+                              <input
+                                type="checkbox"
+                                id="icon-youtube"
+                                name="social"
+                                class="icon-checkbox"
+                                checked
+                              />
+                              <label for="icon-youtube">
+                                <img
+                                  src="./assets/images/youtube.svg"
+                                  alt="YouTube"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item">
+                              <input
+                                type="checkbox"
+                                id="icon-linkedin"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-linkedin">
+                                <img
+                                  src="./assets/images/linkedin.svg"
+                                  alt="LinkedIn"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item">
+                              <input
+                                type="checkbox"
+                                id="icon-threads"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-threads">
+                                <img
+                                  src="./assets/images/threads.svg"
+                                  alt="threads"
+                                />
+                              </label>
+                            </div>  
+
+                            <div class="icon-item">
+                              <input
+                                type="checkbox"
+                                id="icon-facebook"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-facebook">
+                                <img
+                                  src="./assets/images/facebook.svg"
+                                  alt="Facebook"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item">
+                              <input
+                                type="checkbox"
+                                id="icon-snapchat"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-snapchat">
+                                <img
+                                  src="./assets/images/snapchat.svg"
+                                  alt="Snapchat"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item">
+                              <input
+                                type="checkbox"
+                                id="icon-pinterest"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-pinterest">
+                                <img
+                                  src="./assets/images/pinterest.svg"
+                                  alt="Pinterest"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item">
+                              <input
+                                type="checkbox"
+                                id="icon-reddit"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-reddit">
+                                <img
+                                  src="./assets/images/reddit.svg"
+                                  alt="Reddit"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item">
+                              <input
+                                type="checkbox"
+                                id="icon-medium"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-medium">
+                                <img
+                                  src="./assets/images/medium.svg"
+                                  alt="medium"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item">
+                              <input
+                                type="checkbox"
+                                id="icon-spotify"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-spotify">
+                                <img
+                                  src="./assets/images/spotify.svg"
+                                  alt="Spotify"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item">
+                              <input
+                                type="checkbox"
+                                id="icon-apple-music"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-apple-music">
+                                <img
+                                  src="./assets/images/apple-music.svg"
+                                  alt="Apple Music"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item">
+                              <input
+                                type="checkbox"
+                                id="icon-sound-cloud"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-sound-cloud">
+                                <img
+                                  src="./assets/images/soundcloud.svg"
+                                  alt="Sound Cloud"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item">
+                              <input
+                                type="checkbox"
+                                id="icon-dribbble"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-dribbble">
+                                <img
+                                  src="./assets/images/dribbble.svg"
+                                  alt="Dribbble"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item">
+                              <input
+                                type="checkbox"
+                                id="icon-behance"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-behance">
+                                <img
+                                  src="./assets/images/behance.svg"
+                                  alt="behance"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item">
+                              <input
+                                type="checkbox"
+                                id="icon-vimeo"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-vimeo">
+                                <img
+                                  src="./assets/images/vimeo.svg"
+                                  alt="Vimeo"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item">
+                              <input
+                                type="checkbox"
+                                id="icon-patreon"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-patreon">
+                                <img
+                                  src="./assets/images/patreon.svg"
+                                  alt="Patreon"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item hidden">
+                              <input
+                                type="checkbox"
+                                id="icon-github"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-github">
+                                <img
+                                  src="./assets/images/github.svg"
+                                  alt="Github"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item hidden">
+                              <input
+                                type="checkbox"
+                                id="icon-substack"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-substack">
+                                <img
+                                  src="./assets/images/substack.svg"
+                                  alt="Substack"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item hidden">
+                              <input
+                                type="checkbox"
+                                id="icon-twitch"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-twitch">
+                                <img
+                                  src="./assets/images/twitch.svg"
+                                  alt="twitch"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item hidden">
+                              <input
+                                type="checkbox"
+                                id="icon-poshmark"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-poshmark">
+                                <img
+                                  src="./assets/images/poshmark.svg"
+                                  alt="poshmark"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item hidden">
+                              <input
+                                type="checkbox"
+                                id="icon-kick-line"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-kick-line">
+                                <img
+                                  src="./assets/images/kick-line.svg"
+                                  alt="Kick Line"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item hidden">
+                              <input
+                                type="checkbox"
+                                id="icon-onlyfans"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-onlyfans">
+                                <img
+                                  src="./assets/images/onlyfans.svg"
+                                  alt="OnlyFans"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item hidden">
+                              <input
+                                type="checkbox"
+                                id="icon-etsy"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-etsy">
+                                <img
+                                  src="./assets/images/etsy.svg"
+                                  alt="Etsy"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item hidden">
+                              <input
+                                type="checkbox"
+                                id="icon-clubhouse"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-clubhouse">
+                                <img
+                                  src="./assets/images/clubhouse.svg"
+                                  alt="Clubhouse"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item hidden">
+                              <input
+                                type="checkbox"
+                                id="icon-bluesky"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-bluesky">
+                                <img
+                                  src="./assets/images/bluesky.svg"
+                                  alt="Bluesky"
+                                />
+                              </label>
+                            </div>
+                            <div class="icon-item hidden">
+                              <input
+                                type="checkbox"
+                                id="icon-bandcamp"
+                                name="social"
+                                class="icon-checkbox"
+                              />
+                              <label for="icon-bandcamp">
+                                <img
+                                  src="./assets/images/bandcamp.svg"
+                                  alt="Bandcamp"
+                                />
+                              </label>
+                            </div>
+                            <div class="search-message" style="display: none; color: rgb(102, 102, 102); padding: 10px;  position: absolute; inset: 0px; justify-content: center; align-items: center; pointer-events: none; text-align: center;  line-break: anywhere;overflow: hidden;margin-top: 30px;"></div>
+                          </div>
+                          <button class="show-more-btn">Show More</button>
+                        </div>
+                        <div class="social-icons__bottom">
+                          <div class="icons__pick-five site_flex">
+                            <p>Pick at least 1, up to 5</p>
+                            <div
+                              class="social__enable-cta site_btn-bg site_glow-btn"
+                            >
+                              <button class="popup_upload-btn">Continue</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="screen-btns">
-              <div class="screen-btns-left">
-                <div class="site_btn-bg site_glow-btn">
-                  <button>
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M20.25 12L3.75 12M3.75 12L10.5 5.25M3.75 12L10.5 18.75"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
+          <div class="screen-btns" style="pointer-events: none;">
+            <div class="screen-btns-left">
+              <div class="site_btn-bg site_glow-btn">
+                <button>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.25 12L3.75 12M3.75 12L10.5 5.25M3.75 12L10.5 18.75"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
               </div>
-              <div class="screen-btns-right site_flex">
-                <div class="site_btn-bg">
-                  <button>Crop Current Photo</button>
-                </div>
-                <div
-                  class="site_btn-bg site_glow-btn"
-                  data-step-change
-                  data-step="0"
-                >
-                  <button class="chagne__steps">
-                    <span class="step__text">Continue with this Photo</span>
-                  </button>
-                </div>
+            </div>
+            <div class="screen-btns-right site_flex">
+              <div class="site_btn-bg white">
+                <button>Crop Current Photo</button>
+              </div>
+              <div
+                class="site_btn-bg site_glow-btn"
+                data-step-change
+                data-step="0"
+              >
+                <button class="chagne__steps">
+                  <span class="step__text">Continue with this Photo</span>
+                </button>
               </div>
             </div>
           </div>
@@ -316,6 +1296,7 @@
     </div>
     <script src="./assets/js/gsap.min.js"></script>
     <script src="./assets/js/ScrollTrigger.min.js"></script>
+
     <script src="./assets/js/app.js"></script>
   </body>
 </html>
